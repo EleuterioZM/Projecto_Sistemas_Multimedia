@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="main" addfieldpath="administrator/components/com_convertforms/models/forms/fields">
+        <field name="state" type="list"
+            label="JSTATUS"
+            description="NR_FIELD_STATE_DESC"
+            class="chzn-color-state"
+            size="1"
+            default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+        <field name="id" type="text"
+            label="JGLOBAL_FIELD_ID_LABEL"
+            description="JGLOBAL_FIELD_ID_DESC"
+            default="0"
+            readonly="true"
+            class="readonly"
+        />
+        <field name="form_id" type="convertforms"
+            label="COM_CONVERTFORMS_FORM"
+            readonly="true"
+        />
+        <field name="visitor_id" type="text"
+            label="COM_CONVERTFORMS_VISITOR_ID"
+            readonly="true"
+        />
+        <field name="user_id" type="user"
+            label="Joomla User"
+        />
+        <field name="created" type="calendar"
+            label="NR_CREATED_DATE"
+            description="NR_CREATED_DATE_DESC"
+            size="40"
+			translateformat="true"
+            showtime="true"
+			filter="user_utc" 
+            readonly="true"
+        />
+        <field name="modified" type="calendar"
+            label="NR_MODIFIFED_DATE"
+            description="NR_MODIFIFED_DATE_DESC"
+            size="40"
+			translateformat="true"
+            showtime="true"
+			filter="user_utc"
+            readonly="true"
+        />
+        <fields name="params">
+            <field name="leadnotes" type="textarea"
+                label="COM_CONVERTFORMS_NOTES"
+                rows="10"
+                class="span12"
+            />
+        </fields>
+    </fieldset>
+    <fieldset name="params" addfieldpath='/plugins/system/nrframework/fields'>
+        <field name="params"/>
+    </fieldset>
+</form>

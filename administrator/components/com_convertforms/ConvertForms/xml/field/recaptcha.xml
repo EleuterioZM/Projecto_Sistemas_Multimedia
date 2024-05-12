@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+        <field name="theme" type="list" 
+            label="NR_THEME"
+            description="COM_CONVERTFORMS_FIELD_RECAPTCHA_THEME_DESC"
+            default="light">
+                <option value="light">NR_LIGHT</option>
+                <option value="dark">NR_DARK</option>
+        </field>
+        <field name="size" type="list" 
+            label="NR_SIZE"
+            description="COM_CONVERTFORMS_FIELD_RECAPTCHA_SIZE_DESC"
+            default="normal">
+                <option value="normal">NR_NORMAL</option>
+                <option value="compact">NR_COMPACT</option>
+        </field>
+    </fieldset>
+</form>

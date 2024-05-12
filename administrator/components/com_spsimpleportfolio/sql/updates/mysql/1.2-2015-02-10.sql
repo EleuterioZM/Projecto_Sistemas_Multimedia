@@ -1,0 +1,1 @@
+ALTER TABLE `#__spsimpleportfolio_items` ADD `category_id` int NOT NULL AFTER `alias`;

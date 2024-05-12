@@ -1,0 +1,123 @@
+[
+    {
+        "table"  : "#__komento_activities",
+        "column" : "url",
+        "query"  : "ALTER TABLE `#__komento_activities` DROP COLUMN `url`;"
+    },
+    {
+        "table"  : "#__komento_activities",
+        "column" : "component",
+        "query"  : "ALTER TABLE `#__komento_activities` DROP COLUMN `component`;"
+    },
+    {
+        "table"  : "#__komento_activities",
+        "column" : "cid",
+        "query"  : "ALTER TABLE `#__komento_activities` DROP COLUMN `cid`;"
+    },
+    {
+        "table"  : "#__komento_activities",
+        "column" : "comment_id",
+        "query"  : "ALTER TABLE `#__komento_activities` ADD `comment_id` BIGINT(20) NOT NULL AFTER `type`;"
+    },
+    {
+        "table"  : "#__komento_subscription",
+        "column" : "published",
+        "query"  : "ALTER TABLE  `#__komento_subscription` ADD `published` tinyint(1) NOT NULL DEFAULT 0 AFTER `created`;"
+    },
+    {
+        "table"  : "#__komento_uploads",
+        "column" : "uid",
+        "query"  : "ALTER TABLE  `#__komento_uploads` ADD `uid` int(11) NULL AFTER `id`;"
+    },
+    {
+        "table"  : "#__komento_actions",
+        "index" : "komento_actions_comment_id",
+        "query"  : "ALTER TABLE `#__komento_actions` ADD INDEX `komento_actions_comment_id` (`comment_id`);"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "column" : "depth",
+        "query"  : "ALTER TABLE  `#__komento_comments` ADD `depth` INT(11) NOT NULL DEFAULT 0 AFTER `rgt`;"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_frontend",
+        "query"  : "ALTER TABLE `#__komento_comments` DROP INDEX `komento_frontend`;"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_frontend_threaded",
+        "query"  : "ALTER TABLE `#__komento_comments` DROP INDEX `komento_frontend_threaded`;"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_component",
+        "query"  : "ALTER TABLE `#__komento_comments` DROP INDEX `komento_component`;"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_cid",
+        "query"  : "ALTER TABLE `#__komento_comments` DROP INDEX `komento_cid`;"
+    },
+
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_parent_id",
+        "query"  : "ALTER TABLE `#__komento_comments` DROP INDEX `komento_parent_id`;"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_lft",
+        "query"  : "ALTER TABLE `#__komento_comments` DROP INDEX `komento_lft`;"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_rgt",
+        "query"  : "ALTER TABLE `#__komento_comments` DROP INDEX `komento_rgt`;"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_backend",
+        "query"  : "ALTER TABLE `#__komento_comments` DROP INDEX `komento_backend`;"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_module_comments",
+        "query"  : "ALTER TABLE `#__komento_comments` ADD INDEX `komento_module_comments` (`component`, `published`, `created`);"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_threaded",
+        "query"  : "ALTER TABLE `#__komento_comments` ADD INDEX `komento_threaded` (`component`, `cid`, `published`, `lft`);"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_threaded_reverse",
+        "query"  : "ALTER TABLE `#__komento_comments` ADD INDEX `komento_threaded_reverse` (`component`, `cid`, `published`, `rgt`);"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "index" : "komento_backend",
+        "query"  : "ALTER TABLE `#__komento_comments` ADD INDEX `komento_backend` (`parent_id`, `created`);"
+    },
+    {
+        "table"  : "#__komento_mailq",
+        "index" : "type",
+        "query"  : "ALTER TABLE `#__komento_mailq` ADD COLUMN `type` varchar(10) NOT NULL DEFAULT text AFTER `created`;"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "column" : "params",
+        "query"  : "ALTER TABLE `#__komento_comments` ADD COLUMN `params` text;"
+    },
+    {
+        "table"  : "#__komento_hashkeys",
+        "column" : "state",
+        "query"  : "ALTER TABLE `#__komento_hashkeys` ADD COLUMN `state` tinyint(1) NOT NULL DEFAULT 0;"
+    },
+    {
+        "table"  : "#__komento_comments",
+        "column" : "ratings",
+        "query"  : "ALTER TABLE  `#__komento_comments` ADD `ratings` int(11) unsigned default 0;"
+    }
+]

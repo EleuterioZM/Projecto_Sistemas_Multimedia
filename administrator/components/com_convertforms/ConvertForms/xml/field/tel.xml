@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="restrictions">
+	    <field name="inputmask" type="text"
+	    	label="COM_CONVERTFORMS_INPUT_MASK"
+	    	description="COM_CONVERTFORMS_INPUT_MASK_DESC"
+			hint="(999) 999-9999"
+	    />
+        <field name="readonly" type="nrtoggle" 
+            label="COM_CONVERTFORMS_READONLY"
+            description="COM_CONVERTFORMS_READONLY_DESC"
+		/>
+	</fieldset>
+</form>

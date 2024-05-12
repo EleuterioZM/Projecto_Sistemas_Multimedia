@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="tfinputrepeater" 
+            label="NR_ASSIGN_REFERRER"
+            description="NR_ASSIGN_REFERRER_DESC">
+            <form>
+                <field name="value"
+                    class="input-fullwidth"
+                    hint="www.facebook.com"
+                    size="50"
+                    type="text" />
+            </form>
+        </field>
+        <field name="note" type="note"
+            class="ruleValueHint"
+            description="NR_ASSIGN_REFERRER_NOTE"
+        />
+    </fieldset>
+</form>

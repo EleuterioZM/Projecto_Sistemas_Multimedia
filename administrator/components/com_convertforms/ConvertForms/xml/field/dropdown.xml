@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+        <field name="choices" type="nr_choices"
+            label="COM_CONVERTFORMS_CHOICES"
+            description="COM_CONVERTFORMS_CHOICES_DESC"
+        />
+    </fieldset>
+</form>

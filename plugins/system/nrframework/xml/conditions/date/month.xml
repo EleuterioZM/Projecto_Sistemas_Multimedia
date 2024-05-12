@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="list"
+            label="NR_MONTH" 
+            class="hasChosen"
+            multiple="true">
+            <option value="Jan">NR_JANUARY</option>
+            <option value="Feb">NR_FEBRUARY</option>
+            <option value="Mar">NR_MARCH</option>
+            <option value="Apr">NR_APRIL</option>
+            <option value="May">NR_MAY</option>
+            <option value="Jun">NR_JUNE</option>
+            <option value="Jul">NR_JULY</option>
+            <option value="Aug">NR_AUGUST</option>
+            <option value="Sep">NR_SEPTEMBER</option>
+            <option value="Oct">NR_OCTOBER</option>
+            <option value="Nov">NR_NOVEMBER</option>
+            <option value="Dec">NR_DECEMBER</option>
+        </field>
+        <field name="note" type="ruleValueHint"/>
+    </fieldset>
+</form>

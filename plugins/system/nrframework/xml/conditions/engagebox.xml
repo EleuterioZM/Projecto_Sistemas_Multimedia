@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general" addfieldpath="administrator/components/com_rstbox/models/forms/fields">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="boxes"
+            label="NR_SELECTION"
+            description="NR_ENGAGEBOX_SELECT_BOX"
+            multiple="true"
+            excludeeditingbox="true"
+            class="hasChosen"
+        />
+    </fieldset>
+</form>

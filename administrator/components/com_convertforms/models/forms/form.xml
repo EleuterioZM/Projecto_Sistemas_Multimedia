@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="submission" label="Submission" tab="conversion">
+		<field name="submission_state" type="list"
+            label="COM_CONVERTFORMS_SUBMISSION_DEFAULT_STATE"
+            description="COM_CONVERTFORMS_SUBMISSION_DEFAULT_STATE_DESC"
+            class="chzn-color-state"
+            size="1"
+            default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+        <field name="campaign" type="campaigns"
+            label="COM_CONVERTFORMS_COLLECT_LEADS_USING"
+            description="COM_CONVERTFORMS_COLLECT_LEADS_USING_DESC"
+            required="true"
+        />
+        <field name="onsuccess" type="list" 
+            label="COM_CONVERTFORMS_SUCCESSFUL_SUBMISSION"
+            description="COM_CONVERTFORMS_SUCCESSFUL_SUBMISSION_DESC"
+            default="msg">
+            <option value="msg">COM_CONVERTFORMS_DISPLAY_MSG</option>
+            <option value="url">COM_CONVERTFORMS_REDIRECT_USER</option>
+        </field>
+        <field name="successmsg" type="textarea"
+            label="COM_CONVERTFORMS_SUCCESS_TEXT"
+            description="COM_CONVERTFORMS_SUCCESS_TEXT_DESC"
+            default="Thanks for contacting us! We will get in touch with you shortly."
+            class="editorx show-smart-tags"
+            showon="onsuccess:msg">
+        </field>
+        <field name="resetform" type="nrtoggle" 
+            label="COM_CONVERTFORMS_RESET_FORM"
+            description="COM_CONVERTFORMS_RESET_FORM_DESC"
+            checked="true"
+            showon="onsuccess:msg"
+        />
+        <field name="hideform" type="nrtoggle" 
+            label="COM_CONVERTFORMS_HIDE_FORM"
+            description="COM_CONVERTFORMS_HIDE_FORM_DESC"
+            checked="true"
+            showon="onsuccess:msg"
+        />
+        <field name="hidetext" type="nrtoggle" 
+            label="COM_CONVERTFORMS_HIDE_TEXT"
+            description="COM_CONVERTFORMS_HIDE_TEXT_DESC"
+            showon="onsuccess:msg"
+        />
+        <field name="successurl" type="text" 
+            label="COM_CONVERTFORMS_SUCCESS_URL"
+            description="COM_CONVERTFORMS_SUCCESS_URL_DESC"
+            hint="http://"
+            showon="onsuccess:url">
+        </field>
+        <field name="passdata" type="nrtoggle" 
+            label="COM_CONVERTFORMS_PASS_DATA"
+            description="COM_CONVERTFORMS_PASS_DATA_DESC"
+            showon="onsuccess:url"
+        />
+    </fieldset>
+	<fieldset name="behavior" label="COM_CONVERTFORMS_BEHAVIOR" tab="behavior" addfieldpath="plugins/system/nrframework/fields">
+		<field name="state" type="list"
+            label="JSTATUS"
+            description="NR_FIELD_STATE_DESC"
+            class="chzn-color-state"
+            size="1"
+            default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+        <field name="honeypot" type="nrtoggle" 
+            label="COM_CONVERTFORMS_HONEYPOT"
+            description="COM_CONVERTFORMS_HONEYPOT_DESC"
+            checked="true"
+        />
+        <field name="id" type="hidden"
+            label="JGLOBAL_FIELD_ID_LABEL"
+            description="JGLOBAL_FIELD_ID_DESC"
+            default="0"
+            readonly="true"
+            class="readonly"
+        />
+    </fieldset>
+    <fieldset name="phpscripts" label="COM_CONVERTFORMS_PHPSCRIPT" tab="behavior">
+        <fields name="phpscripts">
+            <field name="formprepare" type="textarea"
+                label="COM_CONVERTFORMS_PHPSCRIPT_FORM_PREPARE"
+                description="COM_CONVERTFORMS_PHPSCRIPT_FORM_PREPARE_DESC"
+                rows="10"
+            />
+            <field name="formdisplay" type="textarea"
+                label="COM_CONVERTFORMS_PHPSCRIPT_FORM_DISPLAY"
+                description="COM_CONVERTFORMS_PHPSCRIPT_FORM_DISPLAY_DESC"
+                rows="10"
+            />
+            <field name="formprocess" type="textarea"
+                label="COM_CONVERTFORMS_PHPSCRIPT_FORM_PROCESS"
+                description="COM_CONVERTFORMS_PHPSCRIPT_FORM_PROCESS_DESC"
+                rows="10"
+            />
+            <field name="afterformsubmission" type="textarea"
+                label="COM_CONVERTFORMS_PHPSCRIPT_AFTER_FORM_SUBMISSION"
+                description="COM_CONVERTFORMS_PHPSCRIPT_AFTER_FORM_SUBMISSION_DESC"
+                rows="10"
+            />
+            <field name="notephpscripts" type="note"
+                description="COM_CONVERTFORMS_PHPSCRIPT_NOTE"
+                class="alert"
+            />
+        </fields>
+    </fieldset>
+</form>

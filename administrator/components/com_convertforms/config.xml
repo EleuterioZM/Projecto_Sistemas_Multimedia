@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="Misc" label="General" addfieldpath="/plugins/system/nrframework/fields">
+        <field name="loadCSS" default="1" class="btn-group btn-group-yesno" type="radio" label="COM_CONVERTFORMS_LOADCSS" description="COM_CONVERTFORMS_LOADCSS_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="showcopyright" default="1" class="btn-group btn-group-yesno" type="radio" label="NR_SHOW_COPYRIGHT" description="NR_SHOW_COPYRIGHT_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+
+        <field name="debug" default="0" class="btn-group btn-group-yesno" type="radio" label="COM_CONVERTFORMS_DEBUG" description="COM_CONVERTFORMS_DEBUG_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="show_update_notification" type="radio"
+            label="NR_SHOW_UPDATE_NOTIFICATION"
+            description="NR_SHOW_UPDATE_NOTIFICATION_DESC"
+            default="1"
+            class="btn-group btn-group-yesno">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+    </fieldset>
+    <fieldset name="security" label="COM_CONVERTFORMS_SECURITY">
+        <field name="api_key" type="text"
+            label="COM_CONVERTFORMS_API_KEY"
+            description="COM_CONVERTFORMS_API_KEY_DESC"
+        />
+        <field name="csrf_check" type="radio"
+            label="COM_CONVERTFORMS_CSRF_CHECK"
+            description="COM_CONVERTFORMS_CSRF_CHECK_DESC"
+            class="btn-group btn-group-yesno"
+            default="0">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="excel_security" type="radio"
+            label="COM_CONVERTFORMS_EXCEL_SECURITY"
+            description="COM_CONVERTFORMS_EXCEL_SECURITY_DESC"
+            default="1"
+            class="btn-group btn-group-yesno">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+    </fieldset>
+    <fieldset name="advanced" label="Advanced" addfieldpath="/administrator/components/com_convertforms/models/forms/fields">
+        
+        <field name="executeoutputoverride" default="0" class="btn-group btn-group-yesno" type="radio" label="NR_EXECUTE_ON_OUTPUT_OVERRIDE" description="NR_EXECUTE_ON_OUTPUT_OVERRIDE_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+        <field name="executeonformat" default="0" class="btn-group btn-group-yesno" type="radio" label="NR_EXECUTE_ON_FORMAT_OVERRIDE" description="NR_EXECUTE_ON_FORMAT_OVERRIDE_DESC">
+            <option value="1">JYES</option>
+            <option value="0">JNO</option>
+        </field>
+    </fieldset>
+    <fieldset name="recaptcha" label="reCAPTCHA" description="NR_RECAPTCHA_DESC">
+        <field name="1" type="note" label="Checkbox reCAPTCHA v2" />
+        <field name="recaptcha_sitekey" type="text" 
+            label="NR_RECAPTCHA_SITE_KEY"
+            description="NR_RECAPTCHA_SITE_KEY_DESC"
+            class="input-xxlarge"
+        />
+        <field name="recaptcha_secretkey" type="text" 
+            label="NR_RECAPTCHA_SECRET_KEY"
+            description="NR_RECAPTCHA_SECRET_KEY_DESC"
+            class="input-xxlarge"
+        />  
+        <field name="2" type="note" label="Invisible reCAPTCHA v2" />
+        <field name="recaptcha_sitekey_invs" type="text" 
+            label="NR_RECAPTCHA_SITE_KEY"
+            description="NR_RECAPTCHA_SITE_KEY_DESC"
+            class="input-xxlarge"
+        />
+        <field name="recaptcha_secretkey_invs" type="text" 
+            label="NR_RECAPTCHA_SECRET_KEY"
+            description="NR_RECAPTCHA_SECRET_KEY_DESC"
+            class="input-xxlarge"
+        /> 
+    </fieldset>
+    <fieldset name="hcaptcha" label="hCaptcha" description="NR_HCAPTCHA_DESC">
+        <field name="hcaptcha_sitekey" type="text" 
+            label="NR_RECAPTCHA_SITE_KEY"
+            description="NR_RECAPTCHA_SITE_KEY_DESC"
+            class="input-xxlarge"
+        />
+        <field name="hcaptcha_secretkey" type="text" 
+            label="NR_RECAPTCHA_SECRET_KEY"
+            description="NR_HCAPTCHA_SECRET_KEY_DESC"
+            class="input-xxlarge"
+        />
+    </fieldset>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC" >
+		<field name="rules" type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			validate="rules"
+			component="com_convertforms"
+			section="component" />
+	</fieldset>
+</config>

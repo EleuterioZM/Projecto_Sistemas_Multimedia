@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+        <field name="step" type="nrnumber"
+        	label="COM_CONVERTFORMS_FIELD_NUMBER_STEP"
+        	description="COM_CONVERTFORMS_FIELD_NUMBER_STEP_DESC"
+        	default="1"
+        	min="1"
+        />
+        <field name="min" type="nrnumber"
+            label="COM_CONVERTFORMS_FIELD_NUMBER_MIN"
+            description="COM_CONVERTFORMS_FIELD_NUMBER_MIN_DESC"
+        />
+        <field name="max" type="nrnumber"
+            label="COM_CONVERTFORMS_FIELD_NUMBER_MAX"
+            description="COM_CONVERTFORMS_FIELD_NUMBER_MAX_DESC"
+        />
+    </fieldset>
+    <fieldset name="restrictions">
+        <field name="readonly" type="nrtoggle" 
+            label="COM_CONVERTFORMS_READONLY"
+            description="COM_CONVERTFORMS_READONLY_DESC"
+		/>
+    </fieldset>
+</form>

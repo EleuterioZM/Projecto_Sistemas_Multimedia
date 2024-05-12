@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+        <field name="badge" type="list" 
+            label="COM_CONVERTFORMS_FIELD_RECAPTCHA_INVIS_BADGE"
+            description="COM_CONVERTFORMS_FIELD_RECAPTCHA_INVIS_BADGE_DESC"
+            default="inline">
+                <option value="inline">COM_CONVERTFORMS_FIELD_RECAPTCHA_INVIS_BADGE_INLINE</option>
+                <option value="bottomright">COM_CONVERTFORMS_FIELD_RECAPTCHA_INVIS_BADGE_BOTTOMRIGHT</option>
+                <option value="bottomleft">COM_CONVERTFORMS_FIELD_RECAPTCHA_INVIS_BADGE_BOTTOMLEFT</option>
+        </field>
+    </fieldset>
+</form>

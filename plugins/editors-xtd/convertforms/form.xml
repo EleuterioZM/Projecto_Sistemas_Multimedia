@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="main" addfieldpath="administrator/components/com_convertforms/models/forms/fields">
+        <field name="convertformid" type="convertforms"
+            label="PLG_EDITORS-XTD_CONVERTFORMS_SELECT_FORM"
+            description="PLG_EDITORS-XTD_CONVERTFORMS_SELECT_FORM_DESC"
+            class="span12">
+        </field>
+    </fieldset>
+</form>

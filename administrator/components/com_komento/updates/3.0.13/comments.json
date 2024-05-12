@@ -1,0 +1,7 @@
+[
+	{
+		"table" : "#__komento_comments",
+		"index" : "idx_published_comments",
+		"query" : "ALTER TABLE `#__komento_comments` ADD INDEX `idx_published_comments` (`published`, `created`);"
+	}
+]

@@ -1,0 +1,15 @@
+/* Body Padding */
+body {
+	padding:20px;
+}
+
+/* Article Image Margin */
+.contentpane img {
+	margin:10px !important;
+}
+
+/* Link Color */
+a {
+	color:#0088CC;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInByaW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxrQkFBa0I7QUFDbEI7Q0FDQyxhQUFhO0NBQ2I7O0FBRUQsMEJBQTBCO0FBQzFCO0NBQ0MsdUJBQXVCO0NBQ3ZCOztBQUVELGdCQUFnQjtBQUNoQjtDQUNDLGNBQWM7Q0FDZCIsImZpbGUiOiJwcmludC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBCb2R5IFBhZGRpbmcgKi9cclxuYm9keSB7XHJcblx0cGFkZGluZzoyMHB4O1xyXG59XHJcblxyXG4vKiBBcnRpY2xlIEltYWdlIE1hcmdpbiAqL1xyXG4uY29udGVudHBhbmUgaW1nIHtcclxuXHRtYXJnaW46MTBweCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG4vKiBMaW5rIENvbG9yICovXHJcbmEge1xyXG5cdGNvbG9yOiMwMDg4Q0M7XHJcbn0iXX0= */

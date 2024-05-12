@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_CONVERTFORMS_FORM" option="JDEFAULT">
+		<help key="COM_CONVERTFORMS_FORM_DESC"/>
+		<message>
+			<![CDATA[COM_CONVERTFORMS_FORM_DESC]]>
+		</message>
+	</layout>
+	<fields name="params" addfieldpath="administrator/components/com_convertforms/models/forms/fields">	
+		<fieldset name="options" label="Options">
+			<field name="form_id" type="convertforms"
+				label="COM_CONVERTFORMS_SELECT_FORM"
+				description="COM_CONVERTFORMS_SELECT_FORM_DESC2"
+				required="true"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="nrk2"
+            label="NR_SELECTION"
+            description="NR_ASSIGN_PAGE_TYPES_DESC"
+            group="pagetypes"
+            multiple="true"
+            class="hasChosen"
+        />
+    </fieldset>
+</form>

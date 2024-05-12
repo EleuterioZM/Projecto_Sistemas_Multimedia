@@ -1,0 +1,160 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "version": "4.0.0",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+    {
+      "name": "template.base",
+      "type": "style",
+      "uri": "base/template.css"
+    },
+    {
+      "name": "template.nexus.min",
+      "type": "style",
+      "uri": "nexus.min.css"
+    },
+    {
+      "name": "template.nexus",
+      "type": "style",
+      "uri": "nexus.css"
+    },
+    {
+      "name": "template.responsive.min",
+      "type": "style",
+      "uri": "responsive.min.css"
+    },
+    {
+      "name": "template.responsive",
+      "type": "style",
+      "uri": "responsive.css"
+    },
+    {
+      "name": "template.custom",
+      "type": "style",
+      "uri": "custom.css"
+    },
+    {
+      "name": "template.animate",
+      "type": "style",
+      "uri": "animate.css"
+    },
+    {
+      "name": "template.animate.min",
+      "type": "style",
+      "uri": "animate.min.css"
+    },
+    {
+      "name": "template.bonsai.util.min",
+      "type": "style",
+      "uri": "bonsaicss/bonsai-utilities.min.css"
+    },
+    {
+      "name": "template.bonsai.util",
+      "type": "style",
+      "uri": "bonsaicss/bonsai-utilities.css"
+    },
+    {
+      "name": "template.script",
+      "type": "script",
+      "uri": "scripts.js",
+      "attributes" : {
+        "defer": true
+      }
+    },
+    {
+      "name": "template.jquery",
+      "type": "script",
+      "uri": "jquery-3.6.0.min.js"
+    },
+    {
+      "name": "template.mmenu",
+      "type": "script",
+      "uri": "mmenu-light.js",
+      "attributes" : {
+        "defer": true
+      }
+    },
+    {
+      "name": "template.slideout",
+      "type": "script",
+      "uri": "slideout.min.js",
+      "attributes" : {
+        "defer": true
+      }
+    },
+    {
+      "name": "template.slicknav",
+      "type": "script",
+      "uri": "jquery.slicknav.min.js",
+      "attributes" : {
+        "defer": true
+      }
+    },
+    {
+      "name": "template.waypoints",
+      "type": "script",
+      "uri": "noframework.waypoints.min.js",
+      "attributes" : {
+        "defer": true
+      }
+    },
+    {
+      "name": "template.jarallax",
+      "type": "script",
+      "uri": "jarallax.min.js"
+    },
+    {
+      "name": "template.sticky",
+      "type": "script",
+      "uri": "jquery.sticky.min.js",
+      "attributes" : {
+        "defer": true
+      }
+    },
+    {
+      "name": "template.masonry",
+      "type": "script",
+      "uri": "masonry.pkgd.min.js"
+    },
+    {
+      "name": "template.imagesloaded",
+      "type": "script",
+      "uri": "imagesloaded.pkgd.min.js"
+    },
+    {
+      "name": "searchtools",
+      "type": "style",
+      "uri": "system/searchtools/searchtools.min.css"
+    },
+    {
+      "name": "fontawesome.joomla",
+      "type": "style",
+      "uri": "system/joomla-fontawesome.min.css"
+    },
+    {
+      "name": "fontawesome.base",
+      "type": "style",
+      "uri": "fontawesome/fontawesome.min.css"
+    },
+    {
+      "name": "fontawesome.regular",
+      "type": "style",
+      "uri": "fontawesome/regular.min.css"
+    },
+    {
+      "name": "fontawesome.brands",
+      "type": "style",
+      "uri": "fontawesome/brands.min.css"
+    },
+    {
+      "name": "fontawesome.solid",
+      "type": "style",
+      "uri": "fontawesome/solid.min.css"
+    },
+    {
+      "name": "fontawesome.shims",
+      "type": "style",
+      "uri": "fontawesome/v4-shims.min.css"
+    }
+  ]
+}

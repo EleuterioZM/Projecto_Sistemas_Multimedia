@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0.0" method="upgrade">
+	<name>com_komento</name>
+	<creationDate>21st July 2022</creationDate>
+	<author>Stack Ideas Sdn Bhd</author>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>http://www.stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2016 StackIdeas. All rights reserved.</copyright>
+	<license>GPL License</license>
+	<version>4.0.4</version>
+	<description>
+		Komento is a Joomla! comment component.
+	</description>
+	<scriptfile>script.php</scriptfile>
+	<administration>
+		<menu link="option=com_komento">COM_KOMENTO</menu>
+		<submenu>
+			<menu link="option=com_komento">COM_KOMENTO_MENU_DASHBOARD</menu>
+			<menu view="settings">COM_KOMENTO_MENU_CONFIGURATION</menu>
+			<menu view="comments">COM_KOMENTO_MENU_COMMENTS</menu>
+			<menu view="acl">COM_KOMENTO_MENU_ACL</menu>
+			<menu view="subscribers">COM_KOMENTO_MENU_SUBSCRIBERS</menu>
+			<menu view="users">COM_KOMENTO_MENU_USERS</menu>
+			<menu view="languages">COM_KOMENTO_MENU_LANGUAGES</menu>
+			<menu view="mailq">COM_KOMENTO_MENU_MAILQ</menu>
+			<menu view="migrators">COM_KOMENTO_MENU_MIGRATORS</menu>
+		</submenu>
+		<files folder="admin">
+			<file>access.xml</file>
+			<file>config.xml</file>
+			<file>komento.xml</file>
+			<file>constants.php</file>
+			<file>komento.php</file>
+			<file>script.php</file>
+			<file>setup.php</file>
+			<file>setup.html</file>
+		</files>
+	</administration>
+	<updateservers>
+		<server type="extension" name="Komento Update Site">https://stackideas.com/jupdates/manifest/komento</server>
+	</updateservers>
+</extension>

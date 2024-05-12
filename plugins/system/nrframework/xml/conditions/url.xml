@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="tfinputrepeater" 
+            label="NR_ASSIGN_URLS"
+            description="NR_ASSIGN_URLS_DESC">
+            <form>
+                <field name="value"
+                    class="input-fullwidth"
+                    hint="/blog/welcome-to-our-site"
+                    size="50"
+                    type="text" />
+            </form>
+        </field>
+        <fields name="params">
+            <field name="regex" type="nrtoggle" 
+                label="NR_ASSIGN_URLS_REGEX" 
+                description="NR_ASSIGN_URLS_REGEX_DESC"
+            />
+        </fields>
+    </fieldset>
+</form>

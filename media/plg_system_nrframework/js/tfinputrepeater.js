@@ -1,0 +1,2 @@
+!function(){"use strict";jQuery(document).on("subform-row-remove",".tf-input-repeater .subform-repeatable",function(e){1==e.target.querySelectorAll("tbody tr").length&&e.target.querySelector("thead .group-add").click()}),document.addEventListener("click",function(e){var t=e.target.closest(".tf-input-repeater-add");t&&(e.preventDefault(),t.closest(".tf-input-repeater").querySelector("table thead .group-add").click())})}();
+

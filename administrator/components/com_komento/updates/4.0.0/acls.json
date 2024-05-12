@@ -1,0 +1,7 @@
+[
+	{
+		"table" : "#__komento_acl",
+		"index" : "idx_cid_type",
+		"query" : "ALTER TABLE `#__komento_acl` ADD INDEX `idx_cid_type` (`cid` (25), `type` (64));"
+	}
+]

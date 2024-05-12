@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="image_modal" class="image-subform">
+		<field name="j51_progress_title" type="text" size="60" default="" label="MOD_J51_PROGRESSTITLE" description="MOD_J51_PROGRESSTITLE_DESC" />
+		<field name="j51_progress" type="textpercent" default="" label="MOD_J51_PROGRESS" description="MOD_J51_PROGRESS_DESC" />
+		<field name="j51_override_style" type="radio" layout="joomla.form.field.radio.switcher" label="MOD_J51_PROGRESSCOLOR_OVERRIDE" description="MOD_J51_PROGRESSCOLOR_OVERRIDE_DESC" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="j51_progress_color" type="color" default="" label="MOD_J51_PROGRESS_COLOR" description="MOD_J51_PROGRESS_COLOR_DESC" showon="j51_override_style:1"/>
+		<field name="j51_progress_bg_color" type="color" default="" label="MOD_J51_PROGRESS_BG_COLOR" description="MOD_J51_PROGRESS_COLOR_DESC" showon="j51_override_style:1"/>
+		<field name="j51_progress_height" type="textpx" size="60" default="5" label="MOD_J51_PROGRESS_STROKE" description="MOD_J51_PROGRESS_STROKE_DESC" showon="j51_override_style:1"/>
+	</fieldset>
+</form>

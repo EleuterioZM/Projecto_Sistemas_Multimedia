@@ -1,0 +1,2 @@
+var TF_Gallery_Manager_Init=function(){function n(){this.isDropzoneAvailable()&&this.initWidgets()}var e=n.prototype;return e.isDropzoneAvailable=function(){return"undefined"!=typeof Dropzone},e.initWidgets=function(){document.querySelectorAll(".tf-gallery-manager").forEach(function(n){new TF_Gallery_Manager(n).init()})},n}();document.addEventListener("DOMContentLoaded",function(n){new TF_Gallery_Manager_Init});
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="akeebasubs" 
+            label="NR_AKEEBASUBS_LEVELS" 
+            description="NR_AKEEBASUBS_LEVELS_DESC"
+            multiple="true"
+        />
+    </fieldset>
+</form>

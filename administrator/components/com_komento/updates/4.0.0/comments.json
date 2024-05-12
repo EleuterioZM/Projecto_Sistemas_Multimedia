@@ -1,0 +1,17 @@
+[
+	{
+		"table" : "#__komento_comments",
+		"index" : "idx_parent_comments",
+		"query" : "ALTER TABLE `#__komento_comments` ADD INDEX `idx_parent_comments` (`component` (128), `cid`, `published`, `parent_id`, `created`);"
+	},
+	{
+		"table" : "#__komento_comments",
+		"index" : "idx_user_last_comment",
+		"query" : "ALTER TABLE `#__komento_comments` ADD INDEX `idx_user_last_comment` (`email` (128), `component` (64), `cid`);"
+	},
+	{
+		"table" : "#__komento_comments",
+		"index" : "idx_top_rated",
+		"query" : "ALTER TABLE `#__komento_comments` ADD INDEX `idx_top_rated` (`published`, `ratings`, `created`, `component` (64), `cid`);"
+	}
+]

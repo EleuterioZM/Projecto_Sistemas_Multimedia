@@ -1,0 +1,7 @@
+[
+    {
+        "table"  : "#__komento_uploads",
+        "index" : "idx_uid",
+        "query"  : "ALTER TABLE `#__komento_uploads` ADD INDEX `idx_uid` (`uid`);"
+    }
+]

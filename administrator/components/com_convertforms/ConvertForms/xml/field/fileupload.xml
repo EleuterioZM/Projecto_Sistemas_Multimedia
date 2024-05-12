@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+        <field name="upload_folder_type" type="list"
+            label="COM_CONVERTFORMS_FILEUPLOAD_FOLDER_TYPE"
+            description="COM_CONVERTFORMS_FILEUPLOAD_FOLDER_TYPE_DESC"
+            default="auto">
+                <option value="auto">NR_AUTO</option>
+                <option value="custom">NR_CUSTOM</option>
+        </field>
+        <field name="upload_folder" type="text"
+            label="COM_CONVERTFORMS_FILEUPLOAD_FOLDER"
+            description="COM_CONVERTFORMS_FILEUPLOAD_FOLDER_DESC"
+            hint="media/com_convertforms/uploads"
+            class="show-smart-tags"
+            showon="upload_folder_type:custom"
+        />
+        
+        <field name="max_file_size" type="nrnumber"
+            label="COM_CONVERTFORMS_FILEUPLOAD_MAX_FILE_SIZE"
+            description="COM_CONVERTFORMS_FILEUPLOAD_MAX_FILE_SIZE_DESC"
+            addon="MB"
+            min="0"
+            default="0"
+        />
+        <field name="upload_types" type="text"
+            label="COM_CONVERTFORMS_FILEUPLOAD_UPLOAD_TYPES"
+            description="COM_CONVERTFORMS_FILEUPLOAD_UPLOAD_TYPES_DESC"
+            hint=".jpg, .png, .gif"
+            default=".jpg, .png, .gif"
+        />
+        <field name="allow_unsafe" type="nrtoggle"
+            label="COM_CONVERTFORMS_UPLOAD_ALLOW_UNSAFE"
+            description="COM_CONVERTFORMS_UPLOAD_ALLOW_UNSAFE_DESC"
+        />
+        
+        
+        <field name="@limit_files" type="nr_pro"
+            label="COM_CONVERTFORMS_FILEUPLOAD_LIMIT_FILES"
+            description="COM_CONVERTFORMS_FILEUPLOAD_LIMIT_FILES_DESC"
+        />
+        <field name="@auto_delete_files" type="nr_pro"
+            label="COM_CONVERTFORMS_UPLOAD_AUTO_DELETE"
+            description="COM_CONVERTFORMS_UPLOAD_AUTO_DELETE_DESC"
+        />
+        
+    </fieldset>
+</form>

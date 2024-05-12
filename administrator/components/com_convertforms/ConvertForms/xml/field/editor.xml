@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+		<field name="editor" type="plugins"
+			label="COM_CONVERTFORMS_EDITOR_SELECT"
+			description="COM_CONVERTFORMS_EDITOR_SELECT_DESC"
+			folder="editors">
+			<option value="">JOPTION_USE_DEFAULT</option>
+		</field>
+        <field name="height" type="nrnumber"
+        	label="COM_CONVERTFORMS_EDITOR_HEIGHT"
+        	description="COM_CONVERTFORMS_EDITOR_HEIGHT_DESC"
+        	addon="px"
+        	default="300"
+			step="50"
+        	min="0"
+        />
+    </fieldset>
+	<fieldset name="restrictions">
+        <field name="readonly" type="nrtoggle" 
+            label="COM_CONVERTFORMS_READONLY"
+            description="COM_CONVERTFORMS_READONLY_DESC"
+		/>
+        <field name="minchars" type="nrnumber"
+        	label="COM_CONVERTFORMS_MIN_CHARS"
+        	description="COM_CONVERTFORMS_MIN_CHARS_DESC"
+        	default="0"
+        	min="0"
+        />
+        <field name="maxchars" type="nrnumber"
+        	label="COM_CONVERTFORMS_MAX_CHARS"
+        	description="COM_CONVERTFORMS_MAX_CHARS_DESC"
+        	default="0"
+        	min="0"
+        />
+        <field name="minwords" type="nrnumber"
+        	label="COM_CONVERTFORMS_MIN_WORDS"
+        	description="COM_CONVERTFORMS_MIN_WORDS_DESC"
+        	default="0"
+        	min="0"
+        />
+        <field name="maxwords" type="nrnumber"
+        	label="COM_CONVERTFORMS_MAX_WORDS"
+        	description="COM_CONVERTFORMS_MAX_WORDS_DESC"
+        	default="0"
+        	min="0"
+        />
+	</fieldset>
+	<fieldset name="advanced">
+        <field name="filter" type="list"
+            label="COM_CONVERTFORMS_FIELD_FILTER"
+            description="COM_CONVERTFORMS_FIELD_FILTER_DESC"
+            default="safehtml">
+            	<option value="safehtml">JLIB_FILTER_PARAMS_SAFEHTML</option>
+            	<option value="raw">JLIB_FILTER_PARAMS_RAW</option>
+        </field>
+	</fieldset>
+</form>

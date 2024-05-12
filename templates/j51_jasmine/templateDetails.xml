@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="4.0" type="template" client="site" method="upgrade">
+	<name>j51_jasmine</name>
+	<version>1.1.6</version>
+	<creationDate>February 2022</creationDate>
+	<author>Joomla51</author>
+	<authorEmail>info@joomla51.com</authorEmail>
+	<authorUrl>http://www.joomla51.com</authorUrl>
+	<copyright>Joomla51</copyright>
+	<inheritable>1</inheritable> 
+	<description><![CDATA[<link href="../templates/j51_jasmine/css/admin.css" rel="stylesheet" media="all" />
+
+    <div class="extension-info">
+    	<div class="extension-info__image">
+			<img src="../templates/j51_jasmine/template_thumbnail.png" border="0" class="extension-info__image"/>
+    	</div>
+		<div class="extension-info__details">
+
+			<p>
+				Today we are happy to introduce Jasmine, our new addition to the Joomla51 template collection. The light and stylish layout combined with carefully crafted typography gives Jasmine a bright and fresh design. A fully stacked feature set allows you easy control of layout and coloring via an easy to use template settings panel. Create a host of beautiful website elements quickly and easily with a collection of bundled module extensions including slideshows, galleries and rotating testimonials. Get started today with the Jasmine Joomla template and enjoy seamlessly crafting beautifully designed, fully responsive websites. 
+			</p>
+
+			<p>
+      <a class="btn btn-primary" style="margin-right:10px;" target="_blank" href="http://www.joomla51.com/">Joomla51</a>
+      <a class="btn btn-primary" target="_blank" href="http://www.joomla51.com/tutorials">Template Tutorials</a>
+    </p>
+		</div>
+	</div>
+	<div class="preset">
+		<div class="preset__load">
+			<h6>Load Preset</h6>
+			<select name="preset" class="form-control">
+				<option value="Example_Style_1" selected>Example Style 1</option>
+				<option value="Example_Style_2" selected>Example Style 2</option>
+				<option value="Example_Style_3" selected>Example Style 3</option>
+				<option value="Example_Style_4" selected>Example Style 4</option>
+				<option value="Example_Style_5" selected>Example Style 5</option>
+				<option value="Example_Style_6" selected>Example Style 6</option>
+				<option selected value="Default">Default</option>
+			</select>
+			<a class="preset-loader btn btn-primary mt-2">Load Preset</a>
+		</div>
+		<div class="preset__import">
+			<h6>Import Preset</h6>
+			<input type="file" class="preset-input form-control" />
+		</div>
+		<div class="preset__export">
+			<h6>Export Preset</h6>
+			<a class="preset-export btn btn-primary">Export Preset</a>
+		</div>
+	</div>
+	
+  ]]></description>
+
+	<files>
+		<filename>changelog.php</filename>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+    <filename>joomla.asset.json</filename>
+		<folder>css/</folder>
+		<folder>elements/</folder>
+		<folder>fonts/</folder>
+		<folder>html/</folder>
+		<folder>images/</folder>
+		<folder>inc/</folder>
+		<folder>js/</folder>
+		<folder>language/</folder>
+		<folder>presets/</folder>
+		<folder>vendor/</folder>
+	</files>
+
+	<media destination="templates/site/j51_jasmine" folder="media">
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>fonts</folder>
+	</media>
+  
+  <languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_j51_jasmine.ini</language>
+	</languages>
+
+	<positions>
+		<position>header-1</position>
+		<position>header-2</position>		
+		<position>showcase</position>
+		<position>breadcrumb</position>
+		<position>showcase-1a</position>
+		<position>showcase-1b</position>
+		<position>showcase-1c</position>
+		<position>showcase-1d</position>
+		<position>showcase-1e</position>
+		<position>showcase-1f</position>
+		<position>showcase-1a</position>
+		<position>top-1a</position>
+		<position>top-1b</position>
+		<position>top-1c</position>
+		<position>top-1d</position>
+		<position>top-1e</position>
+		<position>top-1f</position>
+	    <position>top-2a</position>
+		<position>top-2b</position>
+		<position>top-2c</position>
+		<position>top-2d</position>
+		<position>top-2e</position>
+		<position>top-2f</position>
+	    <position>top-3a</position>
+		<position>top-3b</position>
+		<position>top-3c</position>
+		<position>top-3d</position>
+		<position>top-3e</position>
+		<position>top-3f</position>
+		<position>sidecol-1a</position>
+		<position>sidecol-1b</position>
+		<position>sidecol-1c</position>
+		<position>sidecol-2a</position>
+		<position>sidecol-2b</position>
+		<position>sidecol-2c</position>
+		<position>contenttop-a</position>
+		<position>contenttop-b</position>
+		<position>contenttop-c</position>		
+		<position>contentbottom-a</position>	
+		<position>contentbottom-b</position>
+		<position>contentbottom-c</position>		
+		<position>bottom-1a</position>
+		<position>bottom-1b</position>
+		<position>bottom-1c</position>
+		<position>bottom-1d</position>
+		<position>bottom-1e</position>
+		<position>bottom-1f</position>
+		<position>bottom-2a</position>
+		<position>bottom-2b</position>
+		<position>bottom-2c</position>
+		<position>bottom-2d</position>
+		<position>bottom-2e</position>
+		<position>bottom-2f</position>
+		<position>bottom-3a</position>
+		<position>bottom-3b</position>
+		<position>bottom-3c</position>
+		<position>bottom-3d</position>
+		<position>bottom-3e</position>
+		<position>bottom-3f</position>	
+	    <position>base-1a</position>
+		<position>base-1b</position>
+		<position>base-1c</position>
+		<position>base-1d</position>
+		<position>base-1e</position>
+		<position>base-1f</position>
+		<position>base-2a</position>
+		<position>base-2b</position>
+		<position>base-2c</position>
+		<position>base-2d</position>
+		<position>base-2e</position>
+		<position>base-2f</position>	
+		<position>footer-1</position>
+		<position>footer-2</position>	
+		<position>hornav</position>
+		<position>footermenu</position>
+	</positions>
+<config>
+<fields name="params" >
+
+	<fieldset name="H3GENERAL" addfieldpath="/templates/j51_jasmine/elements">	
+		<field type="tplhelper" name="tplhelper" />
+
+		<field type="subgroup" label="Body/Header Styling" icon="bars" expend="1" />   
+			<field name="header_bg_color" type="color" default="#ffffff" label="Header Background" description="Select the color of the foreground to the header area" />
+			<field name="sticky_sw" type="radio" label="Sticky Header" description="Enable to stick header to the top of the viewport on scroll" default="0" 
+				checked="checked" 
+				class="btn-group">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+		<field type="subgroup" icon="th" label="Modules/Component Styling" />
+
+			<field name="showcase1_color" type="color" default="#ffffff" label="Showcase-1 Background Color" description="Select the color of the background to the showcase-1 modules" />
+			<field name="showcase1_bg" type="media" default="" label="Showcase-1 Background Image" description="Select your showcase-1 background image" directory="/" filter="" exclude="" stripext="" />
+
+			<field name="top1_color" type="color" default="#f5f5f5" label="Top-1 Background Color" description="Select the color of the background to the top-1# modules" />
+			<field name="top1_bg" type="media" default="" label="Top-1 Background Image" description="Select your top-1 background image" directory="/" filter="" exclude="" stripext="" />
+			<field name="top1_parallax" type="radio" label="Top-1 Enable Parallax" description="Set to Yes to enable a background parallax effect" default="1" 
+				checked="checked" 
+				class="btn-group"
+				showon="top1_bg!:">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+			<field name="top2_color" type="color" default="#ffffff" label="Top-2 Background Color" description="Select the color of the background to the top-2# modules" />
+			<field name="top2_bg" type="media" default="" label="Top-2 Background Image" description="Select your top-2 background image" directory="/" filter="" exclude="" stripext="" />
+			<field name="top2_parallax" type="radio" label="Top-2 Enable Parallax" description="Set to Yes to enable a background parallax effect" default="1" 
+				checked="checked" 
+				class="btn-group"
+				showon="top2_bg!:">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field name="top3_color" type="color" default="#f3f3f3" label="Top-3 Background Color" description="Select the color of the background to the top-3# modules" />
+			<field name="top3_bg" type="media" default="" label="Top-3 Background Image" description="Select your top-3 background image" directory="/" filter="" exclude="" stripext="" />
+			<field name="top3_parallax" type="radio" label="Top-3 Enable Parallax" description="Set to Yes to enable a background parallax effect" default="1" 
+				checked="checked" 
+				class="btn-group"
+				showon="top3_bg!:">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field name="elementcolor3" type="color" default="#f5f5f5" label="Article Background Color" description="Select the color of the component/article area of your template." />
+
+			<field name="bottom1_color" type="color" default="#f3f3f3" label="Bottom-1 Background Color" description="Select the color of the background to the bottom-1# modules" />
+			<field name="bottom1_bg" type="media" default="" label="Bottom-1 Background Image" description="Select your bottom-1 background image" directory="/" filter="" exclude="" stripext="" />
+			<field name="bottom1_parallax" type="radio" label="Bottom-1 Enable Parallax" description="Set to Yes to enable a background parallax effect" default="1" 
+				checked="checked" 
+				class="btn-group"
+				showon="bottom1_bg!:">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+			<field name="bottom2_color" type="color" default="#1d2e38" label="Bottom-2 Background Color" description="Select the color of the background to the bottom-2# modules" />
+			<field name="bottom2_bg" type="media" default="" label="Bottom-2 Background Image" description="Select your bottom-2 background image" directory="/" filter="" exclude="" stripext="" />
+			<field name="bottom2_parallax" type="radio" label="Bottom-2 Enable Parallax" description="Set to Yes to enable a background parallax effect" default="1" 
+				checked="checked" 
+				class="btn-group"
+				showon="bottom2_bg!:">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+			<field name="bottom3_color" type="color" default="#f7f7f7" label="Bottom-3 Background Color" description="Select the color of the background to the bottom-3# modules" />
+			<field name="bottom3_bg" type="media" default="" label="Bottom-3 Background Image" description="Select your bottom-3 background image" directory="/" filter="" exclude="" stripext="" />
+			<field name="bottom3_parallax" type="radio" label="Bottom-3 Enable Parallax" description="Set to Yes to enable a background parallax effect" default="1" 
+				checked="checked" 
+				class="btn-group"
+				showon="bottom3_bg!:">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			
+			<field name="base1_color" type="color" default="#20303d" label="Base-1 Background Color" description="Select the color of the background to the base-1 modules" />
+			<field name="base1_bg" type="media" default="" label="Base-1 Background Image" description="Select your base-1 background image" directory="/" />
+
+			<field name="base2_color" type="color" default="#20303d" label="Base-2 Background Color" description="Select the color of the background to the base-2 modules" />
+			<field name="base2_bg" type="media" default="" label="Base-2 Background Image" description="Select your base-2 background image" directory="/" />
+
+			<field name="footer_color" type="color" default="#111b24" label="Footer Background Color" description="Select the color of the background to the copyright a footer menu area" />
+
+
+		<field type="subgroup" label="Typography Styling" icon="font" />
+			<field name="body_fontsize" type="textpx" default="16" size="2" label="Body Font Size" description="Choose bodyfont size." />
+			
+			<field name="body_fontstyle" type="GoogleFonts" default="Raleway" label="Body font" description="Select Body font" >
+				<option value="font1">font1</option>
+			</field>
+			<field name="body_font_color" type="color" default="#545454" label="Body Font Color" description="Select the color for the body font" />
+
+			<field name="h1head_fontstyle" type="GoogleFonts" default="Raleway" label="(H1) Category Head Font" description="Select font for H1 heading" >
+				<option value="font1">font1</option>
+			</field>
+			<field name="h1head_font_color" type="color" default="#0d1724" label="(H1) Category Head Color" description="Select the color for H1 heading" />
+			
+			<field name="articlehead_fontstyle" type="GoogleFonts" default="Nunito" label="(H2) Article Title Font" description="Select font for Article Titles and H2 heading">
+				<option value="font1">font1</option>
+			</field>
+			<field name="articletitle_font_color" type="color" default="#0d1724" label="(H2) Article Title Color" description="Select the color for Article Titles and H2 heading" />
+			
+			<field name="modulehead_fontstyle" type="GoogleFonts" default="Nunito" label="(H3) Module Title Font" description="Select font for module title and H3 heading">
+				<option value="font1">font1</option>
+			</field>
+			<field name="modulehead_font_color" type="color" default="#0d1724" label="(H3) Module Title Color" description="Select the color for module title and H3 heading" />		
+
+			<field name="h4head_fontstyle" type="GoogleFonts" default="Raleway" label="(H4) Heading Font" description="Select font for H4 heading">
+				<option value="font1">font1</option>
+			</field>
+			<field name="h4head_font_color" type="color" default="#688fad" label="(H4) Heading Color" description="Select color for H4 heading" />		
+			
+			<field name="hornav_fontstyle" type="GoogleFonts" default="Raleway" label="Hornav Menu Font" description="Select hornav menu font">
+				<option value="font1">font1</option>
+			</field>
+
+			<field name="primary_color" type="color" default="#688fad" label="Primary Color" description="This option sets the primary color used throughout on	items not listed below (HR tags, active menu items, etc.)" />
+			<field name="content_link_color" type="color" default="#688fad" label="Link Color" description="Select the color for content links" />	<field name="button_color" type="color" default="#688fad" label="Button Color" description="Select the color for content buttons" />
+			<field name="button_hover_color" type="color" default="#4d6980" label="Button Hover Color" description="Select the hover color for content buttons" />
+			<field name="font_subset" type="text" default="latin" size="40" label="Google Font Subset Info" description="Google subset information. Eg. latin,greek" />
+			<field name="font_weights" type="text" default="200,400,600" size="40" label="Google Font Weight" description="Google font weight information. Separate each required weight with a comma. Eg. 300,400,600" />
+			
+			<field name="fontawesome_sw" type="radio" label="Load Font Awesome" description="Load Font Awesome icons" default="1" 
+				checked="checked" 
+				class="btn-group">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+
+		<field type="subgroup" label="Logo" icon="camera" />
+			<field name="logoImage" type="radio" label="Logo Image" description="Turn on for logo image and off if using text based logo"  
+				default="1" 
+				checked="checked" 
+				class="btn-group">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="logoimagefile" type="media" default="" label="Logo Image" description="Select your logo image" directory="/" filter="" exclude="" stripext="" />
+			<field name="mobilelogoimagefile" type="media" default="" label="Mobile Logo Image" description="Select your logo image for mobile devices" directory="/" filter="" exclude="" stripext="" />
+			<field name="mobilelogo_breakpoint" type="textpx" default="959" size="2" label="Mobile Logo Screen Width" description="Set the max screen width to display your mobile logo image" />
+			<field name="logo_x" type="textpx" default="0" size="2" label="X Position Offset" description="X Position for Logo" />
+			<field name="logo_y" type="textpx" default="0" size="2" label="Y Position Offset" description="Y Position for Logo" />
+			<field name="logoText" type="text" default="" size="40" label="Logo Text" description="Logo Text" />
+			<field name="logo_fontstyle" type="GoogleFonts" default="Muli" label="Logo Font" description="Select Logo font">
+			<option value="font1">font1</option>
+			</field>
+			<field name="logo_font_color" type="color" default="#688fad" label="Logo Text Color" description="Logo Text Color" />
+			<field name="logo_font_size" type="textpx" default="40" label="Logo Text Size" description="Logo Text Size" />
+			<field name="sloganText" type="text" default="" size="40" label="Slogan Text" description="Slogan Text" />
+			<field name="slogan_font_color" type="color" default="#7a7a7a" label="Slogan Text Color" description="Slogan Text Color" />									
+			<field name="slogan_font_size" type="textpx" default="10" label="Slogan Text Size" description="Slogan Text Size" />	
+
+		<field type="subgroup" label="Menus" icon="cubes" />
+			<field label="HORNAVMENU_INFO" type="spacer" class="alert alert-grey"/>	
+			<field name="hornav_menu" type="menu" default="mainmenu" label="Select Top Menu" description="Select Top Menu" />	
+			<field name="hornav_font_color" type="color" default="#2e2e2e" label="Menu Item Color" description="Menu Item Color" />
+			<field name="hornav_dd_color" type="color" default="#474747" label="Dropdown Menu Item Color" description="Hornav Dropdown Menu Item Color" />
+			<field name="hornav_ddbackground_color" type="color" default="#ffffff" label="Dropdown Background Color" description="Hornav Dropdown Background Color" />
+			<field name="hornavPosition"
+				type="radio" 
+				label="Convert to Module Position (hornav) " 
+				description="Select Yes to create 'hornav' module position" 
+				default="0" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			</field>
+			<field label="FOOTERMENU_INFO" type="spacer" class="alert alert-grey"/>	
+			<field name="footer_menu" type="menu" default="mainmenu" label="Select Footer menu" description="Select Footer Menu" />		
+			<field name="footermenuPosition"
+				type="radio" 
+				label="Convert to Module Position (footermenu) " 
+				description="Select Yes to create 'footermenu' module position" 
+				default="1" 
+				checked="checked" 
+				class="btn-group">	
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			</field>
+
+		<field type="subgroup" label="Layout Options" icon="th-large" />
+			<field name="wrapper_width" type="textpx" default="1180" label="Template Width" description="Enter the width of your Site Wrapper (pixels)." />
+			<field name="hide_component"
+				type="radio" 
+				label="Hide Component/Article(s)" 
+				description="Select Yes to hide the component/article area including sidecolumn, contenttop and contentbottom module positions" 
+				default="0" 
+				checked="checked" 
+				class="btn-group">	
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			</field>
+			<field label="SIDECOLSETTINGS_INFO" type="spacer" default="SIDECOLSETTINGS_INFO" class="alert alert-grey"/>
+			<field name="column_layout" type="radio" default="SCOLA-COM-SCOLB" label="Side Column Layout" description="Side Column Layout" 
+				checked="checked" 
+				class="btn-group">
+				<option value="SCOLA-SCOLB-COM">S-S-C</option>
+				<option value="SCOLA-COM-SCOLB">S-C-S</option>
+				<option value="COM-SCOLA-SCOLB">C-S-S</option>
+			</field>				
+			<field name="sidecola_width" type="textpercent" default="25" label="SideCol-A Width (%)" description="Enter the width of the Side Column A in pixels." />
+			<field name="sidecolb_width" type="textpercent" default="25" label="SideCol-B Width (%)" description="Enter the width of the Side Column B pixels." />	
+
+		<field type="subgroup" label="Responsive Options" icon="tablet" />
+			<field name="responsive_sw" type="radio" label="Responsive Layout" description="Responsive Layout" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			</field>
+			<field name="hornav_breakpoint" type="textpx" default="1140" label="Mobile Menu Breakpoint" description="Enter the max screen width to display the mobile menu." />
+			<field name="mobile_menu_type" type="radio" label="Mobile Menu Type" description="Select which mobile menu to use." default="slideout" 
+				checked="checked" 
+				class="btn-group">
+			<option value="slicknav">SlickNav</option>
+			<option value="slideout">SlideOut</option>
+			<option value="hide">JHIDE</option>
+			</field>
+			<field name="mobile_menu_color" type="color" default="#555555" label="Slideout Toggle Color" description="Select the icon color of the Slideout Menu toggle" showon="mobile_menu_type:slideout" />
+			<field name="mobile_menu_bg" type="color" default="#141414" label="Mobile Menu Background" description="Select the background color of the Mobile Menu" />
+			<field name="sidecol_responsive_pos" type="radio" label="Sidecolumn Positioning" description="Sidecol position relative to the component area on smaller screen devices" default="after" 
+				checked="checked" 
+				class="btn-group">
+			<option value="before">Before Component</option>
+			<option value="after">After Component</option>
+			</field>
+		
+		<field label="RESPONSIVE_NOTICE2" type="spacer" class="alert alert-blue"/>
+			<field name="res_header1_sw" type="radio" label="Header-1 Module" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_header2_sw" type="radio" label="Header-2 Module" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_showcase1_sw" type="radio" label="Showcase-1 Modules" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_top1_sw" type="radio" label="Top-1 Modules" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_top2_sw" type="radio" label="Top-2 Modules" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_top3_sw" type="radio" label="Top-3 Modules" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_sidecola_sw" type="radio" label="Sidecol-a Modules" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_sidecolb_sw" type="radio" label="Sidecol-b Modules" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_bottom1_sw" type="radio" label="Bottom-1 Modules" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_bottom2_sw" type="radio" label="Bottom-2 Modules" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_bottom3_sw" type="radio" label="Bottom-3 Modules" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_base1_sw" type="radio" label="Base-1 Modules" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field name="res_base2_sw" type="radio" label="Base-2 Modules" description="Set to Yes to disable on mobile phones" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JHIDE</option>
+			<option value="1">JSHOW</option>
+			</field>
+			<field label="RESPONSIVECUSTOM_INFO" type="spacer" class="alert alert-grey"/>
+			<field name="tabport_css" type="textarea" filter="raw" default="" label="Tablet (Portrait) Custom CSS" description="Add your Custom CSS for Tablets (portrait)." rows="10" cols="40" />
+			<field name="mobland_css" type="textarea" filter="raw" default="" label="Phone (L/scape) Custom CSS" description="Add your Custom CSS for Phones (landscape." rows="10" cols="40" />
+			<field name="mobport_css" type="textarea" filter="raw" default="" label="Phone (Portrait) Custom CSS" description="Add your Custom CSS for Phones (portrait)." rows="10" cols="40" />
+
+		<field type="subgroup" label="Social Media Icons" icon="users" />
+			<field label="SOCIAL_INFO" type="spacer" class="alert alert-blue"/>	
+			<field name="social_style" type="color" default="#1d2e38" label="Social Icons Color" description="Set the color of your Social Icons" />
+			<field name="social_rss" type="text" size="40" default="" label=" RSS Feed URL" description="RSS Feed URL" />
+			<field name="social_twitter" type="text" size="40" default="" label="Twitter URL" description="Twitter URL" />
+			<field name="social_facebook" type="text" size="40" default="" label="Facebook URL" description="Facebook URL" />
+			<field name="social_googleplus" type="text" size="40" default="" label="Google+ URL" description="Google+ URL" />
+			<field name="social_youtube" type="text" size="40" default="" label="Youtube URL" description="Youtube URL" />
+			<field name="social_pinterest" type="text" size="40" default="" label="Pinterest URL" description="Pinterest URL" />
+			<field name="social_instagram" type="text" size="40" default="" label="Instagram URL" description="Instagram URL" />
+			<field name="social_dribbble" type="text" size="40" default="" label="Dribbble URL" description="Dribbble URL" />
+			<field name="social_flickr" type="text" size="40" default="" label="Flickr URL" description="Flickr URL" />
+			<field name="social_skype" type="text" size="40" default="" label="Skype URL" description="Skype URL" />
+			<field name="social_linkedin" type="text" size="40" default="" label="LinkedIn URL" description="LinkedIn URL" />
+			<field name="social_vimeo" type="text" size="40" default="" label="Vimeo URL" description="Vimeo URL" />
+			<field name="social_yahoo" type="text" size="40" default="" label="Yahoo URL" description="Yahoo URL" />
+			<field name="social_tumblr" type="text" size="40" default="" label="Tumblr URL" description="Tumblr URL" />
+			<field name="social_custom" type="subform" formsource="templates/j51_jasmine/elements/icons.xml" class="advancedSelect" min="0" max="10" multiple="true" layout="joomla.form.field.subform.repeatable" groupByFieldset="true" buttons="add,remove,move" label="Custom Icon(s)" description="Custom Icon(s)" />
+
+		<field type="subgroup" label="Copyright" icon="copyright" />
+			<field label="COPYRIGHT_INFO" type="spacer" class="alert alert-blue"/>
+			<field name="copyright" type="text" size="80" filter="raw" default="(c) 2022 Your Copyright Info" label="Copyright" description="Copyright Text" />
+
+		<field type="subgroup" label="Miscellaneous" icon="star" />
+			<field name="scrollto_offset" type="textpx" default="0" size="2" label="Scroll To Offset" description="Set the scroll to offset when linking to anchors" />
+			<field name="animatecss_sw" type="radio" label="Load Animate.css" description="Load the Animate.css animations library" default="1" 
+				checked="checked" 
+				class="btn-group">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="min_css" type="radio" label="Load Minified CSS" description="Enable to load minified versions of your template CSS" default="1" 
+				checked="checked" 
+				class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+			
+	</fieldset>
+
+	<fieldset name="H3MODULESTYING">	
+		<field name="moduleoverrides" type="subform" formsource="templates/j51_jasmine/elements/moduleOverrides.xml" class="advancedSelect" min="0" max="200" multiple="true" layout="joomla.form.field.subform.repeatable" groupByFieldset="true" label="Module Override(s)" description="Override the styling for individual module(s)" />	
+	</fieldset>
+	
+	<fieldset name="H3MODULEWIDTHS">
+		<field type="subgroup" label="SHOWCASE1MODULES_INFO" expend="1" icon="ellipsis-h" />     
+		<field name="showcase1_width100" type="radio" label="100% Width" description="Set module block width to 100%" default="1" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>   
+		<field name="showcase1_padding" type="radio" label="Remove Container Padding" description="Remove padding from the containing div of these modules" default="1" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>    
+		<field type="spacer" label="&lt;hr/&gt;" />
+		<field name="showcase1_auto" type="radio" label="Enable Manual Widths" description="Select Yes for manual widths" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 
+
+		<field name="showcase_1a_manual" type="textpercent" default="16.6" label="Showcase-1a width" description="Enter value for module width" />
+		<field name="showcase_1b_manual" type="textpercent" default="16.6" label="Showcase-1b width" description="Enter value for module width" />
+		<field name="showcase_1c_manual" type="textpercent" default="16.6" label="Showcase-1c width" description="Enter value for module width" />
+		<field name="showcase_1d_manual" type="textpercent" default="16.6" label="Showcase-1d width" description="Enter value for module width" />
+		<field name="showcase_1e_manual" type="textpercent" default="16.6" label="Showcase-1e width" description="Enter value for module width" />
+		<field name="showcase_1f_manual" type="textpercent" default="16.6" label="Showcase-1f width" description="Enter value for module width" />
+
+		<field type="subgroup" label="TOP1MODULES_INFO" expend="1" icon="ellipsis-h" />     
+		<field name="top1_width100" type="radio" label="100% Width" description="Set module block width to 100%" default="0" checked="checked" class="btn-group width100">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>   
+		<field name="top1_padding" type="radio" label="Remove Container Padding" description="Remove padding from the containing div of these modules" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>    
+		<field type="spacer" label="&lt;hr/&gt;" />
+		<field name="top1_auto" type="radio" label="Enable Manual Widths" description="Select Yes for manual widths" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 
+
+		<field name="top_1a_manual" type="textpercent" default="16.6" label="Top-1a width" description="Enter value for module width" />
+		<field name="top_1b_manual" type="textpercent" default="16.6" label="Top-1b width" description="Enter value for module width" />
+		<field name="top_1c_manual" type="textpercent" default="16.6" label="Top-1c width" description="Enter value for module width" />
+		<field name="top_1d_manual" type="textpercent" default="16.6" label="Top-1d width" description="Enter value for module width" />
+		<field name="top_1e_manual" type="textpercent" default="16.6" label="Top-1e width" description="Enter value for module width" />
+		<field name="top_1f_manual" type="textpercent" default="16.6" label="Top-1f width" description="Enter value for module width" />
+	   
+	   	<field type="subgroup" label="TOP2MODULES_INFO" icon="ellipsis-h" />
+		<field name="top2_width100" type="radio" label="100% Width" description="Set module block width to 100%" default="0" checked="checked" class="btn-group width100">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="top2_padding" type="radio" label="Remove Container Padding" description="Remove padding from the containing div of these modules" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>    
+		<field type="spacer" label="&lt;hr/&gt;" />
+		<field name="top2_auto" type="radio" label="Enable Manual Widths" description="Select Yes for manual widths" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="top_2a_manual" type="textpercent" default="16.6" size="2" label="Top-2a width (%)" description="Enter value for module width" />
+		<field name="top_2b_manual" type="textpercent" default="16.6" size="2" label="Top-2b width (%)" description="Enter value for module width" />
+		<field name="top_2c_manual" type="textpercent" default="16.6" size="2" label="Top-2c width (%)" description="Enter value for module width" />
+		<field name="top_2d_manual" type="textpercent" default="16.6" size="2" label="Top-2d width (%)" description="Enter value for module width" />
+		<field name="top_2e_manual" type="textpercent" default="16.6" size="2" label="Top-2e width (%)" description="Enter value for module width" />
+		<field name="top_2f_manual" type="textpercent" default="16.6" size="2" label="Top-2f width (%)" description="Enter value for module width" />
+		
+		<field type="subgroup" label="TOP3MODULES_INFO" icon="ellipsis-h" />
+		<field name="top3_width100" type="radio" label="100% Width" description="Set module block width to 100%" default="0" checked="checked" class="btn-group width100">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 
+		<field name="top3_padding" type="radio" label="Remove Container Padding" description="Remove padding from the containing div of these modules" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>   
+		<field type="spacer" label="&lt;hr/&gt;" />
+		<field name="top3_auto" type="radio" label="Enable Manual Widths" description="Select Yes for manual widths" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="top_3a_manual" type="textpercent" default="16.6" size="2" label="Top-3a width (%)" description="Enter value for module width" />
+		<field name="top_3b_manual" type="textpercent" default="16.6" size="2" label="Top-3b width (%)" description="Enter value for module width" />
+		<field name="top_3c_manual" type="textpercent" default="16.6" size="2" label="Top-3c width (%)" description="Enter value for module width" />
+		<field name="top_3d_manual" type="textpercent" default="16.6" size="2" label="Top-3d width (%)" description="Enter value for module width" />
+		<field name="top_3e_manual" type="textpercent" default="16.6" size="2" label="Top-3e width (%)" description="Enter value for module width" />
+		<field name="top_3f_manual" type="textpercent" default="16.6" size="2" label="Top-3f width (%)" description="Enter value for module width" />
+	   	
+	   	<field type="subgroup" label="CONTENTTOPMODULES_INFO" icon="ellipsis-h" />
+		<field name="contenttop_auto" type="radio" label="Enable Manual Widths" description="Select Yes for manual widths" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="contenttop_a_manual" type="textpercent" default="33" size="2" label="ContentTop-a Width (%)" description="Enter value for module width" />
+		<field name="contenttop_b_manual" type="textpercent" default="33" size="2" label="ContentTop-b Width (%)" description="Enter value for module width" />
+		<field name="contenttop_c_manual" type="textpercent" default="33" size="2" label="ContentTop-c Width (%)" description="Enter value for module width" />
+	   
+	   	<field type="subgroup" label="CONTENTBOTTOMMODULES_INFO" icon="ellipsis-h" />
+		<field name="contentbottom_auto" type="radio" label="Enable Manual Widths" description="Select Yes for manual widths" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="contentbottom_a_manual" type="textpercent" default="33" size="2" label="ContentBottom-a Width (%)" description="Enter value for module width" />
+		<field name="contentbottom_b_manual" type="textpercent" default="33" size="2" label="ContentBottom-b Width (%)" description="Enter value for module width" />
+		<field name="contentbottom_c_manual" type="textpercent" default="33" size="2" label="ContentBottom-c Width (%)" description="Enter value for module width" />
+	   	
+	   	<field type="subgroup" label="BOTTOM1MODULES_INFO" icon="ellipsis-h" />
+		<field name="bottom1_width100" type="radio" label="100% Width" description="Set module block width to 100%" default="0" checked="checked" class="btn-group width100">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 
+		<field name="bottom1_padding" type="radio" label="Remove Container Padding" description="Remove padding from the containing div of these modules" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>   
+		<field type="spacer" label="&lt;hr/&gt;" />
+		<field name="bottom1_auto" type="radio" label="Enable Manual Widths" description="Select Yes for manual widths" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="bottom_1a_manual" type="textpercent" default="16.6" size="2" label="Bottom-1a Width (%)" description="Enter value for module width" />
+		<field name="bottom_1b_manual" type="textpercent" default="16.6" size="2" label="Bottom-1b Width (%)" description="Enter value for module width" />
+		<field name="bottom_1c_manual" type="textpercent" default="16.6" size="2" label="Bottom-1c Width (%)" description="Enter value for module width" />
+		<field name="bottom_1d_manual" type="textpercent" default="16.6" size="2" label="Bottom-1d Width (%)" description="Enter value for module width" />
+		<field name="bottom_1e_manual" type="textpercent" default="16.6" size="2" label="Bottom-1e Width (%)" description="Enter value for module width" />
+		<field name="bottom_1f_manual" type="textpercent" default="16.6" size="2" label="Bottom-1f Width (%)" description="Enter value for module width" />
+
+		<field type="subgroup" label="BOTTOM2MODULES_INFO" icon="ellipsis-h" />
+		<field name="bottom2_width100" type="radio" label="100% Width" description="Set module block width to 100%" default="0" checked="checked" class="btn-group width100">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 	 
+		<field name="bottom2_padding" type="radio" label="Remove Container Padding" description="Remove padding from the containing div of these modules" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 
+		<field type="spacer" label="&lt;hr/&gt;" />
+		<field name="bottom2_auto" type="radio" label="Enable Manual Widths" description="Select Yes for manual widths" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="bottom_2a_manual" type="textpercent" default="16.6" size="2" label="Bottom-2a Width (%)" description="Enter value for module width" />
+		<field name="bottom_2b_manual" type="textpercent" default="16.6" size="2" label="Bottom-2b Width (%)" description="Enter value for module width" />
+		<field name="bottom_2c_manual" type="textpercent" default="16.6" size="2" label="Bottom-2c Width (%)" description="Enter value for module width" />
+		<field name="bottom_2d_manual" type="textpercent" default="16.6" size="2" label="Bottom-2d Width (%)" description="Enter value for module width" />
+		<field name="bottom_2e_manual" type="textpercent" default="16.6" size="2" label="Bottom-2e Width (%)" description="Enter value for module width" />
+		<field name="bottom_2f_manual" type="textpercent" default="16.6" size="2" label="Bottom-2f Width (%)" description="Enter value for module width" />
+
+		<field type="subgroup" label="BOTTOM3MODULES_INFO" icon="ellipsis-h" />
+		<field name="bottom3_width100" type="radio" label="100% Width" description="Set module block width to 100%" default="0" checked="checked" class="btn-group width100">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 	 
+		<field name="bottom3_padding" type="radio" label="Remove Container Padding" description="Remove padding from the containing div of these modules" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 
+		<field type="spacer" label="&lt;hr/&gt;" />
+		<field name="bottom3_auto" type="radio" label="Enable Manual Widths" description="Select Yes for manual widths" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="bottom_3a_manual" type="textpercent" default="16.6" size="2" label="Bottom-3a Width (%)" description="Enter value for module width" />
+		<field name="bottom_3b_manual" type="textpercent" default="16.6" size="2" label="Bottom-3b Width (%)" description="Enter value for module width" />
+		<field name="bottom_3c_manual" type="textpercent" default="16.6" size="2" label="Bottom-3c Width (%)" description="Enter value for module width" />
+		<field name="bottom_3d_manual" type="textpercent" default="16.6" size="2" label="Bottom-3d Width (%)" description="Enter value for module width" />
+		<field name="bottom_3e_manual" type="textpercent" default="16.6" size="2" label="Bottom-3e Width (%)" description="Enter value for module width" />
+		<field name="bottom_3f_manual" type="textpercent" default="16.6" size="2" label="Bottom-3f Width (%)" description="Enter value for module width" />
+	   	
+	   	<field type="subgroup" label="BASE1MODULES_INFO" icon="ellipsis-h" />
+		<field name="base1_width100" type="radio" label="100% Width" description="Set module block width to 100%" default="0" checked="checked" class="btn-group width100">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 
+		<field name="base1_padding" type="radio" label="Remove Container Padding" description="Remove padding from the containing div of these modules" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 
+		<field type="spacer" label="&lt;hr/&gt;" />
+		<field name="base1_auto" type="radio" label="Enable Manual Widths" description="Select Yes for manual widths" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="base_1a_manual" type="textpercent" default="16.6" size="2" label="Base-1a Width (%)" description="Enter value for module width" />
+		<field name="base_1b_manual" type="textpercent" default="16.6" size="2" label="Base-1b Width (%)" description="Enter value for module width" />
+		<field name="base_1c_manual" type="textpercent" default="16.6" size="2" label="Base-1c Width (%)" description="Enter value for module width" />
+		<field name="base_1d_manual" type="textpercent" default="16.6" size="2" label="Base-1d Width (%)" description="Enter value for module width" />
+		<field name="base_1e_manual" type="textpercent" default="16.6" size="2" label="Base-1e Width (%)" description="Enter value for module width" />
+		<field name="base_1f_manual" type="textpercent" default="16.6" size="2" label="Base-1f Width (%)" description="Enter value for module width" />
+	   	
+	   	<field type="subgroup" label="BASE2MODULES_INFO" icon="ellipsis-h" />
+		<field name="base2_width100" type="radio" label="100% Width" description="Set module block width to 100%" default="0" checked="checked" class="btn-group width100">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 
+		<field name="base2_padding" type="radio" label="Remove Container Padding" description="Remove padding from the containing div of these modules" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field> 
+		<field type="spacer" label="&lt;hr/&gt;" />
+		<field name="base2_auto" type="radio" label="Enable Manual Widths" description="Select Yes for manual widths" default="0" checked="checked" class="btn-group">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="base_2a_manual" type="textpercent" default="16.6" size="2" label="Base-2a Width (%)" description="Enter value for module width" />
+		<field name="base_2b_manual" type="textpercent" default="16.6" size="2" label="Base-2b Width (%)" description="Enter value for module width" />
+		<field name="base_2c_manual" type="textpercent" default="16.6" size="2" label="Base-2c Width (%)" description="Enter value for module width" />
+		<field name="base_2d_manual" type="textpercent" default="16.6" size="2" label="Base-2d Width (%)" description="Enter value for module width" />
+		<field name="base_2e_manual" type="textpercent" default="16.6" size="2" label="Base-2e Width (%)" description="Enter value for module width" />
+		<field name="base_2f_manual" type="textpercent" default="16.6" size="2" label="Base-2f Width (%)" description="Enter value for module width" />   
+	</fieldset>
+	
+	<fieldset name="H3CUSTOMCSS">		
+		<field label="CUSTOMCSS_INFO" type="spacer" class="alert alert-blue"/>
+		<field name="custom_css" type="textarea" filter="raw" default="" label="Custom CSS" description="Add your custom CSS here." rows="10" cols="100" />
+		<field name="custom_css_note" type="note" description="Note: If you find you have a large amount of Custom CSS in the field above, you can copy it's contents to your templates custom.css (../templates/[YourTemplate]/css/custom.css) with the same effect. Ensure to first enable the custom.css option below." />
+		<field name="customcss_sw" type="radio" label="Load custom.css" description="Load custom.css. Place the custom.css in your templates CSS folder (../templates/[YourTemplate]/css/custom.css" default="0" 
+			checked="checked" 
+			class="btn-group">
+		<option value="0">JNO</option>
+		<option value="1">JYES</option>
+		</field>
+	</fieldset>
+	
+	<fieldset name="H3CUSTOMCODE">		
+		<field label="CUSTOM_CODE" type="spacer" class="alert alert-blue"/>
+		<field name="head_custom_code" type="textarea" filter="raw" default="" label="Head Custom Code" description="Code will be placed between the HEAD tags in your index.php" rows="10" cols="100" />
+		<field name="body_custom_code" type="textarea" filter="raw" default="" label="Body Custom Code" description="Code will be placed between the BODY tags in your index.php" rows="10" cols="100" />
+	</fieldset>
+
+	</fields>
+	
+</config>
+
+</extension>

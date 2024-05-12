@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_CONVERTFORMS</name>
+	<description>PLG_SYSTEM_CONVERTFORMS_DESC</description>
+	<version>1.0</version>
+	<creationDate>September 2016</creationDate>
+	<copyright>Copyright © 2020 Tassos Marinos All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<author>Tassos Marinos</author>
+	<authorEmail>info@tassos.gr</authorEmail>
+	<authorUrl>http://www.tassos.gr</authorUrl>
+	<scriptfile>script.install.php</scriptfile>
+	<files>
+		<filename plugin="convertforms">convertforms.php</filename>
+		<filename>script.install.helper.php</filename>
+		<folder>language</folder>
+	</files>
+</extension>

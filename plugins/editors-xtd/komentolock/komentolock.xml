@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="editors-xtd" method="upgrade">
+	<name>Button - Komento Lock</name>
+	<creationDate>5th December 2016</creationDate>
+	<author>Stack Ideas Sdn Bhd</author>
+	<authorUrl>http://www.stackideas.com</authorUrl>
+	<copyright>Copyright 2009 - 2016 StackIdeas. All rights reserved.</copyright>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<license>GPL License</license>
+	<version>1.6.0</version>
+	<description>Button under the editor to lock Komento in the article</description>
+	<files>
+		<filename plugin="komentolock">komentolock.php</filename>
+	</files>
+	<updateservers>
+		<server type="extension" priority="1" name="StackIdeas Modules and Plugins">https://stackideas.com/joomla4compat.xml</server>
+	</updateservers>
+</extension>

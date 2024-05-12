@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>J51_LayerSlideshow</name>
+	<author>Joomla51</author>
+	<creationDate>October 2017</creationDate>
+	<copyright>Copyright (C)2019 Joomla51</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@joomla51.com</authorEmail>
+	<authorUrl>http://www.joomla51.com</authorUrl>
+	<version>1.1.10</version>
+	<description><![CDATA[<link href="../modules/mod_j51layerslideshow/css/admin.css" rel="stylesheet" type="text/css" media="all" />
+		<p>LayerSlideshow Module by Joomla51</p>
+  	]]></description>
+
+	<files>
+		<filename module="mod_j51layerslideshow">mod_j51layerslideshow.php</filename>
+		<filename>mod_j51layerslideshow.xml</filename>
+		<filename>helper.php</filename>
+		<filename>License.txt</filename>		
+		<filename>index.html</filename>
+		<filename>changelog.php</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+		<folder>elements</folder>
+		<folder>language</folder>
+	</files>
+
+	<media destination="mod_j51layerslideshow" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_j51layerslideshow.ini</language>
+	</languages>
+
+	<config>	
+		<fields name="params" addfieldpath="/modules/mod_j51layerslideshow/elements">
+			
+			<fieldset name="MOD_J51_GENERALSETTINGS">
+				<field name="j51_max_height" type="textpx" default="600" label="Max Height" description="Set the max height to the slideshow" />
+				<field name="autoplay" type="radio" label="Autoplay Transitions" default="0" 
+					checked="checked" 
+					class="btn-group"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="autoplaySpeed" type="textms" default="5000" label="Transition Interval" description="Select the interval between each slide" showon="autoplay:1" />
+				<field name="speed" type="textms" default="600" label="Transition Duration" description="Select your Transition Duration" />
+				<field name="j51_title_color" type="color" default="#ffffff" label="Title Color" />
+				<field name="j51_title_tag" type="list" label="Title Tag" description="Set the HTML tag for the title text" default="h2">
+		          <option value="h1">h1</option>
+		          <option value="h2">h2</option>
+		          <option value="h3">h3</option>
+		          <option value="h4">h4</option>
+		          <option value="h5">h5</option>
+		          <option value="h6">h6</option>
+		          <option value="p">paragraph</option>
+				</field>
+				<field name="j51_text_color" type="color" default="#ffffff" label="Caption Color" />
+				<field name="j51_text_tag" type="list" label="Caption Tag" description="Set the HTML tag for the caption text" default="p">
+		          <option value="h1">h1</option>
+		          <option value="h2">h2</option>
+		          <option value="h3">h3</option>
+		          <option value="h4">h4</option>
+		          <option value="h5">h5</option>
+		          <option value="h6">h6</option>
+		          <option value="p">paragraph</option>
+				</field>
+				<field name="j51_text_bg_color" type="color" format="rgba" default="" label="Title/Caption Background" description="Set the color and opacity to the title and caption background" />
+				<field name="j51_header_overlap" type="radio" label="Overlap Header if in showcase-1# module position" description="Enable to add navigation to the header slideshow" default="1" 
+					checked="checked" 
+					class="btn-group"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="MOD_J51_ANIMATIONSETTINGS">
+				<field name="j51_title_anim_default" type="list" label="Default Title Animation" description="Set the default animation for the title text" default="fadeIn">
+					<option value="bounce">bounce</option>
+					<option value="flash">flash</option>
+					<option value="shake">shake</option>
+					<option value="swing">swing</option>
+					<option value="tada">tada</option>
+					<option value="wobble">wobble</option>
+					<option value="bounceIn">bounceIn</option>
+					<option value="bounceInDown">bounceInDown</option>
+					<option value="bounceInDown">bounceInDown</option>
+					<option value="bounceInLeft">bounceInLeft</option>
+					<option value="bounceInRight">bounceInRight</option>
+					<option value="bounceInUp">bounceInUp</option>
+					<option value="fadeIn">fadeIn</option>
+					<option value="fadeInDown">fadeInDown</option>
+					<option value="fadeInDownBig">fadeInDownBig</option>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInLeftBig">fadeInLeftBig</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="fadeInRightBig">fadeInRightBig</option>
+					<option value="fadeInUp">fadeInUp</option>
+					<option value="fadeInUpBig">fadeInUpBig</option>
+					<option value="flip">flip</option>
+					<option value="flipInX">flipInX</option>
+					<option value="lightSpeedIn">lightSpeedIn</option>
+					<option value="rotateIn">rotateIn</option>
+					<option value="rotateInDownLeft">rotateInDownLeft</option>
+					<option value="rotateInDownRight">rotateInDownRight</option>
+					<option value="rotateInUpLeft">rotateInUpLeft</option>
+					<option value="rotateInUpRight">rotateInUpRight</option>
+					<option value="slideInUp">slideInUp</option>
+					<option value="slideInDown">slideInDown</option>
+					<option value="slideInLeft">slideInLeft</option>
+					<option value="slideInRight">slideInRight</option>
+					<option value="rollIn">rollIn</option>
+					<option value="zoomIn">zoomIn</option>
+					<option value="zoomInDown">zoomInDown</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomInUp">zoomInUp</option>
+					<option value="zoomIn">zoomIn</option>
+				</field>
+				<field name="j51_caption_anim_default" type="list" label="Default Caption Animation" description="Set the default animation for the title text" default="fadeIn">
+					<option value="bounce">bounce</option>
+					<option value="flash">flash</option>
+					<option value="shake">shake</option>
+					<option value="swing">swing</option>
+					<option value="tada">tada</option>
+					<option value="wobble">wobble</option>
+					<option value="bounceIn">bounceIn</option>
+					<option value="bounceInDown">bounceInDown</option>
+					<option value="bounceInDown">bounceInDown</option>
+					<option value="bounceInLeft">bounceInLeft</option>
+					<option value="bounceInRight">bounceInRight</option>
+					<option value="bounceInUp">bounceInUp</option>
+					<option value="fadeIn">fadeIn</option>
+					<option value="fadeInDown">fadeInDown</option>
+					<option value="fadeInDownBig">fadeInDownBig</option>
+					<option value="fadeInLeft">fadeInLeft</option>
+					<option value="fadeInLeftBig">fadeInLeftBig</option>
+					<option value="fadeInRight">fadeInRight</option>
+					<option value="fadeInRightBig">fadeInRightBig</option>
+					<option value="fadeInUp">fadeInUp</option>
+					<option value="fadeInUpBig">fadeInUpBig</option>
+					<option value="flip">flip</option>
+					<option value="flipInX">flipInX</option>
+					<option value="lightSpeedIn">lightSpeedIn</option>
+					<option value="rotateIn">rotateIn</option>
+					<option value="rotateInDownLeft">rotateInDownLeft</option>
+					<option value="rotateInDownRight">fliprotateInDownRightInY</option>
+					<option value="rotateInUpLeft">rotateInUpLeft</option>
+					<option value="rotateInUpRight">rotateInUpRight</option>
+					<option value="slideInUp">slideInUp</option>
+					<option value="slideInDown">slideInDown</option>
+					<option value="slideInLeft">slideInLeft</option>
+					<option value="slideInRight">slideInRight</option>
+					<option value="rollIn">rollIn</option>
+					<option value="zoomIn">zoomIn</option>
+					<option value="zoomInDown">zoomInDown</option>
+					<option value="zoomInLeft">zoomInLeft</option>
+					<option value="zoomInRight">zoomInRight</option>
+					<option value="zoomInUp">zoomInUp</option>
+					<option value="zoomIn">zoomIn</option>
+				</field>
+				<field name="j51_anim_speed" type="textms" default="1500" label="Animation Speed" description="Set the speed in miliseconds to text animation" />
+				<field 
+					name="j51_overflow_hidden" type="radio" label="Hide overflow" default="0" checked="checked" class="btn-group" 
+					description="Enable to hide animation outside of the title/caption container"
+					layout="joomla.form.field.radio.switcher"
+				>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="j51_title_delay" type="textms" default="0" label="Title Animation Delay" description="Set the delay in miliseconds to the title animation" />
+				<field name="j51_caption_delay" type="textms" default="500" label="Caption Animation Delay" description="Set the delay in miliseconds to the caption animation" />
+			</fieldset>
+
+			<fieldset name="MOD_J51_RESPONSIVESETTINGS">
+					<field name="j51_title_breakpoint" type="textpx" default="600" label="Hide Title Breakpoint" description="The title will be hidden on screen widths below the value set." />
+					<field name="j51_caption_breakpoint" type="textpx" default="600" label="Hide Caption Breakpoint" description="The caption will be hidden on screen widths below the value set." />
+			</fieldset>
+
+			<fieldset name="MOD_J51_IMAGES">
+				<field name="j51slideimages" type="subform" formsource="modules/mod_j51layerslideshow/elements/slideshow.xml" class="advancedSelect" min="1" max="200" multiple="true" layout="joomla.form.field.subform.repeatable" groupByFieldset="true" buttons="add,remove,move" label="Slide Image(s)" description="Slide Image(s)" />	
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					class="form-select"
+					validate="moduleLayout"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					rows="3"
+					validate="CssIdentifier"
+				/>
+
+				<field
+					name="owncache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					default="900"
+					filter="integer"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

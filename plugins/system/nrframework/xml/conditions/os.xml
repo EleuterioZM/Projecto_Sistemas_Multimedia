@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="nros"
+            label="NR_ASSIGN_OS"
+            description="NR_ASSIGN_OS_DESC"
+            multiple="true"
+            class="hasChosen"
+        />
+        <field name="note" type="ruleValueHint"/>
+    </fieldset>
+</form>

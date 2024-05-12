@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - Foundry by Stackideas</name>
+	<author>Stack Ideas Sdn Bhd</author>
+	<creationDate>21st July 2022</creationDate>
+	<copyright>Copyright StackIdeas. All rights reserved.</copyright>
+	<license>GPL License</license>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<version>1.1.12</version>
+	<description>
+		This is a plugin of Foundry by Stackideas.
+	</description>
+	<files>
+		<filename plugin="foundry">foundry.php</filename>
+		<filename>foundry.xml</filename>
+	</files>
+	<media folder="media">
+		<folder>foundry</folder>
+	</media>
+	<updateservers>
+		<server type="extension" priority="1" name="StackIdeas Modules and Plugins">https://stackideas.com/joomla4compat.xml</server>
+	</updateservers>
+</extension>

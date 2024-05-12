@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="tfinputrepeater" 
+            label="NR_CITY_NAME"
+            description="NR_CONDITION_CITY_DESC">
+            <form>
+                <field name="value"
+                    class="input-fullwidth"
+                    hint="Athens, Berlin, Paris"
+                    size="25"
+                    type="text" />
+            </form>
+        </field>
+        <field name="note" type="ruleValueHint"/>
+        <field name="geochecker" type="GeoDBChecker"/>
+    </fieldset>
+</form>

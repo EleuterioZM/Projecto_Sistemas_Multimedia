@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general" addfieldpath="administrator/components/com_convertforms/models/forms/fields">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="campaigns"
+            label="NR_CONVERTFORMS_LIST"
+            description="NR_CONVERTFORMS_LIST_DESC"
+            multiple="true"
+            class="hasChosen"
+        />
+    </fieldset>
+</form>

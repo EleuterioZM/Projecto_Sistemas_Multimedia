@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+        <field name="gap" type="nrnumber"
+            label="COM_CONVERTFORMS_FIELD_EMPTY_SPACE_GAP"
+            description="COM_CONVERTFORMS_FIELD_EMPTY_SPACE_GAP_DESC"
+            addon="px"
+            min="0"
+            default="20"
+        />
+    </fieldset>
+</form>

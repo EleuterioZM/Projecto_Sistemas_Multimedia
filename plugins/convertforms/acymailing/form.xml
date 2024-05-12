@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="service">
+        <field name="list" type="acymailing"
+            label="PLG_CONVERTFORMS_ACYMAILING_LIST_ID"
+            description="PLG_CONVERTFORMS_ACYMAILING_LIST_ID_DESC"
+            required="true"
+            multiple="true"
+        />
+        <field name="doubleoptin" type="radio"
+            label="PLG_CONVERTFORMS_ACYMAILING_DOUBLEOPTIN"
+            description="PLG_CONVERTFORMS_ACYMAILING_DOUBLEOPTIN_DESC"
+            class="btn-group btn-group-yesno"
+            default="0">
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+    </fieldset>
+</form>

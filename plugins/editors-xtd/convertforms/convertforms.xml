@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="editors-xtd" method="upgrade">
+	<name>PLG_EDITORS-XTD_CONVERTFORMS</name>
+	<description>PLG_EDITORS-XTD_CONVERTFORMS_DESC</description>
+	<creationDate>June 2017</creationDate>
+	<copyright>Copyright © 2020 Tassos Marinos All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<author>Tassos Marinos</author>
+	<authorEmail>info@tassos.gr</authorEmail>
+	<authorUrl>http://www.tassos.gr</authorUrl>
+	<version>1.0</version>
+	<scriptfile>script.install.php</scriptfile>
+	<files>
+		<filename plugin="convertforms">convertforms.php</filename>
+		<filename>script.install.helper.php</filename>
+		<filename>form.xml</filename>
+		<folder>language</folder>
+	</files>
+</extension>

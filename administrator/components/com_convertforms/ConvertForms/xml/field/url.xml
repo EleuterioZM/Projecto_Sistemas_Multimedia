@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="restrictions">
+        <field name="readonly" type="nrtoggle" 
+            label="COM_CONVERTFORMS_READONLY"
+            description="COM_CONVERTFORMS_READONLY_DESC"
+		/>
+	</fieldset>
+	<fieldset name="advanced">
+	    <field name="placeholder" type="text"
+	    	label="COM_CONVERTFORMS_PLACEHOLDER_NAME"
+	    	description="COM_CONVERTFORMS_PLACEHOLDER_NAME_DESC"
+            default="http://www.example.com"
+	    />
+	</fieldset>
+</form>

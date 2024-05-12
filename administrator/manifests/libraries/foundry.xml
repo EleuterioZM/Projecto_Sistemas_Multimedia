@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="2.5" type="library" method="upgrade">
+	<name>Library - Foundry by Stackideas</name>
+	<author>Stack Ideas Sdn Bhd</author>
+	<creationDate>21st July 2022</creationDate>
+	<libraryname>foundry</libraryname>
+	<version>1.1.12</version>
+	<description>This is a Foundry Library by Stackideas.</description>
+	<copyright>Copyright StackIdeas. All rights reserved.</copyright>
+	<license>GPL License</license>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>https://stackideas.com</authorUrl>
+	<files folder="foundry">
+		<folder>helpers</folder>
+		<folder>html</folder>
+		<folder>libraries</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		<folder>themes</folder>
+		<folder>vendor</folder>
+		<filename>autoloader.php</filename>
+		<filename>compatibility.php</filename>
+		<filename>composer.json</filename>
+		<filename>composer.lock</filename>
+		<filename>constants.php</filename>
+		<filename>en-GB.lib_foundry.ini</filename>
+		<filename>foundry.php</filename>
+		<filename>foundry.xml</filename>
+		<filename>helper.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.lib_foundry.ini</language>
+	</languages>
+	<updateservers>
+		<server type="extension" priority="1" name="StackIdeas Modules and Plugins">https://stackideas.com/joomla4compat.xml</server>
+	</updateservers>
+</extension>

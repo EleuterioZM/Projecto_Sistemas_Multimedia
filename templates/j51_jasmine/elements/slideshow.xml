@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<fieldset name="header_slides_modal" class="slideshow-subform">
+	<field name="header_slide_image" type="media" default="" label="Header Image" description="Select your header background image(s)" directory="/" filter="" exclude="" stripext="" />
+</fieldset>
+</form>

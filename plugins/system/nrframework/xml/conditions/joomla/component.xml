@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="nrcomponents" 
+            label="NR_ASSIGN_COMPONENTS"
+            description="NR_ASSIGN_COMPONENTS_DESC"
+            multiple="true" 
+            frontend="true"
+            class="hasChosen"
+        />
+    </fieldset>
+</form>

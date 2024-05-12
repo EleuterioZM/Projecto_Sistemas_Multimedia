@@ -1,0 +1,7 @@
+{
+	"require": {
+		"nahid/jsonq": "^5.2",
+		"guzzlehttp/guzzle": "~6.0",
+		"intervention/image": "^2.5"
+	}
+}

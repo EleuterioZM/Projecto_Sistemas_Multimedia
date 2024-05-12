@@ -1,0 +1,73 @@
+.j51-calltoaction {
+	display: flex;
+	justify-content: space-between;
+	background-size: cover;
+}
+.j51-calltoaction .j51-text {
+	flex: 1;
+	margin: 0 2rem 0 0;
+}
+.j51-calltoaction .j51-text *:last-child {
+	margin-bottom: 0;
+}
+.j51-calltoaction .j51-buttons {
+	display: flex;
+	align-items: center;
+}
+.j51-calltoaction button {
+	margin: 1.5rem 0 0;
+}
+.j51-calltoaction button + button {
+	margin-left: 1rem;
+}
+
+/* Layout */
+.j51-calltoaction-col-t-b {
+	flex-direction: column;
+}
+.j51-calltoaction-col-t-b .j51-text {
+	margin: 0;
+}
+
+.j51-calltoaction-col-b-t {
+	flex-direction: column;
+}
+.j51-calltoaction-col-b-t .j51-text {
+    order: 1;
+	margin: 0 0 0 2rem;
+}
+.j51-calltoaction-col-b-t button {
+	margin: 0 0 1.5em;
+}
+
+.j51-calltoaction-row-t-b button {
+	margin: 0;
+}
+
+.j51-calltoaction-row-b-t .j51-text {
+    order: 1;
+    margin: 0 0 0 2rem;
+}
+.j51-calltoaction-row-b-t button {
+	margin: 0;
+}
+
+/* Alignment */
+.j51-calltoaction-left {
+	text-align: left;
+}
+.j51-calltoaction-left .j51-buttons {
+	justify-content: flex-start;
+}
+.j51-calltoaction-center {
+	text-align: center;
+}
+.j51-calltoaction-center .j51-buttons {
+	justify-content: center;
+}
+.j51-calltoaction-right {
+	text-align: right;
+}
+.j51-calltoaction-right .j51-buttons {
+	justify-content: flex-end;
+}

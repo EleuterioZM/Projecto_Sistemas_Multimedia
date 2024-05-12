@@ -1,0 +1,52 @@
+[
+	{
+		"extension": "com_komento",
+		"element": "komento",
+		"rule": "comment",
+		"core": true,
+		"field": false,
+		"app": false,
+		"value": {
+			"system": true,
+			"email": false
+		}
+	},
+
+	{
+		"extension": "com_komento",
+		"element": "komento",
+		"rule": "reply",
+		"core": true,
+		"field": false,
+		"app": false,
+		"value": {
+			"system": true,
+			"email": false
+		}
+	},
+
+	{
+		"extension": "com_komento",
+		"element": "komento",
+		"rule": "like",
+		"core": true,
+		"field": false,
+		"app": false,
+		"value": {
+			"system": true,
+			"email": false
+		}
+	},
+	{
+		"extension": "com_komento",
+		"element": "komento",
+		"rule": "mentions",
+		"core": true,
+		"field": false,
+		"app": false,
+		"value": {
+			"system": true,
+			"email": false
+		}
+	}
+]

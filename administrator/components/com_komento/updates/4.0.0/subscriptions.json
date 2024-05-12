@@ -1,0 +1,37 @@
+[
+	{
+		"table" : "#__komento_subscription",
+		"column" : "interval",
+		"query" : "ALTER TABLE `#__komento_subscription` ADD COLUMN `interval` varchar(25) default 'instant'"
+	},
+	{
+		"table" : "#__komento_subscription",
+		"column" : "sent_out",
+		"query" : "ALTER TABLE `#__komento_subscription` ADD COLUMN `sent_out` datetime null"
+	},
+	{
+		"table" : "#__komento_subscription",
+		"column" : "count",
+		"query" : "ALTER TABLE `#__komento_subscription` ADD COLUMN `count` int(11) default 10"
+	},
+	{
+		"table" : "#__komento_subscription",
+		"index" : "idx_digest_subscribers",
+		"query" : "ALTER TABLE `#__komento_subscription` ADD INDEX `idx_digest_subscribers` (`published`, `interval`, `sent_out`)"
+	},
+	{
+		"table" : "#__komento_subscription",
+		"index" : "idx_digest_emails",
+		"query" : "ALTER TABLE `#__komento_subscription` ADD INDEX `idx_digest_emails` (`published`, `interval`, `email`, `sent_out`)"
+	},
+	{
+		"table" : "#__komento_subscription",
+		"index" : "idx_userid",
+		"query" : "ALTER TABLE `#__komento_subscription` ADD INDEX `idx_userid` (`userid`)"
+	},
+	{
+		"table" : "#__komento_subscription",
+		"index" : "idx_subs_interval",
+		"query" : "ALTER TABLE `#__komento_subscription` ADD INDEX `idx_subs_interval` (`component` (128), `cid`, `published`, `interval`)"
+	}
+]

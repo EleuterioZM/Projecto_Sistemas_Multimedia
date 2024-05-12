@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<fieldset name="modulepadding_modal" class="modulepadding-subform">
+	<field name="module_padding_top" type="toptextpx" default=""  label="Top Padding" description="Choose a text color for this module"/>
+	<field name="module_padding_right" type="righttextpx" default=""  label="Text Color" description="Choose a text color for this module"/>
+	<field name="module_padding_bottom" type="bottomtextpx" default=""  label="Text Color" description="Choose a text color for this module"/>
+	<field name="module_padding_left" type="lefttextpx" default=""  label="Text Color" description="Choose a text color for this module"/>
+</fieldset>
+</form>

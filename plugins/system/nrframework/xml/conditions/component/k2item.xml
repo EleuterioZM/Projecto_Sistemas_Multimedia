@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="componentitems"
+            label="NR_ASSIGN_K2_ITEMS"
+            description="NR_ASSIGN_K2_ITEMS_LIST_DESC"
+            multiple="true"
+            class="hasChosen"
+            table="k2_items"
+            column_state="published"
+        />
+        <fields name="params">
+            <field name="cont_keywords" type="textarea" 
+                label="NR_CONTENT_KEYWORDS" 
+                description="NR_ASSIGN_K2_ITEMS_CONTENT_KEYWORDS_DESC"
+                class="span12"
+                rows="5"
+                hint="keyword1, keyword2, keyword3"
+            />
+            <field name="meta_keywords" type="textarea" 
+                label="NR_META_KEYWORDS" 
+                description="NR_ASSIGN_K2_ITEMS_META_KEYWORDS_DESC"
+                class="span12"
+                rows="5"
+                hint="keyword1, keyword2, keyword3"
+            />  
+        </fields>
+    </fieldset>
+</form>

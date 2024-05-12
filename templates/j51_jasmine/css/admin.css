@@ -1,0 +1,271 @@
+@import "fontawesome/fontawesome.min.css";
+@import "fontawesome/solid.min.css";
+.alert {
+  display: inline-block;
+  margin-top: 0;
+  border: 1px solid var(--template-bg-dark-10);
+  background: var(--template-bg-dark-3);
+}
+.alert .spacer label {
+  width: auto;
+}
+/* Template Info */
+.templateinfo img {
+  float: left;
+  padding: 0 20px;
+}
+.templateinfo p {
+  padding: 0 20px;
+  max-width: 600px;
+  text-align: left;
+  font-weight: normal;
+}
+.templateinfo h4 {
+  padding: 10px 20px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  font-size: 22px;
+  color: #888888;
+  text-transform: uppercase;
+  background: #eeeeee;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+.form-horizontal .control-label {
+  min-width: 180px;
+}
+.form-horizontal .control-label label {
+  margin-right: 10px;
+}
+#system-message-container {
+  margin-bottom: 10px;
+}
+input[type="range"] {
+  margin: 0 5px;
+  padding: 0;
+  width: 150px;
+}
+#installer-install .extension-info {
+  padding: 20px;
+}
+.moduleoverrides-subform input ~ .control-group {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  margin-top: 0 !important;
+  margin-bottom: 5px !important;
+  margin-right: 0 !important;
+}
+.moduleoverrides-subform input ~ .control-group:not(.field-spacer) {
+  max-width: 200px;
+  margin-right: 10px !important;
+}
+.moduleoverrides-subform input ~ .control-group:not(.field-spacer) small {
+  display: none;
+}
+.moduleoverrides-subform input ~ .control-group .control-label {
+  display: none;
+}
+.moduleoverrides-subform input ~ .control-group .controls {
+  margin-left: 0;
+  margin-right: 10px;
+  min-width: 180px;
+}
+.moduleoverrides-subform input ~ .control-group .input-prepend.input-append input {
+  max-width: 30px;
+}
+.moduleoverrides-subform input + .control-group {
+  display: inline-block;
+}
+.moduleoverrides-subform input + .control-group .control-label {
+  display: block;
+}
+input[value="margin"] + .control-group {
+  display: block;
+  height: 0;
+  width: 100%;
+}
+input[value="margin"] + .control-group .control-label {
+  display: none;
+}
+input[value="margin"] + .control-group + .control-group .control-label {
+  display: inline-block;
+}
+#attrib-H3MODULEWIDTHS hr {
+  margin: 0 0 -10px;
+}
+joomla-tab joomla-tab-element {
+  position: relative;
+}
+joomla-tab joomla-tab-element .top-legend-group .control-label {
+  padding: 0;
+}
+joomla-tab joomla-tab-element .options-form {
+  padding: 0;
+  border: 0;
+}
+joomla-tab joomla-tab-element legend {
+  display: none;
+}
+joomla-tab joomla-tab-element .hide {
+  display: none;
+}
+joomla-tab .top-group {
+  display: none;
+}
+joomla-tab .top-group.active {
+  display: block;
+}
+.group-legends {
+  border-right: 1px solid #e6e6e6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 280px;
+}
+.group-legends:empty {
+  display: none;
+}
+.group-legends .control-group {
+  margin-bottom: 0;
+}
+.group-legends .control-group .control-label {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.group-legends .control-label {
+  display: inline-block;
+  float: none;
+  min-width: 280px;
+  padding: 0;
+  vertical-align: middle;
+}
+.group-legends h3.legend {
+  border-right: 1px solid #e6e6e6;
+  color: #444;
+  display: block;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 0 1px;
+  line-height: 34px;
+  margin-right: -1px;
+  position: relative;
+  transition: opacity 0.35s;
+  background: var(--template-bg-dark-3);
+  box-shadow: 0 1px 0 #fff inset, 0 1px 0 #dddddd;
+}
+.group-legends h3.legend:hover {
+  background-color: #f6f7f8;
+  color: #303030;
+  cursor: pointer;
+}
+.group-legends h3.legend .fas {
+  opacity: 0.8;
+  min-width: 12px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 16px;
+  width: 38px;
+  line-height: 36px;
+  box-shadow: 1px 0 0 #fff, -1px 0 0 #dddddd inset;
+}
+.group-legends .active h3.legend {
+  background-color: #fff;
+  border-right: 1px solid #fff;
+  color: #1d6fa5;
+  text-shadow: none;
+}
+.group-legends .active h3.legend .fas {
+  background-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+  opacity: 1;
+}
+#attrib-H3MODULEWIDTHS,
+#attrib-H3STYLES,
+#attrib-H3GENERAL {
+  padding-left: 320px;
+  position: relative;
+  min-height: 500px;
+}
+#attrib-H3MODULEWIDTHS > .control-group,
+#attrib-H3STYLES > .control-group,
+#attrib-H3GENERAL > .control-group {
+  display: none;
+}
+#attrib-H3MODULEWIDTHS .top-legend-group .control-label,
+#attrib-H3STYLES .top-legend-group .control-label,
+#attrib-H3GENERAL .top-legend-group .control-label,
+#attrib-H3MODULEWIDTHS .sub-legend-group .control-label,
+#attrib-H3STYLES .sub-legend-group .control-label,
+#attrib-H3GENERAL .sub-legend-group .control-label {
+  background: transparent;
+  border: 0;
+  display: block;
+  height: auto;
+  line-height: 1;
+  padding: 0;
+  text-align: left;
+}
+#attrib-H3MODULEWIDTHS h3,
+#attrib-H3STYLES h3,
+#attrib-H3GENERAL h3 {
+  font-size: 16px;
+}
+#attrib-H3MODULEWIDTHS .form-grid > .control-group,
+#attrib-H3STYLES .form-grid > .control-group,
+#attrib-H3GENERAL .form-grid > .control-group {
+  display: none;
+}
+#attrib-H3MODULEWIDTHS h3[data-expend="all"]:hover,
+#attrib-H3STYLES h3[data-expend="all"]:hover,
+#attrib-H3GENERAL h3[data-expend="all"]:hover {
+  cursor: default;
+}
+#attrib-H3MODULEWIDTHS h3[data-expend="all"]:after,
+#attrib-H3STYLES h3[data-expend="all"]:after,
+#attrib-H3GENERAL h3[data-expend="all"]:after {
+  display: none;
+}
+.extension-info {
+  display: flex;
+}
+.extension-info__image {
+  flex: 1 0 230px;
+}
+.extension-info p {
+  margin-bottom: 15px;
+}
+.preset {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--template-bg-dark-5);
+  border: 1px solid var(--template-bg-dark-10);
+  border-radius: 4px;
+  padding: 15px;
+  margin: 25px 0 40px;
+}
+.preset__load,
+.preset__import {
+  margin-bottom: 15px;
+}
+.preset h6 {
+  margin: 0 0 6px;
+}
+.com_templates .preset {
+  margin-bottom: 0;
+}
+.com_installer .preset {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .extension-info {
+    flex-direction: column;
+  }
+  .extension-info__image {
+    flex: 1 0 175px;
+  }
+}
+/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="componentitems"
+            label="NR_ARTICLE"
+            description="NR_ARTICLES_DESC"
+            class="hasChosen"
+            multiple="true"
+            table="content"
+        />
+    </fieldset>
+</form>

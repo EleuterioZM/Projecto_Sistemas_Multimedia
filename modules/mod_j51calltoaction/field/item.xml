@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="j51_calltoaction_modal" class="calltoaction-subform">
+		<field name="j51_buttontext" type="text" filter="safehtml" default="Button" label="MOD_J51_BUTTON_TEXT" />
+		<field name="j51_linktype" type="list" default="url" label="MOD_J51_LINK_TYPE" checked="checked">
+			<option value="url">URL</option>
+			<option value="menuitem">Menu Item</option>
+		</field>
+		<field name="j51_menuitem" type="menuitem" default="45" label="MOD_J51_SELECT_MENU_ITEM" showon="j51_linktype:menuitem" />
+		<field name="j51_url" type="text" filter="safehtml" default="" label="MOD_J51_URL" showon="j51_linktype:url" />
+		<field name="j51_class" type="text" filter="safehtml" default="btn" label="MOD_J51_BUTTON_CLASS"/>
+	</fieldset>
+</form>

@@ -1,0 +1,2 @@
+ConvertForms.Helper.onReady(function(e){"undefined"!=typeof Inputmask&&e.forEach(function(e){var r=e.querySelectorAll(".cf-input[data-inputmask-mask]");r&&(Inputmask("",{jitMasking:!1,showMaskOnHover:!1}).mask(r),e.addEventListener("beforeSubmit",function(e){if(!e.defaultPrevented)for(var t=0;t<r.length;t++){var n=r[t];if(!n.hasAttribute("required"))return;if(!n.inputmask.isComplete()){e.preventDefault(),e.detail.error=e.detail.instance.text("ERROR_INPUTMASK_INCOMPLETE"),n.focus();break}}}))})});
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="restrictions">
+        <field name="readonly" type="nrtoggle" 
+            label="COM_CONVERTFORMS_READONLY"
+            description="COM_CONVERTFORMS_READONLY_DESC"
+		/>
+    </fieldset>
+    <fieldset name="basic">
+        <field name="dnscheck" type="nrtoggle" 
+            label="COM_CONVERTFORMS_FIELD_EMAIL_DNSCHECK"
+            description="COM_CONVERTFORMS_FIELD_EMAIL_DNSCHECK_DESC"
+        />
+    </fieldset>
+</form>

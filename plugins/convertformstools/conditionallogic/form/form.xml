@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="conditionallogic" label="PLG_CONVERTFORMSTOOLS_CONDITIONALLOGIC_FIELDS" addfieldpath="plugins/convertformstools/conditionallogic/fields" tab="behavior">
+        
+        <field name="note" type="note"
+            description="PLG_CONVERTFORMSTOOLS_CONDITIONALLOGIC_DESC"
+        />
+        <field name="@conditionallogic" type="nr_pro"
+            hiddenLabel="true"
+            label="PLG_CONVERTFORMSTOOLS_CONDITIONALLOGIC_ALIAS"
+            description="PLG_CONVERTFORMSTOOLS_CONDITIONALLOGIC_DESC"
+        />
+        
+        
+    </fieldset>
+</form>

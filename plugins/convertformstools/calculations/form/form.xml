@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="calculations" label="PLG_CONVERTFORMSTOOLS_CALCULATIONS_ALIAS" addfieldpath="plugins/convertformstools/calculations/fields">
+        
+        <field name="@calculations" type="nr_pro"
+            label="PLG_CONVERTFORMSTOOLS_CALCULATIONS_ALIAS"
+            description="Wondering how you can calculate a total based on the option selected by the user from your form? With the Convert Forms Calculations Feature, you can make simple to complex calculations using the answers you get from your form users. Example: {field.xxx} + {field.yyy} * {field.zzz}"
+        />
+        
+        
+    </fieldset>
+</form>

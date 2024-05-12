@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="list"
+            label="NR_WEEKDAY"
+            class="hasChosen"
+            multiple="true">
+            <option value="Mon">NR_MONDAY</option>
+            <option value="Tue">NR_TUESDAY</option>
+            <option value="Wed">NR_WEDNESDAY</option>
+            <option value="Thu">NR_THURSDAY</option>
+            <option value="Fri">NR_FRIDAY</option>
+            <option value="Sat">NR_SATURDAY</option>
+            <option value="Sun">NR_SUNDAY</option>
+            <option value="Weekend">NR_WEEKEND</option>
+            <option value="Weekday">NR_WEEKDAYS</option>
+        </field>
+        <field name="note" type="ruleValueHint"/>
+    </fieldset>
+</form>

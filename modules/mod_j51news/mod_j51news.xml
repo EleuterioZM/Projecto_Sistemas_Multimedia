@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.6" client="site" method="upgrade">
+	<name>J51_News</name>
+	<author>Joomla51</author>
+	<creationDate>July 2016</creationDate>
+	<copyright>Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@joomla51.com</authorEmail>
+	<authorUrl>www.joomla51.com</authorUrl>
+	<version>3.0.12</version>
+	<description><![CDATA[<link href="../modules/mod_j51layerslideshow/css/admin.css" rel="stylesheet" type="text/css" media="all" />
+		<p>An enhanced news feed module for Joomla by Joomla51</p>
+  	]]></description>
+
+	<files>
+		<filename module="mod_j51news">mod_j51news.xml</filename>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>field</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename>changelog.php</filename>	
+		<filename>helper.php</filename>	
+		<filename>index.html</filename>
+		<filename>mod_j51news.php</filename>
+	</files>
+
+	<media destination="mod_j51news" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_j51news/elements">
+			<fieldset name="MOD_J51_GENERALSETTINGS">
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					size="10"
+					default=""
+					label="JCATEGORY"
+					description="MOD_J51_NEWS_FIELD_CATEGORY_DESC"
+				>
+					<option value="">MOD_J51_NEWS_FIELD_VALUE_ALL_CATEGORIES</option>
+				</field>
+
+				<field
+					name="count"
+					type="text"
+					default="6"
+					label="MOD_J51_NEWS_FIELD_NUM_ARTICLES_LABEL"
+					description="MOD_J51_NEWS_FIELD_NUM_ARTICLES_DESC" />
+
+				<field
+					name="show_img"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					default="1"
+					label="MOD_J51_NEWS_FIELD_DISPLAY_INTRO_IMAGE_LABEL"
+					description="MOD_J51_NEWS_FIELD_DISPLAY_INTRO_IMAGE_DESC"
+				>
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                
+				<field
+					name="show_date"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					default="1"
+					label="MOD_J51_NEWS_FIELD_DISPLAY_DATE_LABEL"
+					description="MOD_J51_NEWS_FIELD_DISPLAY_DATE_DESC"
+				>
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+				<field
+					name="show_title"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					default="1"
+					label="Display Title"
+					description="Show/Hide display title"
+				>
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field
+					name="show_category"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					default="1"
+					label="Display Category"
+					description="Show/Hide display Category"
+				>
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field 
+                	name="title_tag" 
+                	type="list" 
+                	label="Title Tag" 
+                	description="Set the HTML tag for the title text" 
+                	default="h3"
+                	showon="show_title:1" 
+                >
+		          <option value="h1">h1</option>
+		          <option value="h2">h2</option>
+		          <option value="h3">h3</option>
+		          <option value="h4">h4</option>
+		          <option value="h5">h5</option>
+		          <option value="h6">h6</option>
+		          <option value="p">paragraph</option>
+				</field>
+                	
+				<field
+					name="show_text"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					default="1"
+					label="MOD_J51_NEWS_FIELD_DISPLAY_INTRO_TEXT_LABEL"
+					description="MOD_J51_NEWS_FIELD_DISPLAY_INTRO_TEXT_DESC"
+				>
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+
+                <field 
+                	name="text_tag" 
+                	type="list" 
+                	label="Intro Text Tag" 
+                	description="Set the HTML tag for the intro text" 
+                	default="p"
+                	showon="show_text:1" 
+                >
+		          <option value="h1">h1</option>
+		          <option value="h2">h2</option>
+		          <option value="h3">h3</option>
+		          <option value="h4">h4</option>
+		          <option value="h5">h5</option>
+		          <option value="h6">h6</option>
+		          <option value="p">paragraph</option>
+				</field>
+
+				<field
+					name="length_text"
+					type="text"
+					default="160"
+					label="MOD_J51_NEWS_FIELD_INTRO_TEXT_LENGTH_LABEL"
+					description="MOD_J51_NEWS_FIELD_INTRO_TEXT_LENGTH_DESC" 
+					showon="show_text:1" />                          	                					
+
+				<field
+					name="show_featured"
+					type="list"
+					default=""
+					label="MOD_J51_NEWS_FIELD_FEATURED_ARTICLES_LABEL"
+					description="Show/Hide Articles designated as Featured"
+				>
+					<option value="">JSHOW</option>
+					<option value="0">JHIDE</option>
+					<option value="1">MOD_J51_NEWS_FIELD_VALUE_SHOW_ONLY_FEATURED</option>
+				</field>
+
+				<field
+					name="ordering"
+					type="list"
+					label="MOD_J51_NEWS_FIELD_ORDERING_LABEL"
+					description="MOD_J51_NEWS_FIELD_ORDERING_DESC"
+					default="a.publish_up"
+					>
+					<option value="a.publish_up">MOD_J51_NEWS_FIELD_ORDERING_PUBLISHED_DATE</option>
+					<option value="a.created">MOD_J51_NEWS_FIELD_ORDERING_CREATED_DATE</option>
+					<option value="a.modified">MOD_J51_NEWS_FIELD_ORDERING_MODIFIED_DATE</option>
+					<option value="a.ordering">MOD_J51_NEWS_FIELD_ORDERING_ORDERING</option>
+					<option value="a.hits">JGLOBAL_HITS</option>
+					<option value="rand()">MOD_J51_NEWS_FIELD_ORDERING_RANDOM</option>
+				</field>
+
+				<field
+					name="direction"
+					type="list"
+					label="JGLOBAL_ORDER_DIRECTION_LABEL"
+					description="JGLOBAL_ORDER_DIRECTION_DESC"
+					default="1"
+					filter="integer"
+					showon="ordering:a.publish_up,a.created,a.modified,a.ordering,a.hits"
+					>
+					<option value="0">JGLOBAL_ORDER_ASCENDING</option>
+					<option value="1">JGLOBAL_ORDER_DESCENDING</option>
+				</field>
+
+				<field
+					name="show_button"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					default="1"
+					label="MOD_J51_NEWS_FIELD_DISPLAY_BUTTON_LABEL"
+					description="MOD_J51_NEWS_FIELD_DISPLAY_BUTTON_DESC"
+				>
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field> 
+				<field name="item_button" type="text" default="Read More" label="MOD_J51_NEWS_FIELD_BUTTON_TEXT_LABEL" description="MOD_J51_NEWS_FIELD_BUTTON_TEXT_DESC" showon="show_button:1" />
+
+				<field name="title_color"
+					type="color"
+					default=""
+					label="Title Color"
+				/>
+
+				<field name="text_color"
+					type="color"
+					default=""
+					label="Text Color"
+				/>
+
+				<field name="bg_color"
+					type="color"
+					format="rgba"
+					default=""
+					label="Background Color"
+				/>
+
+				<field label="MOD_J51_NEWS_COLOR_INFO" type="spacer"/>
+
+				<field
+					name="svg_code"
+					type="textarea"
+					default=""
+					filter="raw"
+					rows="7"
+					cols="35"
+					label="MOD_J51_NEWS_FIELD_ICON_SVG_OVERRIDE_LABEL"
+					description="MOD_J51_NEWS_FIELD_ICON_SVG_OVERRIDE_DESC" /> 
+
+			</fieldset>
+
+			<fieldset name="MOD_J51_LAYOUTSETTINGS">
+				<field name="j51_news_layout" type="list" default="center" label="MOD_J51_NEWS_FIELD_LAYOUT_LABEL" description="MOD_J51_NEWS_FIELD_LAYOUT_DESC">
+					<option value="col-i-c">MOD_J51_NEWS_FIELD_VALUE_COL_IMAGE_TEXT</option>
+					<option value="col-c-i">MOD_J51_NEWS_FIELD_VALUE_COL_TEXT_IMAGE</option>
+					<option value="row-i-c">MOD_J51_NEWS_FIELD_VALUE_ROW_IMAGE_TEXT</option>
+					<option value="row-c-i">MOD_J51_NEWS_FIELD_VALUE_ROW_TEXT_IMAGE</option>
+					<option value="overlay">MOD_J51_NEWS_FIELD_VALUE_OVERLAY</option>
+				</field>
+
+				<field name="overlay_type" type="list" default="overlay-fade-out" label="MOD_J51_NEWS_FIELD_OVERLAY_TYPE_LABEL" description="MOD_J51_NEWS_FIELD_OVERLAY_TYPE_DESC" showon="j51_news_layout:overlay">
+					<option value="always">MOD_J51_NEWS_FIELD_VALUE_DISPLAY_ALWAYS</option>
+					<option value="fade-in">MOD_J51_NEWS_FIELD_VALUE_FADE_IN</option>
+					<option value="fade-out">MOD_J51_NEWS_FIELD_VALUE_FADE_OUT</option>
+				</field>
+
+				<field name="image_width" type="textpercent" default="50" label="MOD_J51_NEWS_FIELD_IMAGE_WIDTH_LABEL" description="MOD_J51_NEWS_FIELD_IMAGE_WIDTH_DESC" showon="j51_news_layout:row-i-c[OR]j51_news_layout:row-c-i" />
+				
+				<field name="columns" type="list" default="3" label="MOD_J51_NEWS_FIELD_COLUMNS_LABEL" description="MOD_J51_NEWS_FIELD_COLUMNS_DESC">
+					<option value="100">MOD_J51_NEWS_FIELD_VALUE_1_COLUMN_LABEL</option>
+					<option value="50">MOD_J51_NEWS_FIELD_VALUE_2_COLUMN_LABEL</option>
+					<option value="33.33">MOD_J51_NEWS_FIELD_VALUE_3_COLUMN_LABEL</option>
+					<option value="25">MOD_J51_NEWS_FIELD_VALUE_4_COLUMN_LABEL</option>
+					<option value="20">MOD_J51_NEWS_FIELD_VALUE_5_COLUMN_LABEL</option>
+					<option value="16.66">MOD_J51_NEWS_FIELD_VALUE_6_COLUMN_LABEL</option>
+					<option value="14.28">MOD_J51_NEWS_FIELD_VALUE_7_COLUMN_LABEL</option>
+					<option value="12.5">MOD_J51_NEWS_FIELD_VALUE_8_COLUMN_LABEL</option>
+				</field>
+
+
+				<field
+					name="layout_type"
+					type="radio"
+					class="btn-group"
+					default="grid"
+					label="MOD_J51_NEWS_FIELD_LAYOUT_TYPE_LABEL"
+					description="MOD_J51_NEWS_FIELD_LAYOUT_TYPE_DESC"
+				>
+                    <option value="grid">MOD_J51_NEWS_FIELD_VALUE_GRID</option>
+                    <option value="masonry">MOD_J51_NEWS_FIELD_VALUE_MASONRY</option>
+                    <option value="carousel">MOD_J51_NEWS_FIELD_VALUE_CAROUSEL</option>
+                </field>
+
+				<field name="j51_trans_speed" type="textms" default="1000" label="MOD_J51_NEWS_FIELD_TRAN_SPEED_LABEL" showon="layout_type:carousel" />
+				<field
+					name="j51_autoplay"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					default="false"
+					label="MOD_J51_NEWS_FIELD_AUTOPLAY_LABEL"
+					showon="layout_type:carousel"
+				>
+                    <option value="false">JNO</option>
+                    <option value="true">JYES</option>
+                </field> 
+				<field name="j51_autoplay_delay" type="textms" default="3000" label="MOD_J51_NEWS_FIELD_AUTOPLAY_DELAY_LABEL" showon="layout_type:carousel[AND]j51_autoplay:true" />
+
+				<field name="columns_tabl" type="list" default="3" label="MOD_J51_NEWS_FIELD_COL_TAB_LANDSCAPE_LABEL" description="MOD_J51_NEWS_FIELD_COL_TAB_LANDSCAPE_DESC">
+					<option value="100">MOD_J51_NEWS_FIELD_VALUE_1_COLUMN_LABEL</option>
+					<option value="50">MOD_J51_NEWS_FIELD_VALUE_2_COLUMN_LABEL</option>
+					<option value="33.33">MOD_J51_NEWS_FIELD_VALUE_3_COLUMN_LABEL</option>
+					<option value="25">MOD_J51_NEWS_FIELD_VALUE_4_COLUMN_LABEL</option>
+					<option value="20">MOD_J51_NEWS_FIELD_VALUE_5_COLUMN_LABEL</option>
+					<option value="16.66">MOD_J51_NEWS_FIELD_VALUE_6_COLUMN_LABEL</option>
+				</field>
+
+				<field name="columns_tabp" type="list" default="1" label="MOD_J51_NEWS_FIELD_COL_TAB_PORTRAIT_LABEL" description="MOD_J51_NEWS_FIELD_COL_TAB_PORTRAIT_DESC">
+					<option value="100">MOD_J51_NEWS_FIELD_VALUE_1_COLUMN_LABEL</option>
+					<option value="50">MOD_J51_NEWS_FIELD_VALUE_2_COLUMN_LABEL</option>
+					<option value="33.33">MOD_J51_NEWS_FIELD_VALUE_3_COLUMN_LABEL</option>
+					<option value="25">MOD_J51_NEWS_FIELD_VALUE_4_COLUMN_LABEL</option>
+					<option value="20">MOD_J51_NEWS_FIELD_VALUE_5_COLUMN_LABEL</option>
+					<option value="16.66">MOD_J51_NEWS_FIELD_VALUE_6_COLUMN_LABEL</option>
+				</field>
+
+				<field name="columns_mobl" type="list" default="1" label="MOD_J51_NEWS_FIELD_COL_MOB_LANDSCAPE_LABEL" description="MOD_J51_NEWS_FIELD_COL_MOB_LANDSCAPE_DESC">
+					<option value="100">MOD_J51_NEWS_FIELD_VALUE_1_COLUMN_LABEL</option>
+					<option value="50">MOD_J51_NEWS_FIELD_VALUE_2_COLUMN_LABEL</option>
+					<option value="33.33">MOD_J51_NEWS_FIELD_VALUE_3_COLUMN_LABEL</option>
+					<option value="25">MOD_J51_NEWS_FIELD_VALUE_4_COLUMN_LABEL</option>
+					<option value="20">MOD_J51_NEWS_FIELD_VALUE_5_COLUMN_LABEL</option>
+					<option value="16.66">MOD_J51_NEWS_FIELD_VALUE_6_COLUMN_LABEL</option>
+				</field>
+
+				<field name="columns_mobp" type="list" default="1" label="MOD_J51_NEWS_FIELD_COL_MOB_PORTRAIT_LABEL" description="MOD_J51_NEWS_FIELD_COL_MOB_PORTRAIT_DESC">
+					<option value="100">MOD_J51_NEWS_FIELD_VALUE_1_COLUMN_LABEL</option>
+					<option value="50">MOD_J51_NEWS_FIELD_VALUE_2_COLUMN_LABEL</option>
+					<option value="33.33">MOD_J51_NEWS_FIELD_VALUE_3_COLUMN_LABEL</option>
+					<option value="25">MOD_J51_NEWS_FIELD_VALUE_4_COLUMN_LABEL</option>
+					<option value="20">MOD_J51_NEWS_FIELD_VALUE_5_COLUMN_LABEL</option>
+					<option value="16.66">MOD_J51_NEWS_FIELD_VALUE_6_COLUMN_LABEL</option>
+				</field>
+
+				<field name="item_margin_x" type="textpx" default="20" label="MOD_J51_NEWS_FIELD_HORIZ_ITEM_SPACING_LABEL" description="MOD_J51_NEWS_FIELD_HORIZ_ITEM_SPACING_DESC" />
+				<field name="item_margin_y" type="textpx" default="20" label="MOD_J51_NEWS_FIELD_VERT_ITEM_SPACING_LABEL" description="MOD_J51_NEWS_FIELD_VERT_ITEM_SPACING_DESC" />
+
+				<field name="max_width" type="textpx" default="" label="MOD_J51_NEWS_FIELD_MAX_WIDTH_LABEL" description="MOD_J51_NEWS_FIELD_MAX_WIDTH_DESC" />
+
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					class="form-select"
+					validate="moduleLayout"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					rows="3"
+					validate="CssIdentifier"
+				/>
+
+				<field
+					name="owncache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					default="900"
+					filter="integer"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

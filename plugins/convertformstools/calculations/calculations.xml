@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4.0" type="plugin" group="convertformstools" method="upgrade">
+	<name>PLG_CONVERTFORMSTOOLS_CALCULATIONS</name>
+	<description>PLG_CONVERTFORMSTOOLS_CALCULATIONS_DESC</description>
+	<version>1.0</version>
+	<creationDate>Apr 2019</creationDate>
+	<copyright>Copyright © 2020 Tassos Marinos All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<author>Tassos Marinos (Tassos.gr)</author>
+	<authorEmail>info@tassos.gr</authorEmail>
+	<authorUrl>http://www.tassos.gr</authorUrl>
+	<scriptfile>script.install.php</scriptfile>
+	<files>
+		<filename plugin="calculations">calculations.php</filename>
+		<filename>script.install.helper.php</filename>
+		<folder>language</folder>
+		<folder>form</folder>
+		 
+	</files>
+	 
+</extension>

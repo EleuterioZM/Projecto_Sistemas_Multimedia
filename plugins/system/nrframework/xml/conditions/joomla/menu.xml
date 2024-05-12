@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator" 
+            label="NR_MENU_ITEMS"
+        />
+        <field name="value" type="nrmenuitems"
+            label="NR_MENU_ITEMS" 
+            multiple="true"
+            description="NR_MENU_ITEMS_DESC" 
+        />
+        <fields name="params">
+            <field name="noitem" type="list" 
+                label="NR_ASSIGN_MENU_NOITEM" 
+                description="NR_ASSIGN_MENU_NOITEM_DESC" 
+                class="switcher btn-group"
+                filter="intval" 
+                size="1" 
+                default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="inc_children" type="list" 
+                label="NR_ASSIGN_MENU_CHILD" 
+                description="NR_ASSIGN_MENU_CHILD_DESC" 
+                class="switcher btn-group"
+                filter="intval" 
+                size="1" 
+                default="0">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+                <option value="2">JONLY</option>
+            </field>
+        </fields>
+    </fieldset>
+</form>

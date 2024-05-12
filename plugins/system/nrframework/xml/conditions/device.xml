@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="nrdevice"
+            label="NR_ASSIGN_DEVICES"
+            description="NR_ASSIGN_DEVICES_DESC"
+            multiple="true"
+            class="hasChosen"
+        />
+        <field name="note" type="ruleValueHint"/>
+    </fieldset>
+</form>

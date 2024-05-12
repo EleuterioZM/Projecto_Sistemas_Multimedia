@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="submission" addfieldpath="plugins/system/nrframework/fields">
+    </fieldset>
+	<fieldset name="submission" addfieldpath="administrator/components/com_convertforms/models/forms/fields/">
+        <field name="filter_form_id" type="convertforms"
+            label="COM_CONVERTFORMS_FORM"
+            description="COM_CONVERTFORMS_FORM"
+            required="true">
+		</field>
+        <field name="filter_search" type="text"
+            label="COM_CONVERTFORMS_FILTER_SEARCH"
+            description="COM_CONVERTFORMS_FILTER_SEARCH_DESC"
+        />
+        <field name="filter_period" type="list"
+            label="COM_CONVERTFORMS_PERIOD"
+            default="">
+            <option value="">NR_ANY</option>
+            <option value="today">COM_CONVERTFORMS_TODAY</option>
+            <option value="yesterday">COM_CONVERTFORMS_YESTERDAY</option>
+            <option value="this_week">COM_CONVERTFORMS_THIS_WEEK</option>
+            <option value="this_month">COM_CONVERTFORMS_THIS_MONTH</option>
+            <option value="this_year">COM_CONVERTFORMS_THIS_YEAR</option>
+            <option value="last_week">COM_CONVERTFORMS_LAST_WEEK</option>
+            <option value="last_month">COM_CONVERTFORMS_LAST_MONTH</option>
+            <option value="last_year">COM_CONVERTFORMS_LAST_YEAR</option>
+            <option value="daterange">COM_CONVERTFORMS_DATE_RANGE</option>
+		</field>
+        <field name="filter_created_from" type="calendar" 
+        	label="COM_CONVERTFORMS_START_DATE"
+        	hint="COM_CONVERTFORMS_START_DATE"
+        	format="%Y-%m-%d"
+			showon="filter_period:daterange"
+			class="input-medium"
+        />
+        <field name="filter_created_to" type="calendar" 
+        	label="COM_CONVERTFORMS_END_DATE"
+        	hint="COM_CONVERTFORMS_END_DATE"
+        	format="%Y-%m-%d"
+			showon="filter_period:daterange"
+        />
+
+		<field name="filter_state" type="status"
+			label="State"
+            default="1"
+        />
+        <field name="export_type" type="list"
+            label="Export as"
+            default="csv">
+			<option value="csv">CSV</option>
+			<option value="json">JSON</option>
+		</field>
+        <field name="advanced" type="nrtoggle"
+            label="Advanced options"
+        />
+        <field name="limit" type="list"
+            label="Batch"
+            default="10000"
+            showon="advanced:1">
+			<option value="1000">1,000</option>
+			<option value="5000">5,000</option>
+			<option value="10000">10,000</option>
+			<option value="30000">30,000</option>
+			<option value="50000">50,000</option>
+		</field>
+		<!-- <field name="state" type="status"
+			label="JSTATE"
+            showon="advanced:1">
+			<option value="">JOPTION_SELECT_PUBLISHED</option>
+		</field> -->
+    </fieldset>
+</form>

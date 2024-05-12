@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="acymailing"
+            label="NR_ACYMAILING_LIST"
+            description="NR_ACYMAILING_LIST_DESC"
+            multiple="true"
+            class="hasChosen"
+        />
+    </fieldset>
+</form>

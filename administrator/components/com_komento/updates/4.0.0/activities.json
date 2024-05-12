@@ -1,0 +1,17 @@
+[
+	{
+		"table" : "#__komento_activities",
+		"index" : "idx_commentid",
+		"query" : "ALTER TABLE `#__komento_activities` ADD INDEX `idx_commentid` (`comment_id`);"
+	},
+	{
+		"table" : "#__komento_activities",
+		"index" : "idx_created",
+		"query" : "ALTER TABLE `#__komento_activities` ADD INDEX `idx_created` (`created`);"
+	},
+	{
+		"table" : "#__komento_activities",
+		"index" : "idx_activities",
+		"query" : "ALTER TABLE `#__komento_activities` ADD INDEX `idx_activities` (`published`, `type`, `created`);"
+	}
+]

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_convertforms">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+		<action name="convertforms.forms.manage" title="COM_CONVERTFORMS_ACCESS_FORMS" description="COM_CONVERTFORMS_ACCESS_FORMS_DESC" />
+		<action name="convertforms.submissions.manage" title="COM_CONVERTFORMS_ACCESS_SUBMISSIONS" description="COM_CONVERTFORMS_ACCESS_SUBMISSIONS_DESC" />
+		<action name="convertforms.campaigns.manage" title="COM_CONVERTFORMS_ACCESS_CAMPAIGNS" description="COM_CONVERTFORMS_ACCESS_CAMPAIGNS_DESC" />
+		<action name="convertforms.addons.manage" title="COM_CONVERTFORMS_ACCESS_ADDONS" description="COM_CONVERTFORMS_ACCESS_ADDONS_DESC" />
+	</section>
+</access>

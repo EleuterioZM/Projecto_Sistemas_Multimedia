@@ -1,0 +1,20 @@
+[
+	{
+		"index": 1,
+		"title": "License",
+		"desc": "Associate licence for this installation",
+		"template": "license"
+	},
+	{
+		"index": 2,
+		"title": "Installation",
+		"desc": "Setting up necessary dependencies for Komento",
+		"template": "installing"
+	},
+	{
+		"index": 3,
+		"title": "Addons",
+		"desc": "Setting up modules and plugins",
+		"template": "addons"
+	}
+]

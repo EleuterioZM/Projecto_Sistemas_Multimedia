@@ -1,0 +1,7 @@
+[
+    {
+        "table"  : "#__komento_comments",
+        "column" : "preview",
+        "query"  : "ALTER TABLE `#__komento_comments` ADD COLUMN `preview` LONGTEXT DEFAULT '' after `comment`;"
+    }
+]

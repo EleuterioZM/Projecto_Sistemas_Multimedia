@@ -1,0 +1,17 @@
+[
+	{
+		"table"  : "#__komento_mailq",
+		"column" : "template",
+		"query"  : "ALTER TABLE `#__komento_mailq` ADD COLUMN `template` varchar(255) default '';"
+	},
+	{
+		"table"  : "#__komento_mailq",
+		"column" : "data",
+		"query"  : "ALTER TABLE `#__komento_mailq` ADD COLUMN `data` LONGTEXT NULL;"
+	},
+	{
+		"table"  : "#__komento_mailq",
+		"column" : "params",
+		"query"  : "ALTER TABLE `#__komento_mailq` ADD COLUMN `params` LONGTEXT NULL;"
+	}
+]

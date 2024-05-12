@@ -1,0 +1,330 @@
+.j51_progress {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.j51_progress * {
+  box-sizing: border-box;
+}
+.j51_progress_item {
+  margin: 5px 0;
+  display: inline-flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.j51_progress_value {
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex: 0 0 auto;
+  font-size: 28px;
+  padding: 15px 15px 0 0;
+  opacity: .5;
+  min-width: 2.5em;
+}
+.j51_progress_item.animate .j51_progress_value {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+.j51_progress_item.animated .j51_progress_value {
+  opacity: .5;
+}
+
+.j51_progress_bar_wrapper {
+  display: block;
+  width: 100%;
+}
+.j51_progress_bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  border-radius: 3px;
+  background-color: rgba(135,135,135,.3);
+  overflow: hidden;
+  background-image: linear-gradient(to left, rgba(0,0,0,.1), rgba(0,0,0,0));
+}
+.j51_progress_bar_highlight {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  border-right: 2px solid #fff;
+  background-image: linear-gradient(to left, rgba(0,0,0,.1), rgba(0,0,0,0));
+  transition: all .4s ease-out;
+}
+
+.j51_progress_circle_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.j51_progress_circle_wrapper svg {
+  overflow: visible;
+}
+.j51_progress_circle_wrapper .j51_progress_title {
+  text-align: center;
+  margin: 0 0 .5em;
+}
+.j51_progress_circle_highlight {
+  stroke: #777;
+  stroke: var(--primary);
+}
+.j51_progress_circle_highlight {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-89deg);
+  -webkit-transform-origin: center;
+  transform-origin: center; 
+}
+
+@-webkit-keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100; }
+}
+
+.j51_progress h1,
+.j51_progress h2,
+.j51_progress h3,
+.j51_progress h4,
+.j51_progress h5,
+.j51_progress h6,
+.j51_progress p {
+  margin-bottom: .25em;
+}
+
+.j51_progress_item.row-b-v .j51_progress_value {
+  order: 1;
+  padding: 15px 0 0 15px;
+}
+
+.j51_progress_item.col-v-t .j51_progress_title {
+  order: 1;
+  margin: .5em 0 0;
+}
+
+.j51_progress_bar_highlight.animate {
+  transform: translateX(-100%);
+}
+.j51_progress_bar_highlight.animated {
+  transform: translateX(0);
+}
+
+.j51_progress_item.animated .j51_progress_circle_highlight {
+  -webkit-animation-name: circle-chart-fill;
+  animation-name: circle-chart-fill;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+[transition-delay="100"] {
+    transition-delay: .1s;
+    animation-delay: .1s;
+}
+
+[transition-delay="200"] {
+    transition-delay: .2s;
+    animation-delay: .2s;
+}
+
+[transition-delay="300"] {
+    transition-delay: .3s;
+    animation-delay: .3s;
+}
+
+[transition-delay="400"] {
+    transition-delay: .4s;
+    animation-delay: .4s;
+}
+
+[transition-delay="500"] {
+    transition-delay: .5s;
+    animation-delay: s;
+}
+
+[transition-delay="600"] {
+    transition-delay: .6s;
+    animation-delay: .6s;
+}
+
+[transition-delay="700"] {
+    transition-delay: .7s;
+    animation-delay: .7s;
+}
+
+[transition-delay="800"] {
+    transition-delay: .8s;
+    animation-delay: .8s;
+}
+
+[transition-delay="900"] {
+    transition-delay: .9s;
+    animation-delay: .9s;
+}
+
+[transition-delay="1000"] {
+    transition-delay: 1s;
+    animation-delay: 1s;
+}
+
+[transition-delay="1100"] {
+    transition-delay: 1.1s;
+    animation-delay: 1.1s;
+}
+
+[transition-delay="1200"] {
+    transition-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+[transition-delay="1300"] {
+    transition-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+
+[transition-delay="1400"] {
+    transition-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+[transition-delay="1500"] {
+    transition-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+[transition-delay="1600"] {
+    transition-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+[transition-delay="1700"] {
+    transition-delay: 1.7s;
+    animation-delay: 1.7s;
+}
+
+[transition-delay="1800"] {
+    transition-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+
+[transition-delay="1900"] {
+    transition-delay: 1.9s;
+    animation-delay: 1.9s;
+}
+
+[transition-delay="2000"] {
+    transition-delay: 2s;
+    animation-delay: 2s;
+}
+
+[transition-delay="2100"] {
+    transition-delay: 2.1s;
+    animation-delay: 2.1s;
+}
+
+[transition-delay="2200"] {
+    transition-delay: 2.2s;
+    animation-delay: 2.2s;
+}
+
+[transition-delay="2300"] {
+    transition-delay: 2.3s;
+    animation-delay: 2.3s;
+}
+
+[transition-delay="2400"] {
+    transition-delay: 2.4s;
+    animation-delay: 2.4s;
+}
+
+[transition-delay="2500"] {
+    transition-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+[transition-delay="2600"] {
+    transition-delay: 2.6s;
+    animation-delay: 2.6s;
+}
+
+[transition-delay="2700"] {
+    transition-delay: 2.7s;
+    animation-delay: 2.7s;
+}
+
+[transition-delay="2800"] {
+    transition-delay: 2.8s;
+    animation-delay: 2.8s;
+}
+
+[transition-delay="2900"] {
+    transition-delay: 2.9s;
+    animation-delay: 2.9s;
+}
+
+[transition-delay="3000"] {
+    transition-delay: 3s;
+    animation-delay: 3s;
+}
+[transition-delay="3100"] {
+    transition-delay: 3.1s;
+    animation-delay: 3.1s;
+}
+
+[transition-delay="3200"] {
+    transition-delay: 3.2s;
+    animation-delay: 3.2s;
+}
+
+[transition-delay="3300"] {
+    transition-delay: 3.3s;
+    animation-delay: 3.3s;
+}
+
+[transition-delay="3400"] {
+    transition-delay: 3.4s;
+    animation-delay: 3.4s;
+}
+
+[transition-delay="3500"] {
+    transition-delay: 3.5s;
+    animation-delay: 3.5s;
+}
+
+[transition-delay="3600"] {
+    transition-delay: 2.6s;
+    animation-delay: 2.6s;
+}
+
+[transition-delay="3700"] {
+    transition-delay: 2.7s;
+    animation-delay: 2.7s;
+}
+
+[transition-delay="3800"] {
+    transition-delay: 2.8s;
+    animation-delay: 2.8s;
+}
+
+[transition-delay="3900"] {
+    transition-delay: 2.9s;
+    animation-delay: 2.9s;
+}
+
+[transition-delay="4000"] {
+    transition-delay: 4s;
+    animation-delay: 4s;
+}
+
+@media all and (-ms-high-contrast:none) {
+  *::-ms-backdrop, .animate { visibility: visible; } 
+}

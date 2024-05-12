@@ -1,0 +1,7 @@
+[
+	{
+		"table" : "#__komento_subscription",
+		"index" : "idx_sub_counts",
+		"query" : "ALTER TABLE `#__komento_subscription` ADD INDEX `idx_sub_counts` (`component` (64), `cid`, `userid`);"
+	}
+]

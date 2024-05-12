@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="nrk2"
+            label="NR_CATEGORIES"
+            description="NR_ASSIGN_CATEGORY_DESC"
+            group="categories"
+            multiple="true"
+            class="hasChosen"
+        />
+        <fields name="params">
+            <field name="inc_children" type="list"
+                default="0"
+                label="NR_ALSO_ON_CHILD_ITEMS"
+                description="NR_ALSO_ON_CHILD_ITEMS_DESC">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+                <option value="2">NR_ONLY</option>
+            </field>
+            <field name="inc" type="list"
+                multiple="true"
+                default="inc_items"
+                label="NR_PAGE_TYPES"
+                class="hasChosen"
+                description="NR_PAGE_TYPES_DESC">
+                <option value="inc_categories">NR_ASSIGN_K2_CATEGORIES_CATEGORIES_OPTION</option>
+                <option value="inc_items">NR_ASSIGN_K2_CATEGORIES_ITEMS_OPTION</option>
+            </field>
+        </fields>
+    </fieldset>
+</form>

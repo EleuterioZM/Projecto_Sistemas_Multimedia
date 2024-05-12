@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general" class="oneline">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="nrbrowser"
+            label="NR_ASSIGN_BROWSERS"
+            description="NR_ASSIGN_BROWSERS_DESC"
+            multiple="true"
+            class="hasChosen"
+        />
+        <field name="note" type="ruleValueHint"/>
+    </fieldset>
+</form>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+        <field name="choices" type="nr_choices"
+            label="COM_CONVERTFORMS_CHOICES"
+            description="COM_CONVERTFORMS_CHOICES_DESC"
+        />
+    </fieldset>
+    <fieldset name="advanced">
+        <field name="choicelayout" type="list" 
+            label="COM_CONVERTFORMS_CHOICE_LAYOUT"
+            description="COM_CONVERTFORMS_CHOICE_LAYOUT_DESC"
+            default="">
+            	<option value="">COM_CONVERTFORMS_CHOICE_1_COLUMN</option>
+            	<option value="2">COM_CONVERTFORMS_CHOICE_2_COLUMN</option>
+            	<option value="3">COM_CONVERTFORMS_CHOICE_3_COLUMN</option>
+            	<option value="auto">COM_CONVERTFORMS_CHOICE_SIDE_BY_SIDE</option>
+        </field>
+    </fieldset>
+</form>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="module" client="site" group="user" method="upgrade">
+	<name>Komento Comments</name>
+	<author>StackIdeas Sdn Bhd</author>
+	<creationDate>21st July 2022</creationDate>
+	<copyright>Copyright 2009 - 2016 StackIdeas. All rights reserved.</copyright>
+	<license>GPL License</license>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>http://www.stackideas.com</authorUrl>
+	<version>3.0.43</version>
+	<description><![CDATA[Displays recent comments posted on the site]]></description>
+	<files>
+		<folder>tmpl</folder>
+		<filename module="mod_komento_comments">mod_komento_comments.php</filename>
+		<filename>mod_komento_comments.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_komento_comments.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_komento/elements">
+				<field name="limit" type="text" default="5" label="MOD_KOMENTO_COMMENTS_COMMENT_LIMIT" description="MOD_KOMENTO_COMMENTS_COMMENT_LIMIT_DESC" />
+				<field name="component" type="modal_komentocomponent" default="all" label="MOD_KOMENTO_COMMENTS_SELECT_COMPONENT" description="MOD_KOMENTO_COMMENTS_SELECT_COMPONENT_DESC" state="1" />
+				
+				<field name="filter" type="list" default="all" label="MOD_KOMENTO_COMMENTS_FILTER_TYPE" description="MOD_KOMENTO_COMMENTS_FILTER_TYPE_DESC">
+					<option value="">MOD_KOMENTO_COMMENTS_FILTER_NO_FILTER</option>
+					<option value="category">MOD_KOMENTO_COMMENTS_FILTER_CATEGORY</option>
+					<option value="article">MOD_KOMENTO_COMMENTS_FILTER_ARTICLE</option>
+					<option value="user">MOD_KOMENTO_COMMENTS_FILTER_USER</option>
+				</field>
+				
+				<field name="category" type="text" default="" label="MOD_KOMENTO_COMMENTS_FILTER_CATEGORY" description="MOD_KOMENTO_COMMENTS_FILTER_CATEGORY_DESC" />
+				<field name="articleId" type="text" default="" label="MOD_KOMENTO_COMMENTS_FILTER_ARTICLE" description="MOD_KOMENTO_COMMENTS_FILTER_ARTICLE_DESC" />
+				<field name="userId" type="text" default="" label="MOD_KOMENTO_COMMENTS_FILTER_USER" description="MOD_KOMENTO_COMMENTS_FILTER_USER_DESC" />
+				
+				<field name="sort" type="list" default="latest" label="MOD_KOMENTO_COMMENTS_SORT" description="MOD_KOMENTO_COMMENTS_SORT_DESC">
+					<option value="latest">MOD_KOMENTO_COMMENTS_SORT_LATEST</option>
+					<option value="oldest">MOD_KOMENTO_COMMENTS_SORT_OLDEST</option>
+					<option value="likes">MOD_KOMENTO_COMMENTS_SORT_MOST_LIKED</option>
+				</field>
+
+				<field name="random" type="radio" class="btn-group" default="0" label="MOD_KOMENTO_COMMENTS_RANDOMIZED" description="MOD_KOMENTO_COMMENTS_RANDOMIZED_DESC" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="featuredOnly" type="radio" class="btn-group" default="0" label="MOD_KOMENTO_COMMENTS_FEATURED_ONLY" description="MOD_KOMENTO_COMMENTS_FEATURED_ONLY_DESC" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="showcomponent" type="radio" class="btn-group" default="1" label="MOD_KOMENTO_COMMENTS_SHOW_COMPONENT" description="MOD_KOMENTO_COMMENTS_SHOW_COMPONENT_DESC" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="showavatar" type="radio" class="btn-group" default="1" label="MOD_KOMENTO_COMMENTS_SHOW_AVATAR" description="MOD_KOMENTO_COMMENTS_SHOW_AVATAR_DESC" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="showauthor" type="radio" class="btn-group" default="1" label="MOD_KOMENTO_COMMENTS_SHOW_AUTHOR" description="MOD_KOMENTO_COMMENTS_SHOW_AUTHOR_DESC" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<field name="maxcommentlength" type="text" default="100" label="MOD_KOMENTO_COMMENTS_MAX_COMMENT_LENGTH" description="MOD_KOMENTO_COMMENTS_MAX_COMMENT_LENGTH_DESC" />
+				<field name="maxitemtitlelength" type="text" default="30" label="MOD_KOMENTO_COMMENTS_MAX_TITLE_LENGTH" description="MOD_KOMENTO_COMMENTS_MAX_TITLE_LENGTH_DESC" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="StackIdeas Modules and Plugins">https://stackideas.com/joomla4compat.xml</server>
+	</updateservers>
+</extension>

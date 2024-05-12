@@ -1,0 +1,41 @@
+[
+    {
+        "name": "ciar4n/j51_framework",
+        "version": "dev-unstable",
+        "version_normalized": "dev-unstable",
+        "source": {
+            "type": "git",
+            "url": "git@github.com:ciar4n/j51_framework.git",
+            "reference": "75efc7c3bfa02f3026c3ba4c72f9cd283c7d56dc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ciar4n/j51_framework/zipball/75efc7c3bfa02f3026c3ba4c72f9cd283c7d56dc",
+            "reference": "75efc7c3bfa02f3026c3ba4c72f9cd283c7d56dc",
+            "shasum": ""
+        },
+        "time": "2018-04-14 16:14:59",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "J51\\": "src"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "description": "Joomla 51 framework",
+        "homepage": "https://github.com/ciar4n/j51_framework",
+        "keywords": [
+            "cms",
+            "framework",
+            "library",
+            "template"
+        ],
+        "support": {
+            "source": "https://github.com/ciar4n/j51_framework/tree/unstable",
+            "issues": "https://github.com/ciar4n/j51_framework/issues"
+        }
+    }
+]

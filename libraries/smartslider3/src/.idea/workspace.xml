@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ba32d09-2177-4f3c-9f5d-8e55354e4e20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/SmartSlider3/Platform/Joomla/AdministratorComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/SmartSlider3/Platform/Joomla/AdministratorComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartSlider3/Platform/Joomla/Plugin/PluginInstallerSmartSlider3.php" beforeDir="false" afterPath="$PROJECT_DIR$/SmartSlider3/Platform/Joomla/Plugin/PluginInstallerSmartSlider3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartSlider3/Platform/WordPress/HelperInstall.php" beforeDir="false" afterPath="$PROJECT_DIR$/SmartSlider3/Platform/WordPress/HelperInstall.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1xGAgUEe4KZ4fhTaQawWnqH6R6O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="options.lastSelected" value="preferences.sourceCode.HTML" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.splitter.proportion" value="0.19159772" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ba32d09-2177-4f3c-9f5d-8e55354e4e20" name="Default Changelist" comment="" />
+      <created>1629971162269</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629971162269</updated>
+      <workItem from="1629971163425" duration="235000" />
+      <workItem from="1674739477821" duration="87000" />
+      <workItem from="1674739622189" duration="602000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="580" y="108" width="1200" height="858" key="find.popup" timestamp="1674740012016">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="580" y="108" width="1200" height="858" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1674740012016" />
+  </component>
+</project>

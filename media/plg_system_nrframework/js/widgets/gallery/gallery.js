@@ -1,0 +1,2 @@
+var TF_Gallery=function(){function t(t){void 0===t&&(t=".tf-gallery-wrapper.lightbox"),this.cls=t,this.init()}return t.prototype.init=function(){var t=document.querySelectorAll(this.cls);if(t.length){var e=t,r=Array.isArray(e),i=0;for(e=r?e:e[Symbol.iterator]();;){var n;if(r){if(i>=e.length)break;n=e[i++]}else{if((i=e.next()).done)break;n=i.value}var a={selector:".tf-gallery-lightbox-item."+n.dataset.id,touchNavigation:!0};GLightbox(a)}}},t}();document.addEventListener("DOMContentLoaded",function(t){new TF_Gallery});
+

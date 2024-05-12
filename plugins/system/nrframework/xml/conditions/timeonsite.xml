@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator">
+            <option value="equal">NR_IS_EQUAL</option>
+            <option value="not_equal">NR_DOES_NOT_EQUAL</option>
+            <option value="less_than">NR_FEWER_THAN</option>
+            <option value="less_than_or_equal_to">NR_FEWER_THAN_OR_EQUAL_TO</option>
+            <option value="greater_than">NR_GREATER_THAN</option>
+            <option value="greater_than_or_equal_to">NR_GREATER_THAN_OR_EQUAL_TO</option>
+        </field>
+        <field name="value" type="nrnumber"
+            label="NR_SELECTION"
+            description="NR_ASSIGN_TIMEONSITE_DESC"
+            filter="intval"
+            hint="360"
+            addon="seconds"
+            min="0"
+            step="100"
+        />
+    </fieldset>
+</form>

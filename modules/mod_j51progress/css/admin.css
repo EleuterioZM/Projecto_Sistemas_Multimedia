@@ -1,0 +1,96 @@
+
+
+/* Subforms */
+.subform-repeatable {
+  padding-right: 0;
+}
+.subform-repeatable > .btn-toolbar {
+  margin: 0 0 10px;
+}
+.subform-repeatable > .btn-toolbar .btn {
+  padding: 4px 20px !important;
+  border-radius: 3px !important;
+}
+.subform-repeatable .row {
+  margin: 0;
+}
+.subform-repeatable .subform-repeatable-group {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+.subform-repeatable .subform-repeatable-group > .btn-toolbar {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  margin-top: 8px !important;
+}
+.subform-repeatable .subform-repeatable-group .control-group {
+  margin-bottom: 10px;
+  margin-right: 140px;
+}
+.subform-repeatable .btn-success,
+.subform-repeatable .btn-danger,
+.subform-repeatable .btn-primary {
+  position: static !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px !important;
+  margin: 0 0 0 -1px !important;
+  padding: 4px 12px !important;
+  border-width: 1px !important;
+}
+.subform-repeatable .btn-success {
+  border-radius: 3px 0 0 3px !important;
+}
+.subform-repeatable .btn-danger {
+  border-radius: 0 !important;
+}
+.subform-repeatable .btn-primary {
+  border-radius: 0 3px 3px 0 !important;
+}
+.subform-repeatable > * > * > fieldset {
+  border-bottom: 1px solid var(--template-bg-dark-10);
+  border-left: 1px solid var(--template-bg-dark-10);
+  border-right: 1px solid var(--template-bg-dark-10);
+  background-color: hsl(var(--hue),20%,98%);
+  padding: 20px 20px 10px;
+}
+.subform-repeatable .btn-group {
+  border: 0;
+  background-color: transparent;
+  padding-bottom: 0;
+}
+.subform-repeatable .slideshow-subform .control-group {
+  margin-bottom: 6px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.subform-repeatable .slideshow-subform .control-label {
+  display: none !important;
+}
+.subform-repeatable .slideshow-subform .controls {
+  margin-left: 0px !important;
+  padding-bottom: 0 !important;
+}
+
+.spacer label {
+  width: auto;
+}
+.control-group.field-spacer .control-label {
+  width: auto;
+}
+
+.alert {
+  display: flex;
+  flex-direction: column;
+}
+
+.alert.alert-grey {
+  margin: 0;
+  background: hsl(var(--hue),20%,98%);
+  border: 1px solid var(--template-bg-dark-10);
+}

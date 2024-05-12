@@ -1,0 +1,31 @@
+<?php
+/**
+* @package		Komento
+* @copyright	Copyright (C) 2010 - 2018 Stack Ideas Sdn Bhd. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* Komento is free software. This version may have been modified pursuant
+* to the GNU General Public License, and as distributed it includes or
+* is derivative of works licensed under the GNU General Public License or
+* other free or open source software licenses.
+* See COPYRIGHT.php for copyright notices and details.
+*/
+defined('_JEXEC') or die('Unauthorized Access');
+?>
+<?php if ($invisible) { ?>
+<style type="text/css">
+#kt .kt-form-captcha { background: none; padding: 0;margin: 0;}
+</style>
+<?php } ?>
+
+<div class="kt-recaptcha-wrapper">
+	<?php if (!$invisible) { ?>
+		<div class="g-recaptcha" data-sitekey="<?php echo $key; ?>" data-theme="<?php echo $layout; ?>" data-callback="recaptchaCallback"></div>
+	<?php } ?>
+
+	<?php if ($invisible) { ?>
+		<div class="g-recaptcha" data-sitekey="<?php echo $key;?>" data-badge="bottomleft" data-size="invisible" data-kt-recaptcha-invisible data-callback="ktGetRecaptchaResponse"></div>
+	<?php } ?>
+
+	<input name="g-recaptcha-response" type="hidden" value="" data-kt-recaptcha-response />
+</div>
+

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="box" label="Box" tab="design" addfieldpath="administrator/components/com_convertforms/models/forms/fields">
+        <field name="name" type="text"
+            label="NR_NAME"
+            hint="NR_NAME"
+            description="COM_CONVERTFORMS_FORMS_NAME_DESC"
+        />
+        <field name="autowidth" type="list" 
+            label="COM_CONVERTFORMS_BOX_WIDTH_TYPE"
+            description="COM_CONVERTFORMS_BOX_WIDTH_TYPE_DESC"
+            default="custom">
+                <option value="auto">NR_AUTO</option>
+                <option value="custom">NR_CUSTOM</option>
+        </field>
+        <field name="width" type="nrnumber"
+            label="COM_CONVERTFORMS_FORM_WIDTH"
+            description="COM_CONVERTFORMS_FORM_WIDTH_DESC"
+            default="500"
+            min="0"
+            step="50"
+            addon="px"
+            showon="autowidth:custom"
+        />
+        <field name="bgcolor" type="color" 
+            default="rgba(255, 255, 255, 1)"
+            keywords="transparent,none"
+            format="rgba"
+            label="NR_BACKGROUND_COLOR"
+            description="NR_BACKGROUND_COLOR_DESC"
+            position="bottom"
+        />
+        <field name="bgimage" type="list" 
+            label="COM_CONVERTFORMS_BACKGROUND_IMAGE" 
+            description="COM_CONVERTFORMS_BACKGROUND_IMAGE_DESC" 
+            filter="intval"
+            size="1" 
+            default="0">
+                <option value="0">NR_NONE</option>
+                <option value="1">NR_UPLOAD</option>
+                <option value="2">COM_CONVERTFORMS_CUSTOM_URL</option>
+        </field>
+        <field name="bgurl" type="text"
+            hint="http://"
+            label="COM_CONVERTFORMS_BACKGROUND_URL"
+            description="COM_CONVERTFORMS_BACKGROUND_URL_DESC"
+            showon="bgimage:2"
+        />
+        <field name="bgfile" type="media"
+            label="COM_CONVERTFORMS_BACKGROUND_FILE"
+            description="COM_CONVERTFORMS_BACKGROUND_FILE_DESC"
+            showon="bgimage:1"
+        />
+        <field name="bgrepeat" type="list"
+            showon="bgimage:1,2"
+            label="NR_BGIMAGE_REPEAT"
+            description="NR_BGIMAGE_REPEAT_DESC" 
+            default="no-repeat">
+                <option value="no-repeat">NR_REPEAT_NO</option>
+                <option value="repeat-x">NR_REPEAT_X</option>
+                <option value="repeat-y">NR_REPEAT_Y</option>
+                <option value="repeat">NR_REPEAT</option>
+        </field> 
+        <field name="bgsize" type="list" 
+            showon="bgimage:1,2"
+            label="NR_BGIMAGE_SIZE"
+            description="NR_BGIMAGE_SIZE_DESC" 
+            default="auto">
+                <option value="auto">NR_AUTO</option>
+                <option value="cover">NR_IMAGE_SIZE_COVER</option>
+                <option value="contain">NR_IMAGE_SIZE_CONTAIN</option>
+                <option value="100% 100%">100% 100%</option>
+        </field> 
+        <field name="bgposition" type="list"
+            showon="bgimage:1,2"
+            label="NR_BGIMAGE_POSITION"
+            description="NR_BGIMAGE_POSITION_DESC" 
+            default="left top">
+                <option value="left top">Left Top</option>
+                <option value="left center">Left Center</option>
+                <option value="left bottom">Left Bottom</option>
+                <option value="right top">Right Top</option>
+                <option value="right center">Right Center</option>
+                <option value="right bottom">Right Bottom</option>
+                <option value="center top">Center Top</option>
+                <option value="center center">Center Center</option>
+                <option value="center bottom">Center Bottom</option>
+        </field>
+        <field name="spacer1"
+            type="spacer" hr="true"
+        />
+        <field name="text" type="textarea"
+            label="COM_CONVERTFORMS_MESSAGE" 
+            description="COM_CONVERTFORMS_MESSAGE_DESC"
+            class="editorx show-smart-tags"
+            filter="raw"
+            hint="Enter your message here"
+        />
+        <field name="font" type="nrfonts"
+            class="nrfont"
+            label="COM_CONVERTFORMS_BODY_FONT"
+            description="COM_CONVERTFORMS_BODY_FONT_DESC"
+            default="Arial">
+            <option value=" ">JDEFAULT</option>
+        </field>
+        <field name="padding" type="nrnumber" 
+            label="NR_PADDING"
+            description="NR_PADDING_DESC"
+            addon="px"
+            min="0"
+            step="5"
+            default="0">
+        </field>
+        <field name="borderradius" type="nrnumber"
+            label="COM_CONVERTFORMS_BOX_RADIUS"
+            description="COM_CONVERTFORMS_BORDER_RADIUS_DESC"
+            addon="px"
+            default="0"
+            min="0"
+            step="5"
+        />
+        <field name="spacer2"
+            type="spacer" hr="true"
+        />
+        <field name="borderstyle" type="list" 
+            label="COM_CONVERTFORMS_FORM_BORDER_STYLE"
+            description="COM_CONVERTFORMS_FORM_BORDER_STYLE_DESC"
+            default="none">
+              <option value="none">NR_NONE</option>   
+              <option value="solid">Solid</option>
+              <option value="dotted">Dotted</option>
+              <option value="dashed">Dashed</option>
+              <option value="double">Double</option>
+              <option value="groove">Groove</option>
+              <option value="ridge">Ridge</option>
+              <option value="inset">Inset</option>
+              <option value="outset">Outset</option>
+        </field>
+        <field name="bordercolor" type="color"
+            label="COM_CONVERTFORMS_FORM_BORDER_COLOR"
+            description="COM_CONVERTFORMS_FORM_BORDER_COLOR_DESC"
+            showon="borderstyle:solid,dotted,dashed,double,groove,ridge,inset,outset"
+            position="bottom"
+        />
+        <field name="borderwidth" type="nrnumber"
+            addon="px"
+            default="2"
+            min="0"
+            label="COM_CONVERTFORMS_FORM_BORDER_WIDTH"
+            description="COM_CONVERTFORMS_FORM_BORDER_WIDTH_DESC"
+            showon="borderstyle:solid,dotted,dashed,double,groove,ridge,inset,outset"
+        />
+    </fieldset>
+    <fieldset name="image" label="NR_IMAGE" tab="design">
+        <field name="image" type="list" 
+            label="COM_CONVERTFORMS_IMAGE_SOURCE" 
+            description="COM_CONVERTFORMS_IMAGE_SOURCE_DESC" 
+            filter="intval"
+            size="1" 
+            default="0">
+                <option value="0">NR_NONE</option>
+                <option value="1">NR_UPLOAD</option>
+                <option value="2">COM_CONVERTFORMS_CUSTOM_URL</option>
+        </field>
+        <field name="imageurl" type="text"
+            hint="http://"
+            label="COM_CONVERTFORMS_IMAGE_URL"
+            description="COM_CONVERTFORMS_IMAGE_URL_DESC"
+            showon="image:2"
+        />
+        <field name="imagefile" type="media"
+            label="NR_IMAGE_SELECT"
+            description="COM_CONVERTFORMS_IMAGE_SOURCE"
+            showon="image:1"
+        />
+        <field name="imgposition" type="list"
+            showon="image:1,2"
+            label="COM_CONVERTFORMS_IMAGE_POSITION"
+            description="COM_CONVERTFORMS_IMAGE_POSITION_DESC"
+            default="img-above">
+                <option value="img-above">COM_CONVERTFORMS_IMAGE_ABOVE</option>
+                <option value="img-below">COM_CONVERTFORMS_IMAGE_BELOW</option>
+                <option value="img-right">COM_CONVERTFORMS_IMAGE_RIGHT</option>
+                <option value="img-left">COM_CONVERTFORMS_IMAGE_LEFT</option>
+        </field> 
+        <field name="imageautowidth" type="list" 
+            label="COM_CONVERTFORMS_IMAGE_WIDTH_TYPE"
+            description="COM_CONVERTFORMS_IMAGE_WIDTH_TYPE_DESC"
+            default="auto"
+            showon="image:1,2">
+                <option value="auto">NR_AUTO</option>
+                <option value="custom">NR_CUSTOM</option>
+        </field>
+        <field name="imagewidth" type="nrnumber" 
+            label="NR_WIDTH"
+            description="NR_WIDTH_DESC"
+            addon="px"
+            min="0"
+            step="10"
+            default="200"
+            showon="imageautowidth:custom[AND]image:1,2"
+        />
+        <field name="imagesize" type="nrnumber"
+            label="COM_CONVERTFORMS_IMAGE_SIZE"
+            description="COM_CONVERTFORMS_IMAGE_SIZE_DESC"
+            addon="Columns"
+            max="16"
+            min="1"
+            default="6"
+            filter="intval"
+            showon="imgposition:img-right,img-left[AND]image:1,2"
+        />
+        <field name="imagehposition" type="nrnumber" 
+            label="COM_CONVERTFORMS_HORIZONTAL_POSITION"
+            description="COM_CONVERTFORMS_HORIZONTAL_POSITION_DESC"
+            addon="px"
+            default="0"
+            step="5"
+            showon="image:1,2"
+        />
+        <field name="imagevposition" type="nrnumber" 
+            label="COM_CONVERTFORMS_VERTICAL_POSITION"
+            description="COM_CONVERTFORMS_VERTICAL_POSITION_DESC"
+            addon="px"
+            default="0"
+            step="5"
+            showon="image:1,2"
+        />
+        <field name="imagealt" type="text" 
+            label="COM_CONVERTFORMS_IMAGE_ALT"
+            description="COM_CONVERTFORMS_IMAGE_ALT_DESC"
+            showon="image:1,2"
+        />
+        <field name="hideimageonmobile" type="nrtoggle" 
+            label="COM_CONVERTFORMS_HIDE_IMAGE_ON_MOBILE"
+            description="COM_CONVERTFORMS_HIDE_IMAGE_ON_MOBILE_DESC"
+            showon="image:1,2"
+        />
+    </fieldset>
+    <fieldset name="layouts" label="Form" tab="design">
+        <field name="formposition" type="list"
+            label="COM_CONVERTFORMS_FORM_POSITION"
+            description="COM_CONVERTFORMS_FORM_POSITION_DESC"
+            showlabels="false"
+            default="form-bottom">
+                <option value="form-left">NR_LEFT</option>
+                <option value="form-bottom">NR_BOTTOM</option>
+                <option value="form-right">NR_RIGHT</option>
+        </field>
+        <field name="formsize" type="nrnumber"
+            label="COM_CONVERTFORMS_FORM_SIZE"
+            description="COM_CONVERTFORMS_COLUMNS_DESC"
+            addon="Columns"
+            max="16"
+            min="1"
+            default="16"
+            filter="intval"
+            showon="formposition:form-left,form-right"
+        />
+        <field name="formbgcolor" type="color"
+            default=""
+            keywords="transparent,none"
+            format="rgba"
+            label="NR_BACKGROUND_COLOR"
+            description="NR_BACKGROUND_COLOR_DESC"
+            position="bottom"
+        />
+    </fieldset>
+    <fieldset name="fields" label="COM_CONVERTFORMS_FIELDS" tab="fields">
+        <field name="fields" type="formfields"
+            hiddenLabel="true"
+            default='{
+                "fields0": {
+                    "key": "0",
+                    "type": "email",
+                    "name": "email",
+                    "label": "Enter your email address",
+                    "placeholder": "Enter your email address"
+                },
+               "fields1": {
+                    "key": "1",
+                    "type": "text",
+                    "name": "name",
+                    "label": "Enter your name",
+                    "placeholder": "Enter your name"
+                },
+               "fields2": {
+                    "key": "2",
+                    "type": "submit",
+                    "text": "Submit"
+                }
+            }'
+        />
+    </fieldset>
+    <fieldset name="formbuilder" label="COM_CONVERTFORMS_FIELDS" tab="design">
+        <field name="labelscolor" type="color"
+            default="#888"
+            label="COM_CONVERTFORMS_LABELS_COLOR"
+            description="NR_COLOR_DESC"
+            position="bottom"
+        />
+        <field name="labelsfontsize" type="nrnumber"
+            default="15"
+            label="COM_CONVERTFORMS_LABELS_FONT_SIZE"
+            description="COM_CONVERTFORMS_LABELS_FONT_SIZE"
+            addon="px"
+        />
+        <field name="labelposition" type="list" 
+            label="COM_CONVERTFORMS_LABEL_POSITION"
+            description="COM_CONVERTFORMS_LABEL_POSITION_DESC"
+            default="top">
+                <option value="top">Top Aligned</option>
+                <option value="left">Left Aligned</option>
+        </field>
+        <field name="required_indication" type="nrtoggle" 
+            label="COM_CONVERTFORMS_REQUIRED_INDICATION"
+            description="COM_CONVERTFORMS_REQUIRED_INDICATION_DESC"
+            checked="true"
+        />
+        <field name="inputfontsize" type="nrnumber"
+            addon="px"
+            default="15"
+            min="0"
+            label="COM_CONVERTFORMS_INPUT_FONT_SIZE"
+            description="COM_CONVERTFORMS_INPUT_FONT_SIZE_DESC"
+        />
+        <field name="inputcolor" type="color"
+            default="#888"
+            label="COM_CONVERTFORMS_INPUT_COLOR"
+            description="NR_COLOR_DESC"
+            position="bottom"
+        />
+        <field name="inputbg" type="color"
+            default="#fff"
+            label="COM_CONVERTFORMS_INPUT_BGCOLOR"
+            description="NR_COLOR_DESC"
+            position="bottom"
+        />
+        <field name="inputalign" type="list" 
+            label="COM_CONVERTFORMS_FORM_TEXT_ALIGN"
+            description="COM_CONVERTFORMS_FORM_TEXT_ALIGN_DESC"
+            default="left">
+                <option value="left">NR_LEFT</option>
+                <option value="center">NR_CENTER</option>
+                <option value="right">NR_RIGHT</option>
+        </field>
+        <field name="inputbordercolor" type="color"
+            label="COM_CONVERTFORMS_INPUT_BORDER_COLOR"
+            description="NR_COLOR_DESC"
+            default="#ccc"
+            position="bottom"
+        />
+        <field name="inputborderradius" type="nrnumber"
+            label="COM_CONVERTFORMS_BORDER_RADIUS"
+            description="COM_CONVERTFORMS_BORDER_RADIUS_DESC"
+            addon="px"
+            default="3"
+            min="0"
+            step="1"
+        />
+        <field name="inputvpadding" type="nrnumber"
+            addon="px"
+            default="10"
+            min="0"
+            label="COM_CONVERTFORMS_VPADDING_SIZE"
+            description="COM_CONVERTFORMS_INPUT_PADDING_DESC"
+        />
+        <field name="inputhpadding" type="nrnumber"
+            addon="px"
+            default="10"
+            min="0"
+            label="COM_CONVERTFORMS_HPADDING_SIZE"
+            description="COM_CONVERTFORMS_INPUT_PADDING_DESC"
+        />
+        <field name="help_text_position" type="list" 
+            label="COM_CONVERTFORMS_HELP_TEXT_POSITION"
+            description="COM_CONVERTFORMS_HELP_TEXT_POSITION_DESC"
+            default="after">
+                <option value="after">COM_CONVERTFORMS_HELP_TEXT_AFTER_INPUT</option>
+                <option value="before">COM_CONVERTFORMS_HELP_TEXT_BEFORE_INPUT</option>
+        </field>
+        <field name="inputshadow" type="nrtoggle" 
+            label="COM_CONVERTFORMS_SHADOW"
+            description="COM_CONVERTFORMS_INPUT_SHADOW_DESC"
+        />
+    </fieldset>
+    <fieldset name="advanced" label="Advanced" tab="design">
+        <field name="footer" type="textarea"
+            label="COM_CONVERTFORMS_FOOTER"
+            description="COM_CONVERTFORMS_FOOTER_DESC"
+            filter="raw"
+            class="editorx show-smart-tags"
+        />
+        <field name="customcss" type="textarea"
+            label="COM_CONVERTFORMS_CUSTOM_CSS"
+            description="COM_CONVERTFORMS_CUSTOM_CSS_DESC"
+            rows="10"
+        />
+        <field name="customcode" type="textarea"
+            label="COM_CONVERTFORMS_CUSTOM_CODE"
+            description="COM_CONVERTFORMS_CUSTOM_CODE_DESC"
+            rows="10"
+        />
+        <field name="classsuffix" type="text" 
+            label="COM_CONVERTFORMS_CLASS_SUFFIX"
+            description="COM_CONVERTFORMS_CLASS_SUFFIX_DESC"
+        />
+    </fieldset>
+</form>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<fieldset name="custom-icons" class="custom-icon-subform">
+		<field name="social_custom_icon" type="text" size="40" default="" label="Custom Icon" description="Add Font Awesome icon class name (eg. fa-coffee)" />
+		<field name="social_custom_name" type="text" size="40" default="" label="Icon Title" description="Add your icon title" />
+		<field name="social_custom_url" type="text" size="40" default="" label="Icon Url" description="Add the linking URL of your icon" />
+		<field name="social_custom_hover" type="color" size="40" default="#AAAAAA" label="Icon Background Color" description="Background color of your icon" />
+	</fieldset>
+</form>

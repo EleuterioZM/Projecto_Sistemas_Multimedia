@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>J51_CallToAction</name>
+	<author>Joomla51</author>
+	<creationDate>June 2019</creationDate>
+	<copyright>Copyright (C)2019 Joomla51</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@joomla51.com</authorEmail>
+	<authorUrl>http://www.joomla51.com</authorUrl>
+	<version>1.0.0</version>
+	<description><![CDATA[<link href="../modules/mod_j51calltoaction/css/admin.css" rel="stylesheet" type="text/css" media="all" />
+	<!--
+                  #wrap1 {padding:0px 0px 4px 0px;}
+                  h1 {clear:both;font-family: Arial Narrow,sans-serif;font-size:18px;margin:0px 0px 12px 0px;padding:0px 0px 1px 10px;color:#C64934; a:}
+                  .wrap2 {background:#fff;border:1px solid #8F8F8F;padding:10px; color:#403d6a;}
+                  -->
+                  </style><div class="templateinfo">
+	<p>Call to Action module by Joomla51</p>
+	
+  	</div>
+  	]]>
+	</description>
+
+	<files>
+		<filename module="mod_j51calltoaction">mod_j51calltoaction.php</filename>
+		<filename module="mod_j51calltoaction">mod_j51calltoaction.xml</filename>
+		<filename module="mod_j51calltoaction">helper.php</filename>
+		<filename module="mod_j51calltoaction">License.txt</filename>		
+		<filename module="mod_j51calltoaction">index.html</filename>
+		<folder>css</folder>
+		<folder>tmpl</folder>
+		<folder>field</folder>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_j51calltoaction.ini</language>
+	</languages>
+	<config>	
+		<fields name="params">
+			
+			<fieldset name="STYLE">
+				<field name="j51_layout" type="list" default="center" label="MOD_J51_LAYOUT">
+					<option value="col-t-b">Column - Text | Button(s)</option>
+					<option value="col-b-t">Column - Button(s) | Text</option>
+					<option value="row-t-b">Row - Text | Button(s)</option>
+					<option value="row-b-t">Row - Button(s) | Text</option>
+				</field>
+				<field name="j51_col_breakpoint" type="textpx" default="759" label="MOD_J51_COL_BREAKPOINT" showon="j51_layout:row-t-b[OR]j51_layout:row-b-t" />
+				<field name="j51_align" type="list" default="center" label="MOD_J51_ALIGNMENT">
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+					<option value="right">Right</option>
+				</field>
+				<field name="j51_margin_x" type="textpx" default="0" label="MOD_J51_MARGINX" />
+				<field name="j51_margin_y" type="textpx" default="25" label="MOD_J51_MARGINY" />
+				<field name="j51_bg_color" type="color" format="rgba" default="" label="MOD_J51_BGCOLOR" />
+				<field name="j51_bg_image" type="media" default="" label="MOD_J51_BG_IMAGE" directory="/" filter="" exclude="" stripext="" />
+			</fieldset>
+
+			<fieldset name="TEXT">
+				<field name="j51_text" type="editor" label="Call to Action Text" width="300" filter="safehtml" />
+			</fieldset>
+			
+			<fieldset name="BUTTONS">
+				<field name="j51_items" type="subform" formsource="modules/mod_j51calltoaction/field/item.xml" class="advancedSelect" min="1" max="200" multiple="true" layout="joomla.form.field.subform.repeatable" groupByFieldset="true" buttons="add,remove,move" label="Buttons" />
+			</fieldset>
+
+						<fieldset name="advanced">
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					class="form-select"
+					validate="moduleLayout"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					rows="3"
+					validate="CssIdentifier"
+				/>
+
+				<field
+					name="owncache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					default="900"
+					filter="integer"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

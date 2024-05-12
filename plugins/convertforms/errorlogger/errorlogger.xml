@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4.0" type="plugin" group="convertforms" method="upgrade">
+	<name>PLG_CONVERTFORMS_ERRORLOGGER</name>
+	<description>PLG_CONVERTFORMS_ERRORLOGGER_DESC</description>
+    <version>1.0</version>
+    <author>Tassos Marinos</author>
+    <authorEmail>info@tassos.gr</authorEmail>
+    <authorUrl>http://www.tassos.gr</authorUrl>
+    <copyright>Copyright (c) 2011-2019 Tassos Marinos</copyright>
+    <license>GNU General Public License version 3, or later</license>
+    <creationDate>January 2019</creationDate>
+    <scriptfile>script.install.php</scriptfile>
+	<files>
+        <folder>language</folder>
+		<filename plugin="errorlogger">errorlogger.php</filename>
+        <filename>script.install.helper.php</filename>
+	</files>
+</extension>

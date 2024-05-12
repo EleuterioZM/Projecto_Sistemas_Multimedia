@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.4" client="site" method="upgrade">
+	<name>mod_convertforms</name>
+	<description>MOD_CONVERTFORMS_DESC</description>
+	<version>1.0</version>
+	<creationDate>October 2016</creationDate>
+	<author>Tassos Marinos</author>
+	<authorEmail>info@tassos.gr</authorEmail>
+	<authorUrl>http://www.tassos.gr</authorUrl>
+	<copyright>Copyright © 2021 Tassos Marinos All Rights Reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <scriptfile>script.install.php</scriptfile>
+	<files>
+		<filename module="mod_convertforms">mod_convertforms.php</filename>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+        <filename>script.install.helper.php</filename>
+		<filename>mod_convertforms.xml</filename>
+	</files>
+	<config>
+		<fields name="params" addfieldpath="administrator/components/com_convertforms/models/forms/fields">
+			<fieldset name="basic">
+                <field name="form" type="convertforms"
+                    label="MOD_CONVERTFORMS_FORM"
+                    class="input-xlarge"
+                />
+            </fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					class="form-select"
+				/>
+				<field name="moduleclass_sfx" type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					rows="3"
+				/>
+				<field name="cache" type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					default="1"
+					filter="integer">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					default="900"
+					filter="integer"
+				/>
+				<field name="cachemode" type="hidden"
+					default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

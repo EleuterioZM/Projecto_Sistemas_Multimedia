@@ -1,0 +1,3 @@
+.nrf-widget{--white: #fff;--black: #000;--light-grey: #ccc;-webkit-box-sizing:border-box;box-sizing:border-box}.nrf-widget *,.nrf-widget *:after,.nrf-widget *:before{-webkit-box-sizing:inherit;box-sizing:inherit}.nrf-widget.nrf-hidden{display:none !important}.nrf-widget.disabled{opacity:.65;cursor:not-allowed !important}.nrf-widget.disabled *{pointer-events:none}
+
+

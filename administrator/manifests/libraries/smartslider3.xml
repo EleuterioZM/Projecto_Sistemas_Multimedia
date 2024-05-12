@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" method="upgrade" version="3.9">
+    <name>Smart Slider 3 Library</name>
+    <libraryname>smartslider3</libraryname>
+    <author>Nextendweb</author>
+    <creationDate>2024-04-08</creationDate>
+    <copyright>Copyright (C) 2020 Nextendweb.com. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.txt GNU General Public License</license>
+    <authorEmail>roland@nextendweb.com</authorEmail>
+    <authorUrl>https://smartslider3.com</authorUrl>
+    <version>3.5.1.23</version>
+
+    <files>
+        <folder>src</folder>
+        <filename>joomla.php</filename>
+    </files>
+    <updateservers>
+        <server type="extension" name="Smart Slider 3 Updates">
+            <![CDATA[https://api.nextendweb.com/v1/?action=joomla_version&platform=joomla&product=smartslider3&pro=0&channel=stable]]>
+        </server>
+    </updateservers>
+</extension>

@@ -1,0 +1,120 @@
+img {
+  max-width: 100% ;
+}
+/* disable css animations */
+.touch .animated {
+  -webkit-animation-duration: 0;
+          animation-duration: 0;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+/* #Tablet (Landscape)
+================================================== */
+@media only screen and (max-width: 1024px) {
+  .module_block,
+  .wrapper960 {
+    width: 100% !important;
+  }
+}
+/* #Tablet (Portrait)
+================================================== */
+@media only screen and (max-width: 959px) {
+  .logo-text h1 a {
+    font-size: 0.8em;
+  }
+}
+/* #Mobile (Landscape)
+================================================== */
+@media only screen and (max-width: 767px) {
+  #content_remainder {
+    width: 100% !important;
+  }
+  #main {
+    flex-direction: column;
+  }
+  .sidecol_a,
+  .sidecol_b,
+  .items-row .item,
+  .showcase-1,
+  .top-1,
+  .top-2,
+  .top-3,
+  .contenttop,
+  .contentbottom,
+  .bottom-1,
+  .bottom-2,
+  .bottom-3,
+  .base-1,
+  .base-2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+  }
+  .module:first-of-type .module_surround {
+    padding-top: 30px;
+  }
+  .module .module_surround,
+  .module_menu .module_surround {
+    padding: 0 35px 30px;
+  }
+  .row-fluid [class*="span"] {
+    margin-left: 0;
+  }
+  .logo-text h1 a {
+    font-size: 0.7em;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .header-2 {
+    text-align: left;
+    margin-left: 0;
+  }
+  .module + .module {
+    margin-top: 0;
+  }
+  .logo {
+    padding: 4px 0 4px 20px;
+  }
+  #container_header {
+    position: relative !important;
+  }
+  .layerslideshow .info.wrapper960 {
+    padding-top: 0 !important;
+  }
+  .layerslideshow .NextArrow,
+  .layerslideshow .PrevArrow {
+    margin-top: -20px !important;
+  }
+}
+/*  #Mobile (Portrait)
+================================================== */
+@media only screen and (max-width: 440px) {
+  #content_remainder,
+  .items-row .item {
+    width: 100% !important;
+  }
+  .row-fluid [class*="span"] {
+    margin-left: 0;
+  }
+  #container_main .wrapper960 {
+    margin-top: 0px;
+  }
+  .slidesjs-previous.slidesjs-navigation,
+  .slidesjs-next.slidesjs-navigation,
+  .layerslideshow .info {
+    display: none;
+  }
+  .logo-text h1 a {
+    font-size: 0.5em;
+  }
+  .header-1,
+  .header-2 {
+    flex-direction: column;
+  }
+  .header-1 > div + div,
+  .header-2 > div + div {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

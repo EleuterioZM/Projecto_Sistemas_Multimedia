@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+        <field name="heading_type" type="list" 
+            label="COM_CONVERTFORMS_FIELD_HEADING_HEADINGTYPE"
+            description="COM_CONVERTFORMS_FIELD_HEADING_HEADINGTYPE_DESC"
+            default="h2">
+            	<option value="h1">H1</option>
+            	<option value="h2">H2</option>
+            	<option value="h3">H3</option>
+            	<option value="h4">H4</option>
+            	<option value="h5">H5</option>
+            	<option value="h6">H6</option>
+        </field>
+        <field name="font_size" type="nrnumber"
+            label="COM_CONVERTFORMS_INPUT_FONT_SIZE"
+            description="COM_CONVERTFORMS_FIELD_HEADING_FONT_SIZE_DESC"
+            addon="px"
+            min="0"
+            default="22"
+        />
+        <field name="font_family" type="nrfonts"
+            class="nrfont"
+            label="COM_CONVERTFORMS_BODY_FONT"
+            description="COM_CONVERTFORMS_FIELD_HEADING_FONT_FAMILY_DESC"
+            default="Arial">
+            <option value=" ">JDEFAULT</option>
+        </field>
+        <field name="line_height" type="nrnumber"
+            label="COM_CONVERTFORMS_FIELD_HEADING_LINE_HEIGHT"
+            description="COM_CONVERTFORMS_FIELD_HEADING_LINE_HEIGHT_DESC"
+            addon="px"
+            min="0"
+            default="22"
+        />
+        <field name="letter_spacing" type="nrnumber"
+            label="COM_CONVERTFORMS_FIELD_HEADING_LETTER_SPACING"
+            description="COM_CONVERTFORMS_FIELD_HEADING_LETTER_SPACING_DESC"
+            addon="px"
+            min="0"
+            default="0"
+        />
+        <field name="content_alignment" type="list" 
+            label="COM_CONVERTFORMS_FIELD_HEADING_CONTENT_ALIGNMENT"
+            description="COM_CONVERTFORMS_FIELD_HEADING_CONTENT_ALIGNMENT_DESC"
+            default="none">
+            	<option value="left">NR_LEFT</option>
+            	<option value="center">NR_CENTER</option>
+            	<option value="right">NR_RIGHT</option>
+        </field>
+        <field name="use_link" type="nrtoggle"
+            label="COM_CONVERTFORMS_FIELD_HEADING_USELINK" 
+            description="COM_CONVERTFORMS_FIELD_HEADING_USELINK_DESC"
+        />
+        <field name="link_url" type="text"
+            label="COM_CONVERTFORMS_FIELD_HEADING_LINK"
+            description="COM_CONVERTFORMS_FIELD_HEADING_LINK_DESC"
+            hint="http://"
+            showon="use_link:1"
+        />
+        <field name="open_new_tab" type="nrtoggle"
+            label="COM_CONVERTFORMS_FIELD_HEADING_NEWTAB" 
+            description="COM_CONVERTFORMS_FIELD_HEADING_NEWTAB_DESC"
+            showon="use_link:1"
+        />
+    </fieldset>
+</form>

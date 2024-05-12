@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="list"
+            label="NR_CONTENT_VIEW"
+            description="NR_CONTENT_VIEW_DESC"
+            class="hasChosen"
+            multiple="true">
+            <option value="article">NR_CONTENT_VIEW_ARTICLE</option>
+            <option value="category_blog">NR_CONTENT_VIEW_CATEGORY_BLOG</option>
+            <option value="category">NR_CONTENT_VIEW_CATEGORY_LIST</option>
+            <option value="categories">NR_CONTENT_VIEW_CATEGORIES</option>
+            <option value="archive">NR_CONTENT_VIEW_ARCHIVED</option>
+            <option value="form">NR_CONTENT_VIEW_CREATE_ARTICLE</option>
+            <option value="featured">NR_CONTENT_VIEW_FEATURES</option>
+        </field>
+    </fieldset>
+</form>

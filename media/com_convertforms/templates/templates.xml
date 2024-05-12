@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+    <group name="inline">
+        <form name="diamond_inline"
+            label="Diamond Inline"
+        />
+        <form name="diamond_inline_2"
+            label="Diamond Inline 2"
+        />
+        <form name="diamond_inline_3"
+            label="Diamond Inline 3"
+        />
+        <form name="ruby_inline"
+            label="Ruby Inline"
+        />
+        <form name="ruby_inline_2"
+            label="Ruby Inline 2"
+        />
+        <form name="ruby_inline_3"
+            label="Ruby Inline 3"
+        />
+    </group>
+    <group name="sidebar">
+        <form name="diamond_sidebar"
+            label="Diamond Sidebar"
+        />
+        <form name="ruby_sidebar"
+            label="Ruby Sidebar"
+        />
+    </group>
+    <group name="bar">
+        <form name="diamond_bar"
+            label="Diamond Bar"
+        />
+        <form name="ruby_bar"
+            label="Ruby Bar"
+        />
+    </group>
+</templates>

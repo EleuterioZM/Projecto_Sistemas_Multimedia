@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<fieldset name="moduleoverrides_modal" class="moduleoverrides-subform">
+	<field name="module_position" type="list" default="0" label="Position" description="Choose which module position to style">
+		<option value="0">None Selected</option>
+		<option value="showcase-1a">Showcase-1A</option>
+		<option value="showcase-1b">Showcase-1B</option>
+		<option value="showcase-1c">Showcase-1C</option>
+		<option value="showcase-1d">Showcase-1D</option>
+		<option value="showcase-1e">Showcase-1E</option>
+		<option value="showcase-1f">Showcase-1F</option>
+		<option value="top-1a">Top-1A</option>
+		<option value="top-1b">Top-1B</option>
+		<option value="top-1c">Top-1C</option>
+		<option value="top-1d">Top-1D</option>
+		<option value="top-1e">Top-1E</option>
+		<option value="top-1f">Top-1F</option>
+		<option value="top-2a">Top-2A</option>
+		<option value="top-2b">Top-2B</option>
+		<option value="top-2c">Top-2C</option>
+		<option value="top-2d">Top-2D</option>
+		<option value="top-2e">Top-2E</option>
+		<option value="top-2f">Top-2F</option>
+		<option value="top-3a">Top-3A</option>
+		<option value="top-3b">Top-3B</option>
+		<option value="top-3c">Top-3C</option>
+		<option value="top-3d">Top-3D</option>
+		<option value="top-3e">Top-3E</option>
+		<option value="top-3f">Top-3F</option>
+		<option value="sidecol-1a">Sidecol-1A</option>
+		<option value="sidecol-1b">Sidecol-1B</option>
+		<option value="sidecol-1c">Sidecol-1C</option>
+		<option value="sidecol-2a">Sidecol-2A</option>
+		<option value="sidecol-2b">Sidecol-2B</option>
+		<option value="sidecol-2c">Sidecol-2C</option>
+		<option value="bottom-1a">Bottom-1A</option>
+		<option value="bottom-1b">Bottom-1B</option>
+		<option value="bottom-1c">Bottom-1C</option>
+		<option value="bottom-1d">Bottom-1D</option>
+		<option value="bottom-1e">Bottom-1E</option>
+		<option value="bottom-1f">Bottom-1F</option>
+		<option value="bottom-2a">Bottom-2A</option>
+		<option value="bottom-2b">Bottom-2B</option>
+		<option value="bottom-2c">Bottom-2C</option>
+		<option value="bottom-2d">Bottom-2D</option>
+		<option value="bottom-2e">Bottom-2E</option>
+		<option value="bottom-2f">Bottom-2F</option>
+		<option value="bottom-3a">Bottom-3A</option>
+		<option value="bottom-3b">Bottom-3B</option>
+		<option value="bottom-3c">Bottom-3C</option>
+		<option value="bottom-3d">Bottom-3D</option>
+		<option value="bottom-3e">Bottom-3E</option>
+		<option value="bottom-3f">Bottom-3F</option>
+		<option value="base-1a">Base-1A</option>
+		<option value="base-1b">Base-1B</option>
+		<option value="base-1c">Base-1C</option>
+		<option value="base-1d">Base-1D</option>
+		<option value="base-1e">Base-1E</option>
+		<option value="base-1f">Base-1F</option>
+		<option value="base-2a">Base-2A</option>
+		<option value="base-2b">Base-2B</option>
+		<option value="base-2c">Base-2C</option>
+		<option value="base-2d">Base-2D</option>
+		<option value="base-2e">Base-2E</option>
+		<option value="base-2f">Base-2F</option>
+	</field>
+	<field name="module_bg_image" type="media" directory="" label="Background Image" description="Choose a background image for this module"/>
+	<field name="module_bg_color" type="color" default="" format="rgba" label="Background Color" description="Choose a background/Border color for this module"/>
+	<field name="module_title_color" type="color" default="" label="Headings/Title Color" description="Choose a Headings/Title color for this module (inc. H# tags)"/>
+	<field name="module_text_color" type="color" default=""  label="Text Color" description="Choose a text color for this module"/>
+	<field name="module_button_color" type="color" default=""  label="Button Color" description="Choose a button color for this module"/>
+	<field name="marker1" type="hidden" default="" />
+	<field type="spacer" name="spacer_padding" label="Padding" />
+	<field name="module_padding_top" type="toptextpx" default=""  label="Top Padding" description="Set a top padding for this module. This will override the default template padding. Leave blank to revert back to the default template padding."/>
+	<field name="module_padding_right" type="righttextpx" default=""  label="Right Padding" description="Set a right padding for this module. This will override the default template padding. Leave blank to revert back to the default template padding."/>
+	<field name="module_padding_bottom" type="bottomtextpx" default=""  label="Bottom Padding" description="Set a bottom padding for this module. This will override the default template padding. Leave blank to revert back to the default template padding."/>
+	<field name="module_padding_left" type="lefttextpx" default=""  label="Left Padding" description="Set a left padding for this module. This will override the default template padding. Leave blank to revert back to the default template padding."/>
+
+	<field name="marker2" type="hidden" default="margin" />
+	<field type="spacer" name="linebreak" label="" />
+	<field type="spacer" name="spacer_margin" label="Margin" />
+	<field name="module_margin_top" type="toptextpx" default=""  label="Top Margin" description="Set a top margin for this module. This will override the default template margin. Leave blank to revert back to the default template padding."/>
+	<field name="module_margin_right" type="righttextpx" default=""  label="Right Margin" description="Set a right margin for this module. This will override the default template margin. Leave blank to revert back to the default template padding."/>
+	<field name="module_margin_bottom" type="bottomtextpx" default=""  label="Bottom Margin" description="Set a bottom margin for this module. This will override the default template margin. Leave blank to revert back to the default template padding."/>
+	<field name="module_margin_left" type="lefttextpx" default=""  label="Left Margin" description="Set a left margin for this module. This will override the default template margin. Leave blank to revert back to the default template padding."/>
+
+
+</fieldset>
+</form>

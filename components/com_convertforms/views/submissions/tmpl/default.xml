@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_CONVERTFORMS_SUBMISSIONS" option="JDEFAULT">
+		<help key="COM_CONVERTFORMS_SUBMISSIONS_DESC"/>
+		<message>
+			<![CDATA[COM_CONVERTFORMS_SUBMISSIONS_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+		<fieldset name="request" addfieldpath="plugins/system/nrframework/fields">
+		</fieldset>
+	</fields>
+
+	<fields name="params" addfieldpath="administrator/components/com_convertforms/models/forms/fields">	
+		<fieldset name="options" label="Options">
+			<field name="form_id" type="convertforms"
+				label="COM_CONVERTFORMS_SELECT_FORM"
+				description="COM_CONVERTFORMS_SELECT_FORM_DESC"
+				required="true"
+			/>
+			<field name="filter_user" type="list"
+				label="COM_CONVERTFORMS_FILTER_USER"
+				description="COM_CONVERTFORMS_FILTER_USER_DESC"
+				default="current">
+				<option value="current">COM_CONVERTFORMS_FILTER_USER_LOGGED_IN</option>
+				<option value="all">COM_CONVERTFORMS_FILTER_USER_ALL</option>
+				<option value="specific">COM_CONVERTFORMS_FILTER_USER_SELECT</option>
+			</field>
+			<field name="user_ids" type="text"
+				label="COM_CONVERTFORMS_SET_USERS"
+				description="COM_CONVERTFORMS_SET_USERS_DESC"
+				showon="filter_user:specific"
+				hint="1,2,3"
+			/>
+			<field name="view_own_only" type="nrtoggle"
+				label="COM_CONVERTFORMS_FRONT_SUBMISSIONS_VIEW_OWN_ONLY"
+				description="COM_CONVERTFORMS_FRONT_SUBMISSIONS_VIEW_OWN_ONLY_DESC"
+				checked="true"
+				showon="filter_user:all,specific"
+			/>
+			<field name="confirmed_only" type="nrtoggle"
+				label="COM_CONVERTFORMS_FRONT_SUBMISSIONS_CONFIRMED_ONLY"
+				description="COM_CONVERTFORMS_FRONT_SUBMISSIONS_CONFIRMED_ONLY_DESC"
+			/>
+			<field name="list_limit" type="number"
+				label="COM_CONVERTFORMS_LIST_LIMIT"
+				description="COM_CONVERTFORMS_LIST_LIMIT_DESC"
+				default="20"
+				min="0"
+			/>
+			<field name="show_pagination" type="nrtoggle"
+				label="COM_CONVERTFORMS_FRONT_SUBMISSIONS_PAGINATION"
+				description="COM_CONVERTFORMS_FRONT_SUBMISSIONS_PAGINATION_DESC"
+				checked="true"
+			/>
+			<field name="ordering" type="list"
+				label="COM_CONVERTFORMS_ORDER"
+				description="COM_CONVERTFORMS_ORDER_DESC"
+				default="recent">
+				<option value="recent">COM_CONVERTFORMS_ORDER_RECENT</option>
+				<option value="oldest">COM_CONVERTFORMS_ORDER_OLDEST</option>
+				<option value="random">COM_CONVERTFORMS_ORDER_RANDOM</option>
+			</field>
+			<field name="hide_empty_values" type="nrtoggle"
+				label="COM_CONVERTFORMS_HIDE_EMPTY_VALUES"
+				description="COM_CONVERTFORMS_HIDE_EMPTY_VALUES_DESC"
+			/>
+			<field name="load_css" type="nrtoggle"
+				label="COM_CONVERTFORMS_LOAD_CSS"
+				description="COM_CONVERTFORMS_LOAD_CSS_DESC"
+				checked="true"
+			/>
+		</fieldset>
+		<fieldset name="layouts" label="Layouts">
+			<field name="layout_type" type="radio"
+				label="COM_CONVERTFORMS_SUBMISSIONS_LAYOUT_TYPE"
+				description="COM_CONVERTFORMS_SUBMISSIONS_LAYOUT_TYPE_DESC"
+				default="template"
+				class="btn-group btn-group-yesno">
+				<option value="template">COM_CONVERTFORMS_SUBMISSIONS_TEMPLATE</option>
+				<option value="custom">NR_CUSTOM</option>
+			</field>
+			<field name="submissions_layout" type="componentlayout" 
+				label="COM_CONVERTFORMS_SUBMISSIONS_SELECT_TEMPLATE"
+				description="COM_CONVERTFORMS_SUBMISSIONS_SELECT_TEMPLATE_DESC"
+				extension="com_convertforms" 
+				view="submissions" 
+				showon="layout_type:template"
+			/>
+			<field name="layout_container" type="editor"
+				label="COM_CONVERTFORMS_SUBMISSIONS_CONTAINER_LAYOUT"
+				description="COM_CONVERTFORMS_SUBMISSIONS_CONTAINER_LAYOUT_DESC"
+				showon="layout_type:custom"
+				editor="codemirror"
+				filter="raw"
+				default="&lt;ul>{submissions}&lt;/ul>&lt;div class='pagination'>{pagination.links}&lt;/div>"
+			/>
+			<field name="layout_row" type="editor"
+				label="COM_CONVERTFORMS_SUBMISSIONS_ROW_LAYOUT"
+				description="COM_CONVERTFORMS_SUBMISSIONS_ROW_LAYOUT_DESC"
+				showon="layout_type:custom"
+				editor="codemirror"
+				filter="raw"
+				default="&lt;li>&lt;a href='{link}'>{submission.id}&lt;/a> {submission.date}&lt;/li>"
+			/>
+			<field name="layout_details" type="editor"
+				label="COM_CONVERTFORMS_SUBMISSIONS_DETAILS_LAYOUT"
+				description="COM_CONVERTFORMS_SUBMISSIONS_DETAILS_LAYOUT_DESC"
+				filter="raw"
+				rows="10"
+				editor="codemirror"
+				showon="layout_type:custom"
+			/>
+			<field name="i" type="nr_freetext"
+				path="/components/com_convertforms/views/submissions/tmpl/"
+				file="smarttags"
+				showon="layout_type:custom"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

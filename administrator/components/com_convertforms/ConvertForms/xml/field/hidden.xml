@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="basic">
+        <field name="required" type="nrtoggle" 
+            label="COM_CONVERTFORMS_REQUIRED_NAME"
+            description="COM_CONVERTFORMS_REQUIRED_NAME_DESC"
+		/>
+	</fieldset>
+</form>

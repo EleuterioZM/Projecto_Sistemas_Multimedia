@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="value" type="textarea" 
+            label="NR_PHPCODE" 
+            description="NR_ASSIGN_PHP_DESC2"
+            filter="raw"
+            class="span12 input-full"
+            rows="10"
+        />
+        <field name="note" type="note"
+            class="ruleValueHint"
+            description="NR_PHP_COLLECTION_SCRIPTS"
+        />
+    </fieldset>
+</form>

@@ -1,0 +1,7 @@
+[
+	{
+		"table" : "#__komento_actions",
+		"index" : "idx_comment_types",
+		"query" : "ALTER TABLE `#__komento_actions` ADD INDEX `idx_comment_types` (`comment_id`, `type`);"
+	}
+]

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="basic">
+        <field name="key" type="hidden"/>
+        <field name="type" type="hidden"/>
+	    <field name="name" type="text"
+	    	label="COM_CONVERTFORMS_FIELD_NAME"
+	    	description="COM_CONVERTFORMS_FIELD_NAME_DESC"
+	    	hint="COM_CONVERTFORMS_FIELD_NAME"
+	    />
+	    <field name="label" type="text"
+	    	label="COM_CONVERTFORMS_FIELD_LABEL"
+	    	description="COM_CONVERTFORMS_FIELD_LABEL_DESC"
+	    	hint="COM_CONVERTFORMS_FIELD_LABEL"
+	    />
+	    <field name="description" type="textarea"
+	    	label="COM_CONVERTFORMS_FIELD_DESCRIPTION"
+	    	description="COM_CONVERTFORMS_FIELD_DESCRIPTION_DESC"
+	    	filter="raw"
+	    />
+        <field name="required" type="nrtoggle" 
+            label="COM_CONVERTFORMS_REQUIRED_NAME"
+            description="COM_CONVERTFORMS_REQUIRED_NAME_DESC"
+            checked="true"
+		/>
+	</fieldset>
+	<fieldset name="advanced">
+        <field name="size" type="list" 
+            label="COM_CONVERTFORMS_FIELD_SIZE"
+            description="COM_CONVERTFORMS_FIELD_SIZE_DESC"
+            default="">
+            	<option value="cf-width-auto">Auto</option>
+            	<option value="cf-one-third">Small</option>
+            	<option value="cf-one-half">Medium</option>
+            	<option value="">Large</option>
+        </field>
+	    <field name="value" type="textarea"
+	    	label="COM_CONVERTFORMS_FIELD_VALUE"
+	    	description="COM_CONVERTFORMS_FIELD_VALUE_DESC"
+	    	class="show-smart-tags"
+	    />
+	    <field name="placeholder" type="text"
+	    	label="COM_CONVERTFORMS_PLACEHOLDER_NAME"
+	    	description="COM_CONVERTFORMS_PLACEHOLDER_NAME_DESC"
+	    />
+	    <field name="cssclass" type="cssclasses"
+	    	label="COM_CONVERTFORMS_CSS_CLASSES"
+	    	description="COM_CONVERTFORMS_CSS_CLASSES_DESC"
+	    />
+	    <field name="inputcssclass" type="text"
+	    	label="COM_CONVERTFORMS_INPUT_CSS_CLASSES"
+	    	description="COM_CONVERTFORMS_INPUT_CSS_CLASSES_DESC"
+	    />
+        <field name="hidelabel" type="nrtoggle" 
+            label="COM_CONVERTFORMS_HIDE_LABELS"
+            description="COM_CONVERTFORMS_HIDE_LABELS_DESC"
+		/>
+        <field name="browserautocomplete" type="nrtoggle" 
+            label="COM_CONVERTFORMS_DISABLE_BROWSER_AUTOCOMPLETE"
+            description="COM_CONVERTFORMS_DISABLE_BROWSER_AUTOCOMPLETE_DESC"
+		/>
+	</fieldset>
+</form>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fieldset name="basic">
+        <field name="text" type="text"
+            default="Sign up"
+            hint="Sign up"
+            label="COM_CONVERTFORMS_BUTTON_TEXT"
+            description="COM_CONVERTFORMS_BUTTON_TEXT_DESC"
+        />
+		<field name="align" type="list"
+            label="COM_CONVERTFORMS_BUTTON_ALIGN"
+            description="COM_CONVERTFORMS_BUTTON_ALIGN_DESC"
+            showon="size:cf-width-auto,cf-one-third,cf-one-half"
+            default="left">
+                <option value="left">NR_LEFT</option>
+                <option value="center">NR_CENTER</option>
+                <option value="right">NR_RIGHT</option>
+        </field> 
+        <field name="btnstyle" type="list" 
+            label="COM_CONVERTFORMS_SUBMIT_STYLE"
+            description="COM_CONVERTFORMS_SUBMIT_STYLE_DESC"
+            default="flat">
+                <option value="flat">COM_CONVERTFORMS_FLAT</option>
+                <option value="outline">COM_CONVERTFORMS_OUTLINE</option>
+                <option value="gradient">COM_CONVERTFORMS_GRADIENT</option>
+        </field>
+        <field name="fontsize" type="nrnumber"
+            addon="px"
+            default="15"
+            min="12"
+            step="2"
+            label="COM_CONVERTFORMS_BTN_FONT_SIZE"
+            description="COM_CONVERTFORMS_BTN_FONT_SIZE_DESC"
+        />
+        <field name="shadow" type="nrtoggle" 
+            label="COM_CONVERTFORMS_SHADOW"
+            description="COM_CONVERTFORMS_BTN_SHADOW_DESC"
+        />
+        <field name="bg" type="color" 
+            label="NR_BACKGROUND_COLOR"
+            description="NR_BACKGROUND_COLOR_DESC"
+            default="#444"
+        />
+        <field name="textcolor" type="color" 
+            label="NR_TEXT_COLOR"
+            description="NR_COLOR_DESC"
+            default="#fff"
+        />
+        <field name="texthovercolor" type="color" 
+            label="COM_CONVERTFORMS_SUBMIT_HOVER_COLOR"
+            description="COM_CONVERTFORMS_SUBMIT_HOVER_COLOR_DESC"
+            default="#fff"
+            showon="btnstyle:outline"
+        />
+        <field name="borderradius" type="nrnumber"
+            addon="px"
+            default="3"
+            min="0"
+            step="1"
+            label="COM_CONVERTFORMS_BORDER_RADIUS"
+            description="COM_CONVERTFORMS_BORDER_RADIUS_DESC"
+        />
+        <field name="vpadding" type="nrnumber"
+            addon="px"
+            default="11"
+            min="0"
+            label="COM_CONVERTFORMS_VPADDING_SIZE"
+            description="COM_CONVERTFORMS_PADDING_DESC"
+        />
+        <field name="hpadding" type="nrnumber"
+            addon="px"
+            default="15"
+            min="0"
+            label="COM_CONVERTFORMS_HPADDING_SIZE"
+            description="COM_CONVERTFORMS_PADDING_DESC"
+        />
+    </fieldset>
+</form>

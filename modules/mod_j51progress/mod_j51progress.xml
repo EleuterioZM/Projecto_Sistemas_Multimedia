@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>J51_Progress</name>
+	<author>Joomla51</author>
+	<creationDate>December 2018</creationDate>
+	<copyright>Copyright (C)2020 Joomla51</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@joomla51.com</authorEmail>
+	<authorUrl>http://www.joomla51.com</authorUrl>
+	<version>1.1.4</version>
+	<description>
+		<![CDATA[<link href="../modules/mod_j51progress/css/admin.css" rel="stylesheet" type="text/css" media="all" />
+		<p>Progress Module by Joomla51</p>
+		<p>If you find this module extension useful, we would much appreciate you sharing some kinds words in the form of a review.</p>
+		<p>
+		<a class="btn btn-primary" style="margin-right:10px;" target="_blank" href="http://www.joomla51.com/">Joomla51</a>
+		<a class="btn btn-primary" target="_blank" href="https://extensions.joomla.org/extension/j51-progress/">Review this Module</a>
+		</p>
+	]]></description>
+
+	<files>
+		<filename module="mod_j51progress">mod_j51progress.php</filename>
+		<filename module="mod_j51progress">mod_j51progress.xml</filename>
+		<filename module="mod_j51progress">helper.php</filename>
+		<filename module="mod_j51progress">License.txt</filename>		
+		<filename module="mod_j51progress">index.html</filename>
+		<folder>field</folder>
+		<folder>language</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<media destination="mod_j51progress" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_j51progress.ini</language>
+	</languages>
+
+	<updateservers>
+        <server type="extension" name="J51 Progress">https://www.joomla51.com/updates/mod_j51progress.xml</server>
+    </updateservers>
+
+	<config>	
+		<fields name="params">
+			
+			<fieldset name="MOD_J51_GENERALSETTINGS">
+				<field name="j51_type" type="radio" default="default" label="MOD_J51_PROGRESS_STYLE" description="MOD_J51_PROGRESS_STYLE_DESC" checked="checked" class="btn-group">
+					<option value="default">Horizontal</option>
+					<option value="circular">Circular</option>
+				</field>
+				<field name="j51_columns" type="list" default="33.3%" label="MOD_J51_PROGRESSCOL" description="MOD_J51_PROGRESSCOL_DESC">
+					<option value="100%">MOD_J51_PROGRESS_1COL</option>
+					<option value="50%">MOD_J51_PROGRESS_2COL</option>
+					<option value="33.3%">MOD_J51_PROGRESS_3COL</option>
+					<option value="25%">MOD_J51_PROGRESS_4COL</option>
+					<option value="20%">MOD_J51_PROGRESS_5COL</option>
+					<option value="16.6%">MOD_J51_PROGRESS_6COL</option>
+					<option value="14.285%">MOD_J51_PROGRESS_7COL</option>
+					<option value="12.5%">MOD_J51_PROGRESS_8COL</option>
+				</field>
+				<field name="j51_layout" type="list" default="center" label="MOD_J51_PROGRESSLAYOUT" description="MOD_J51_PROGRESSLAYOUT_DESC">
+					<option value="row-v-b" showon="j51_type:default">MOD_J51_PROGRESS_LAYOUT_ROW_VB</option>
+					<option value="row-b-v" showon="j51_type:default">MOD_J51_PROGRESS_LAYOUT_ROW_BV</option>
+					<option value="col-t-v" showon="j51_type:circular">MOD_J51_PROGRESS_LAYOUT_COL_TV</option>
+					<option value="col-v-t" showon="j51_type:circular">MOD_J51_PROGRESS_LAYOUT_COL_VT</option>
+				</field>
+				<field name="j51_margin_x" type="textpx" default="20" label="MOD_J51_PROGRESS_MARGINX" description="MOD_J51_PROGRESS_MARGINX_DESC" />
+				<field name="j51_margin_y" type="textpx" default="25" label="MOD_J51_PROGRESS_MARGINY" description="MOD_J51_PROGRESS_MARGINY_DESC" />
+				<field name="j51_title_tag" type="list" default="h4" label="MOD_J51_PROGRESS_TITLE_TAG" description="MOD_J51_PROGRESS_TITLE_TAG_DESC">
+					<option value="h1">h1</option>
+					<option value="h2">h2</option>
+					<option value="h3">h3</option>
+					<option value="h4">h4</option>
+					<option value="h5">h5</option>
+					<option value="h6">h6</option>
+					<option value="p">p</option>
+				</field>
+				<field name="j51_title_color" type="color" default="" label="MOD_J51_PROGRESS_TITLE_COLOR"/>
+				<field name="j51_value_color" type="color" default="" label="MOD_J51_PROGRESS_VALUE_COLOR"/>
+				<field name="j51_progress_color" type="color" default="" label="MOD_J51_PROGRESS_COLOR" description="MOD_J51_PROGRESS_COLOR_DESC"/>
+				<field name="j51_progress_bg_color" format="rgba" type="color" default="rgba(135, 135, 135, 0.3)" label="MOD_J51_PROGRESS_BG_COLOR" />
+				<field name="j51_progress_height" type="textpx" size="60" default="5" label="MOD_J51_PROGRESS_STROKE" />
+				<field label="MOD_J51_PROGRESS_COLOR_INFO" type="spacer"/>	
+			</fieldset>
+
+			<fieldset name="MOD_J51_ANIMATION_SETTINGS">
+				<field name="j51_enable_animation" type="radio" default="1" label="MOD_J51_PROGRESS_ENABLE_ANIMATION_LABEL" description="MOD_J51_PROGRESS_ENABLE_ANIMATION_LABEL_DESC"
+				checked="checked"
+				layout="joomla.form.field.radio.switcher">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+                <field name="j51_animation_length" type="textms" default="400" label="MOD_J51_PROGRESS_ANIMATION_LENGTH" description="MOD_J51_PROGRESS_ANIMATION_LENGTH_DESC" showon="j51_enable_animation:1"/>
+                <field name="j51_interval_length" type="list" default="200" label="MOD_J51_PROGRESS_INTERVAL_LENGTH" description="MOD_J51_PROGRESS_INTERVAL_LENGTH_DESC" showon="j51_enable_animation:1">
+					<option value="0">0ms</option>
+					<option value="100">100ms</option>
+					<option value="200">200ms</option>
+					<option value="300">300ms</option>
+					<option value="400">400ms</option>
+					<option value="500">500ms</option>
+					<option value="600">600ms</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="MOD_J51_PROGRESS">
+				<field name="j51_items" type="subform" formsource="modules/mod_j51progress/field/item.xml" class="advancedSelect" min="1" max="50" multiple="true" layout="joomla.form.field.subform.repeatable" groupByFieldset="true" label="Progress Bars" description="Add icons(s) to display" />
+			</fieldset>
+
+			<fieldset name="RESPONSIVE">
+				<field name="j51_columns_tabl" type="list" default="33.333%" label="MOD_COLUMNS_TABL" description="MOD_COLUMNS_TABL_DESC">
+					<option value="100%">1 Column</option>
+					<option value="50%">2 Column</option>
+					<option value="33.333%">3 Column</option>
+					<option value="25%">4 Column</option>
+					<option value="20%">5 Column</option>
+					<option value="16.666%">6 Column</option>
+					<option value="14.286%">7 Column</option>
+					<option value="12.5%">8 Column</option>
+					<option value="11.111%">9 Column</option>
+					<option value="10%">10 Column</option>
+				</field>
+				<field name="j51_columns_tabp" type="list" default="33.333%" label="MOD_COLUMNS_TABP" description="MOD_COLUMNS_TABP_DESC">
+					<option value="100%">1 Column</option>
+					<option value="50%">2 Column</option>
+					<option value="33.333%">3 Column</option>
+					<option value="25%">4 Column</option>
+					<option value="20%">5 Column</option>
+					<option value="16.666%">6 Column</option>
+					<option value="14.286%">7 Column</option>
+					<option value="12.5%">8 Column</option>
+					<option value="11.111%">9 Column</option>
+					<option value="10%">10 Column</option>
+				</field>
+				<field name="j51_columns_mobl" type="list" default="50%" label="MOD_COLUMNS_MOBL" description="MOD_COLUMNS_MOBL_DESC">
+					<option value="100%">1 Column</option>
+					<option value="50%">2 Column</option>
+					<option value="33.333%">3 Column</option>
+					<option value="25%">4 Column</option>
+					<option value="20%">5 Column</option>
+					<option value="16.666%">6 Column</option>
+					<option value="14.286%">7 Column</option>
+					<option value="12.5%">8 Column</option>
+					<option value="11.111%">9 Column</option>
+					<option value="10%">10 Column</option>
+				</field>
+				<field name="j51_columns_mobp" type="list" default="100%" label="MOD_COLUMNS_MOBP" description="MOD_COLUMNS_MOBP_DESC">
+					<option value="100%">1 Column</option>
+					<option value="50%">2 Column</option>
+					<option value="33.333%">3 Column</option>
+					<option value="25%">4 Column</option>
+					<option value="20%">5 Column</option>
+					<option value="16.666%">6 Column</option>
+					<option value="14.286%">7 Column</option>
+					<option value="12.5%">8 Column</option>
+					<option value="11.111%">9 Column</option>
+					<option value="10%">10 Column</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					class="form-select"
+					validate="moduleLayout"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					rows="3"
+					validate="CssIdentifier"
+				/>
+
+				<field
+					name="owncache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					default="1"
+					filter="integer"
+					validate="options"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					default="900"
+					filter="integer"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

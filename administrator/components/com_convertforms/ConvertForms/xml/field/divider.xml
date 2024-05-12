@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="basic">
+        <field name="border_style" type="list"
+            label="COM_CONVERTFORMS_FIELD_BORDER_STYLE"
+            description="COM_CONVERTFORMS_FIELD_BORDER_STYLE_DESC"
+            default="dashed">
+                <option value="dashed">COM_CONVERTFORMS_FIELD_BORDER_STYLE_DASHED</option>
+                <option value="solid">COM_CONVERTFORMS_FIELD_BORDER_STYLE_SOLID</option>
+                <option value="dotted">COM_CONVERTFORMS_FIELD_BORDER_STYLE_DOTTED</option>
+        </field>
+        <field name="border_width" type="nrnumber"
+            label="COM_CONVERTFORMS_FIELD_BORDER_WIDTH"
+            description="COM_CONVERTFORMS_FIELD_BORDER_WIDTH_DESC"
+            addon="px"
+            min="0"
+            default="1"
+        />
+		<field name="border_color" type="nrcolor" 
+			label="COM_CONVERTFORMS_FIELD_BORDER_COLOR"
+			description="COM_CONVERTFORMS_FIELD_BORDER_COLOR_DESC"
+			default="#ccc"
+		/>
+        <field name="margin_top" type="nrnumber"
+            label="COM_CONVERTFORMS_FIELD_MARGIN_TOP"
+            description="COM_CONVERTFORMS_FIELD_MARGIN_TOP_DESC"
+            addon="px"
+            min="0"
+            default="0"
+        />
+        <field name="margin_bottom" type="nrnumber"
+            label="COM_CONVERTFORMS_FIELD_MARGIN_BOTTOM"
+            description="COM_CONVERTFORMS_FIELD_MARGIN_BOTTOM_DESC"
+            addon="px"
+            min="0"
+            default="0"
+        />
+    </fieldset>
+</form>

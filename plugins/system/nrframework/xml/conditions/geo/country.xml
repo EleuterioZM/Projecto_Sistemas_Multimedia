@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="operator" type="comparator"/>
+        <field name="value" type="nr_geo"
+            label="NR_ASSIGN_COUNTRIES" 
+            description="NR_ASSIGN_COUNTRIES_DESC"
+            multiple="true"
+            showselect="false"
+            class="hasChosen"
+        />
+        <field name="note" type="ruleValueHint"/>
+        <field name="geochecker" type="GeoDBChecker"/>
+    </fieldset>
+</form>

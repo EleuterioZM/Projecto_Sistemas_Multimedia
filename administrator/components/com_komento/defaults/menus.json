@@ -1,0 +1,279 @@
+[
+	{
+		"title": "COM_KOMENTO_DASHBOARD",
+		"icon": "fdi fa fa-tachometer-alt",
+		"link": "index.php?option=com_komento",
+		"view": "",
+		"active": "view"
+	},
+	{
+		"access": "komento.manage.settings",
+		"title": "COM_KOMENTO_SETTINGS",
+		"link": "index.php?option=com_komento&view=settings&layout=system",
+		"view": "settings",
+		"icon": "fdi fa fa-cog",
+		"active": "layout",
+		"sort": true,
+		"childs":
+		[
+			{
+				"title": "COM_KOMENTO_SETTINGS_TAB_ANTISPAM",
+				"url": {
+					"view": "settings",
+					"layout": "antispam"
+				}
+			},
+			{
+				"title": "COM_KOMENTO_SETTINGS_TAB_GENERAL",
+				"url": {
+					"view": "settings",
+					"layout": "general"
+				},
+				"activeLayouts": [
+					"",
+					"general"
+				]
+			},
+			{
+				"title": "COM_KOMENTO_INTEGRATIONS",
+				"url": {
+					"view": "settings",
+					"layout": "integrations"
+				}
+			},
+			{
+				"title": "COM_KT_EDITOR",
+				"url": {
+					"view": "settings",
+					"layout": "editor"
+				}
+			},
+			{
+				"title": "COM_KOMENTO_SETTINGS_TAB_LAYOUT",
+				"url": {
+					"view": "settings",
+					"layout": "layout"
+				}
+			},
+			{
+				"title": "COM_KOMENTO_SETTINGS_TAB_NOTIFICATIONS",
+				"url": {
+					"view": "settings",
+					"layout": "notifications"
+				}
+			},
+			{
+				"access": "komento.manage.themes",
+				"title": "COM_KT_THEMES_EDITOR",
+				"url": {
+					"view": "themes",
+					"layout": ""
+				}
+			},
+			{
+				"title": "COM_KT_MENU_ITEM_THEMES_CUSTOM_CSS",
+				"url": {
+					"view": "themes",
+					"layout": "custom"
+				}
+			}
+		]
+	},
+	{
+		"access": "komento.manage.comments",
+		"title": "COM_KOMENTO_COMMENTS",
+		"view": "comments",
+		"icon": "fdi fa fa-comments",
+		"active": "layout",
+		"childs":
+		[
+			{
+				"access": "komento.manage.comments",
+				"title": "COM_KOMENTO_COMMENTS",
+				"url": {
+					"view": "comments",
+					"layout": ""
+				},
+				"activeLayouts": [
+					"default",
+					"form"
+				]
+			},
+			{
+				"access": "komento.manage.pending",
+				"title": "COM_KOMENTO_PENDING",
+				"url": {
+					"view": "comments",
+					"layout": "pending"
+				},
+				"counter": "comments/getTotalPending"
+			},
+			{	"access": "komento.manage.reports",
+				"title": "COM_KOMENTO_REPORTS",
+				"url": {
+					"view": "comments",
+					"layout": "reports"
+				},
+				"counter": "comments/getTotalReported"
+			},
+			{	"access": "komento.manage.spamlist",
+				"title": "COM_KOMENTO_SPAMLIST",
+				"url": {
+					"view": "comments",
+					"layout": "spamlist"
+				},
+				"counter": "comments/getTotalSpams"
+			}
+		]
+	},
+	{
+		"access": "komento.manage.acl",
+		"title": "COM_KOMENTO_ACL",
+		"view": "acl",
+		"icon": "fdi fa fa-user-lock",
+		"active": "view"
+	},
+	{
+		"access": "komento.manage.subscribers",
+		"title": "COM_KOMENTO_SUBSCRIBERS",
+		"view": "subscribers",
+		"icon": "fdi fa fa-bell",
+		"active": "view"
+	},
+	{
+		"access": "komento.manage.users",
+		"title": "COM_KOMENTO_USERS",
+		"view": "users",
+		"icon": "fdi fa fa-user-friends",
+		"active": "layout",
+		"childs":
+		[
+			{
+				"access": "komento.manage.users",
+				"title": "COM_KOMENTO_USERS",
+				"url": {
+					"view": "users",
+					"layout": ""
+				}
+			},
+			{
+				"access": "komento.manage.downloads",
+				"title": "COM_KT_DOWNLOAD_REQUEST",
+				"url": {
+					"view": "downloads",
+					"layout": ""
+				}
+			}
+		]
+	},
+	{
+		"access": "komento.manage.languages",
+		"title": "COM_KOMENTO_LANGUAGES",
+		"view": "languages",
+		"icon": "fdi fa fa-language",
+		"active": "view"
+	},
+	{
+		"access": "komento.manage.mailq",
+		"title": "COM_KOMENTO_EMAILS",
+		"view": "mailq",
+		"icon": "fdi far fa-envelope",
+		"active": "layout",
+		"childs":
+		[
+			{
+				"access": "komento.manage.mailq",
+				"title": "COM_KOMENTO_EMAILS_ACTIVITIES",
+				"url": {
+					"view": "mailq",
+					"layout": ""
+				}
+			},
+			{
+				"access": "komento.manage.mailq",
+				"title": "COM_KOMENTO_EMAILS_EDITOR",
+				"url": {
+					"view": "mailq",
+					"layout": "editor"
+				}
+			}
+		]
+	},
+	{
+		"access": "komento.manage.migrators",
+		"title": "COM_KOMENTO_MIGRATORS",
+		"view": "migrators",
+		"icon": "fdi fa fa-laptop",
+		"active": "layout",
+		"sort": true,
+		"childs": [
+			{
+				"title": "JLex Comments",
+				"url": {
+					"view": "migrators",
+					"layout": "jlexcomment"
+				}
+			},
+			{
+				"title": "JComments",
+				"url": {
+					"view": "migrators",
+					"layout": "jcomments"
+				}
+			},
+			{
+				"title": "JA Comment",
+				"url": {
+					"view": "migrators",
+					"layout": "jacomment"
+				}
+			},
+			{
+				"title": "RS Comments",
+				"url": {
+					"view": "migrators",
+					"layout": "rscomments"
+				}
+			},
+			{
+				"title": "K2",
+				"url": {
+					"view": "migrators",
+					"layout": "k2"
+				}
+			},
+			{
+				"title": "EasyBlog",
+				"url": {
+					"view": "migrators",
+					"layout": "easyblog"
+				}
+			},
+			{
+				"title": "Zoo",
+				"url": {
+					"view": "migrators",
+					"layout": "zoo"
+				}
+			},
+			{
+				"title": "SLI Comments",
+				"url": {
+					"view": "migrators",
+					"layout": "slicomments"
+				}
+			},
+			{
+				"title": "Custom",
+				"url": {
+					"view": "migrators",
+					"layout": "custom"
+				},
+				"activeLayouts": [
+					"default",
+					""
+				]
+			}
+		]	
+	}
+]

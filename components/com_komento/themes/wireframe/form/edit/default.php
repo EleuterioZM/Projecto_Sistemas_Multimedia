@@ -1,0 +1,28 @@
+<?php
+/**
+* @package		Komento
+* @copyright	Copyright (C) Stack Ideas Sdn Bhd. All rights reserved.
+* @license		GNU/GPL, see LICENSE.php
+* Komento is free software. This version may have been modified pursuant
+* to the GNU General Public License, and as distributed it includes or
+* is derivative of works licensed under the GNU General Public License or
+* other free or open source software licenses.
+* See COPYRIGHT.php for copyright notices and details.
+*/
+defined('_JEXEC') or die('Unauthorized Access');
+?>
+<form class="kt-edit-wrapper" data-kt-edit-form>
+	<?php echo $this->output('site/form/editor', [
+		'comment' => $comment, 
+		'isEdit' => true
+	]); ?>
+	<div class="kt-edit-actions mt-md text-right">
+		<?php echo $this->fd->html('button.link', null, 'COM_KOMENTO_FORM_CANCEL', 'default', 'sm', [
+			'attributes' => 'data-kt-edit-cancel'
+		]); ?>
+
+		<?php echo $this->fd->html('button.link', null, 'COM_KOMENTO_FORM_SAVE', 'primary', 'sm', [
+			'attributes' => 'data-kt-edit-save'
+		]); ?>
+	</div>
+</form>

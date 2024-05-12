@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field name="recipient" type="text"
+            label="COM_CONVERTFORMS_EMAILS_RECIPIENT"
+            description="COM_CONVERTFORMS_EMAILS_RECIPIENT_DESC"
+            hint="COM_CONVERTFORMS_EMAILS_RECIPIENT"
+            class="show-smart-tags"
+            default="{site.email}"
+            required="true"
+        />
+        <field name="subject" type="text"
+            label="COM_CONVERTFORMS_EMAILS_SUBJECT"
+            hint="COM_CONVERTFORMS_EMAILS_SUBJECT"
+            class="show-smart-tags"
+            default="New Submission #{submission.id}: Contact Form"
+            required="true"
+        />
+        <field name="from_name" type="text"
+            label="COM_CONVERTFORMS_EMAILS_FROM"
+            hint="COM_CONVERTFORMS_EMAILS_FROM"
+            class="show-smart-tags"
+            default="{site.name}"
+            required="true"
+        />  
+        <field name="from_email" type="text"
+            label="COM_CONVERTFORMS_EMAILS_FROM_EMAIL"
+            hint="COM_CONVERTFORMS_EMAILS_FROM_EMAIL"
+            class="show-smart-tags"
+            default="{site.email}"
+            required="true"
+        />
+        <field name="reply_to" type="text"
+            label="COM_CONVERTFORMS_EMAILS_REPLY_TO"
+            hint="COM_CONVERTFORMS_EMAILS_REPLY_TO"
+            class="show-smart-tags"
+        />
+        <field name="reply_to_name" type="text"
+            label="COM_CONVERTFORMS_EMAILS_REPLY_TO_NAME"
+            hint="COM_CONVERTFORMS_EMAILS_REPLY_TO_NAME"
+            class="show-smart-tags"
+        />
+        <field name="body" type="textarea"
+            label="COM_CONVERTFORMS_EMAILS_BODY"
+            class="editorx show-smart-tags"
+            filter="raw"
+            required="true"
+            default="{all_fields}"
+        />
+        <field name="attachments" type="text"
+            label="COM_CONVERTFORMS_EMAILS_ATTACHMENT"
+            description="COM_CONVERTFORMS_EMAILS_ATTACHMENT_DESC"
+            hint="images/myattachment.pdf"
+            class="show-smart-tags"
+        />
+    </fieldset>
+</form>
